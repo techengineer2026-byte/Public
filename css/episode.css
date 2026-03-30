@@ -1,0 +1,224 @@
+:root {
+  --accent: #ffcc00;
+  --bg-dark: #050505;
+  --bg-card: #111111;
+  --text-gray: #b3b3b3;
+}
+body {
+  background-color: var(--bg-dark);
+  color: white;
+  font-family: "Poppins", sans-serif;
+  padding-bottom: 120px; /* Space for player */
+}
+
+.logo-container img {
+  height: 45px;
+  width: 45px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid var(--accent);
+  box-shadow: 0 0 15px rgba(255, 215, 0, 0.3);
+}
+
+.badge-ep {
+  background-color: var(--accent);
+  color: black;
+  font-weight: 700;
+  padding: 5px 12px;
+  border-radius: 4px;
+}
+.navbar-nav {
+  display: flex;
+  flex-direction: row;
+  gap: 30px; /* adds space between links */
+  align-items: center;
+}
+
+.navbar-collapse {
+  justify-content: space-between; /* keeps buttons at right */
+}
+
+@media (max-width: 992px) {
+  .navbar-nav {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+  .d-flex.flex-column.flex-lg-row {
+    justify-content: center !important;
+    gap: 15px;
+  }
+}
+/* CONTENT */
+h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-top: 40px;
+  color: white;
+  border-left: 4px solid var(--accent);
+  padding-left: 15px;
+}
+p {
+  color: var(--text-gray);
+  line-height: 1.7;
+}
+.guest-card {
+  background: var(--bg-card);
+  border: 1px solid #333;
+  border-radius: 12px;
+  padding: 25px;
+}
+
+/* CLICKABLE TIMESTAMPS */
+.timestamp-box {
+  background: var(--bg-card);
+  border: 1px solid #222;
+  border-radius: 12px;
+  overflow: hidden;
+}
+.timestamp-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  border-bottom: 1px solid #222;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.timestamp-row:hover {
+  background: #222;
+}
+.timestamp-row:last-child {
+  border-bottom: none;
+}
+.time-btn {
+  color: var(--accent);
+  font-family: monospace;
+  font-weight: bold;
+}
+
+/* --- MOBILE RESPONSIVE PLAYER (THE PILL) --- */
+.music-pill {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  max-width: 600px;
+  background: rgba(20, 20, 20, 0.95);
+  backdrop-filter: blur(10px);
+  border: 1px solid #333;
+  border-radius: 50px;
+  padding: 8px 20px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.8);
+  z-index: 1000;
+  transition: all 0.3s ease;
+}
+
+/* Rotating animation when playing */
+.pill-thumb {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  object-fit: cover;
+  animation: spin 8s linear infinite;
+  animation-play-state: paused;
+}
+.music-pill.playing .pill-thumb {
+  animation-play-state: running;
+}
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.pill-info {
+  flex-grow: 1;
+  overflow: hidden;
+}
+.pill-info h6 {
+  margin: 0;
+  font-size: 14px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.pill-info span {
+  font-size: 11px;
+  color: #aaa;
+}
+
+/* Controls */
+.pill-controls {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.btn-pill-play {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: none;
+  background: white;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+.btn-pill-play:active {
+  transform: scale(0.9);
+}
+
+/* Custom Range Slider */
+input[type="range"] {
+  appearance: none;
+  -webkit-appearance: none;
+  background: transparent;
+  width: 100px; /* Width on Desktop */
+}
+input[type="range"]::-webkit-slider-runnable-track {
+  height: 4px;
+  background: #444;
+  border-radius: 2px;
+}
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  background: var(--accent);
+  margin-top: -4px;
+}
+
+/* --- MOBILE ADJUSTMENTS (Important for 100% Score) --- */
+@media (max-width: 576px) {
+  .hero-section {
+    padding-top: 10px;
+  }
+  h1.display-4 {
+    font-size: 2rem;
+  } /* Smaller title on phone */
+
+  .music-pill {
+    bottom: 10px;
+    width: 96%;
+    border-radius: 16px; /* Less rounded on mobile */
+    padding: 10px;
+  }
+  .pill-thumb {
+    width: 40px;
+    height: 40px;
+  }
+  input[type="range"] {
+    width: 60px;
+  } /* Smaller slider on phone */
+  .pill-info h6 {
+    font-size: 13px;
+  }
+}

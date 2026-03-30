@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<rss version="2.0"
+    xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
+
+    <channel>
+
+        <title>Puadh Punjabi Podcast</title>
+        <link>https://puadhpunjabipodcast.com</link>
+        <language>pa-IN</language>
+
+        <description>
+Real Punjabi conversations with entrepreneurs, artists, police officers, and inspiring personalities from Punjab.
+        </description>
+
+        <itunes:owner>
+            <itunes:name>Puadh Punjabi Podcast</itunes:name>
+            <itunes:email>puadhpunjabipodcast@gmail.com</itunes:email>
+        </itunes:owner>
+
+        <itunes:author>Puadh Punjabi Podcast</itunes:author>
+        <itunes:explicit>false</itunes:explicit>
+
+        <itunes:image href="https://puadhpunjabipodcast.com/img/logo.webp"/>
+        <itunes:author>Puadh Punjabi Podcast</itunes:author>
+        <itunes:type>episodic</itunes:type>
+        <itunes:explicit>false</itunes:explicit>
+        <itunes:category text="Society &amp; Culture"/>
+
+        <lastBuildDate>Wed, 11 Mar 2026 12:00:00 GMT</lastBuildDate>
+
+        <!-- EPISODES -->
+
+        <item>
+            <title>Ep 29: Seerat – Child Actress Interview</title>
+            <link>https://puadhpunjabipodcast.com/episode/ep29-seerat-child-actress-interview</link>
+            <description>Fun and honest conversation with child actress Seerat about acting, school life and funny moments.</description>
+            <pubDate>Mon, 01 Mar 2026 12:00:00 GMT</pubDate>
+            <enclosure url="https://puadhpunjabipodcast.com/audio/ep29.mp3" type="audio/mpeg"/>
+            <guid>https://puadhpunjabipodcast.com/audio/ep29.mp3</guid>
+        </item>
+
+        <item>
+            <title>Ep 28: Vikram – Airbnb, Business and Cyber Scam</title>
+            <link>https://puadhpunjabipodcast.com/episode/ep28-vikram-airbnb-chubara-business-cyber-scam</link>
+            <description>Entrepreneur Vikram shares lessons from Airbnb business, startups and cyber scam awareness.</description>
+            <pubDate>Sun, 22 Feb 2026 12:00:00 GMT</pubDate>
+            <enclosure url="https://puadhpunjabipodcast.com/audio/ep28.mp3" type="audio/mpeg"/>
+            <guid>https://puadhpunjabipodcast.com/audio/ep28.mp3</guid>
+        </item>
+
+        <item>
+            <title>Ep 27: Mindset of Rich People</title>
+            <link>https://puadhpunjabipodcast.com/episode/ep27-rich-mindset</link>
+            <description>Understanding wealth psychology, the buy borrow die strategy and avoiding crypto scams.</description>
+            <pubDate>Sat, 20 Dec 2025 12:00:00 GMT</pubDate>
+            <enclosure url="https://puadhpunjabipodcast.com/audio/ep27.mp3" type="audio/mpeg"/>
+            <guid>https://puadhpunjabipodcast.com/audio/ep27.mp3</guid>
+        </item>
+
+        <item>
+            <title>Ep 26: The Science of Manifestation</title>
+            <link>https://puadhpunjabipodcast.com/episode/ep26-manifestation</link>
+            <description>Discussion on law of attraction, manifestation and mental focus for success.</description>
+            <pubDate>Mon, 15 Dec 2025 12:00:00 GMT</pubDate>
+            <enclosure url="https://puadhpunjabipodcast.com/audio/ep26.mp3" type="audio/mpeg"/>
+            <guid>https://puadhpunjabipodcast.com/audio/ep26.mp3</guid>
+        </item>
+
+        <item>
+            <title>Ep 25: Software Engineer Job in Doha</title>
+            <link>https://puadhpunjabipodcast.com/episode/ep25-doha-engineer</link>
+            <description>Life of an Indian software engineer working in Doha including salary, lifestyle and career growth.</description>
+            <pubDate>Sun, 07 Dec 2025 12:00:00 GMT</pubDate>
+            <enclosure url="https://puadhpunjabipodcast.com/audio/ep25.mp3" type="audio/mpeg"/>
+            <guid>https://puadhpunjabipodcast.com/audio/ep25.mp3</guid>
+        </item>
+
+        <item>
+            <title>Ep 24: IT Evolution and Job Hunting 2025</title>
+            <link>https://puadhpunjabipodcast.com/episode/ep24-it-journey</link>
+            <description>Insights about IT industry evolution and strategies to find tech jobs in 2025.</description>
+            <pubDate>Mon, 01 Dec 2025 12:00:00 GMT</pubDate>
+            <enclosure url="https://puadhpunjabipodcast.com/audio/ep24.mp3" type="audio/mpeg"/>
+            <guid>https://puadhpunjabipodcast.com/audio/ep24.mp3</guid>
+        </item>
+
+        <item>
+            <title>Ep 23: Real Estate Investment</title>
+            <link>https://puadhpunjabipodcast.com/episode/ep23-real-estate</link>
+            <description>Expert discussion about property investment opportunities in Punjab, Gurugram and Dubai.</description>
+            <pubDate>Wed, 15 Oct 2025 12:00:00 GMT</pubDate>
+            <enclosure url="https://puadhpunjabipodcast.com/audio/ep23.mp3" type="audio/mpeg"/>
+            <guid>https://puadhpunjabipodcast.com/audio/ep23.mp3</guid>
+        </item>
+
+        <item>
+            <title>Ep 22: Gurinder Gauri – Mrs Chandigarh</title>
+            <link>https://puadhpunjabipodcast.com/episode/ep22-gurinder-gauri</link>
+            <description>Story of Gurinder Gauri discussing education, social work and winning Mrs Chandigarh.</description>
+            <pubDate>Wed, 01 Oct 2025 12:00:00 GMT</pubDate>
+            <enclosure url="https://puadhpunjabipodcast.com/audio/ep22.mp3" type="audio/mpeg"/>
+            <guid>https://puadhpunjabipodcast.com/audio/ep22.mp3</guid>
+        </item>
+
+        <item>
+            <title>Ep 21: Sheena Dhawan – Delhi vs Mohali Life</title>
+            <link>https://puadhpunjabipodcast.com/episode/ep21-sheena-dhawan</link>
+            <description>Conversation about city life, feminism, technology and youth culture.</description>
+            <pubDate>Sun, 21 Sep 2025 12:00:00 GMT</pubDate>
+            <enclosure url="https://puadhpunjabipodcast.com/audio/ep21.mp3" type="audio/mpeg"/>
+            <guid>https://puadhpunjabipodcast.com/audio/ep21.mp3</guid>
+        </item>
+
+        <item>
+            <title>Ep 20: Punjab Police Crime Confessions</title>
+            <link>https://puadhpunjabipodcast.com/episode/ep20-police-confessions</link>
+            <description>Punjab police officers reveal real crime cases and policing challenges.</description>
+            <pubDate>Sat, 23 Aug 2025 12:00:00 GMT</pubDate>
+            <enclosure url="https://puadhpunjabipodcast.com/audio/ep20.mp3" type="audio/mpeg"/>
+            <guid>https://puadhpunjabipodcast.com/audio/ep20.mp3</guid>
+        </item>
+
+        <item>
+            <title>Ep 19: Gurjeet Mattaur – Punjabi Singers and Puadh</title>
+            <link>https://puadhpunjabipodcast.com/episode/ep19-gurjeet-mattaur</link>
+            <description>Discussion on Punjabi culture, singers and community development.</description>
+            <pubDate>Sun, 24 Aug 2025 12:00:00 GMT</pubDate>
+            <enclosure url="https://puadhpunjabipodcast.com/audio/ep19.mp3" type="audio/mpeg"/>
+            <guid>https://puadhpunjabipodcast.com/audio/ep19.mp3</guid>
+        </item>
+
+        <item>
+            <title>Ep 18: Akash – Ecommerce to Farming</title>
+            <link>https://puadhpunjabipodcast.com/episode/ep18-akash-ecommerce</link>
+            <description>Journey of building ecommerce businesses and moving toward smart farming.</description>
+            <pubDate>Sun, 27 Jul 2025 12:00:00 GMT</pubDate>
+            <enclosure url="https://puadhpunjabipodcast.com/audio/ep18.mp3" type="audio/mpeg"/>
+            <guid>https://puadhpunjabipodcast.com/audio/ep18.mp3</guid>
+        </item>
+
+        <item>
+            <title>Ep 17: Satwinder Singh – Digital Empire</title>
+            <link>https://puadhpunjabipodcast.com/episode/ep17-satwinder-singh</link>
+            <description>From sales job in a news channel to running a digital marketing business.</description>
+            <pubDate>Sun, 20 Jul 2025 12:00:00 GMT</pubDate>
+            <enclosure url="https://puadhpunjabipodcast.com/audio/ep17.mp3" type="audio/mpeg"/>
+            <guid>https://puadhpunjabipodcast.com/audio/ep17.mp3</guid>
+        </item>
+
+        <item>
+            <title>Ep 16: Dr Parvinder Kaur – Family Passion Profession</title>
+            <link>https://puadhpunjabipodcast.com/episode/ep16-parvinder-kaur</link>
+            <description>Balancing law career, family life and passion for travel.</description>
+            <pubDate>Sun, 13 Jul 2025 12:00:00 GMT</pubDate>
+            <enclosure url="https://puadhpunjabipodcast.com/audio/ep16.mp3" type="audio/mpeg"/>
+            <guid>https://puadhpunjabipodcast.com/audio/ep16.mp3</guid>
+        </item>
+
+        <item>
+            <title>Ep 15: Journey of a Coder</title>
+            <link>https://puadhpunjabipodcast.com/episode/ep15-jobanjeet-singh</link>
+            <description>How a self taught programmer built his career.</description>
+            <pubDate>Sun, 06 Jul 2025 12:00:00 GMT</pubDate>
+            <enclosure url="https://puadhpunjabipodcast.com/audio/ep15.mp3" type="audio/mpeg"/>
+            <guid>https://puadhpunjabipodcast.com/audio/ep15.mp3</guid>
+        </item>
+
+
+        <item>
+            <title>Ep 14: Astrology Myths with Manish Shahi</title>
+            <link>https://puadhpunjabipodcast.com/episode/ep14-manish-shahi</link>
+            <description>Debate about astrology science and myths.</description>
+            <pubDate>Sun, 29 Jun 2025 12:00:00 GMT</pubDate>
+            <enclosure url="https://puadhpunjabipodcast.com/audio/ep14.mp3" type="audio/mpeg"/>
+            <guid>https://puadhpunjabipodcast.com/audio/ep14.mp3</guid>
+        </item>
+
+        <item>
+            <title>Ep 13: Dark Reality of Music Industry</title>
+            <link>https://puadhpunjabipodcast.com/episode/ep13-music-industry</link>
+            <description>Independent artists discuss passion vs money.</description>
+            <pubDate>Sun, 22 Jun 2025 12:00:00 GMT</pubDate>
+            <enclosure url="https://puadhpunjabipodcast.com/audio/ep13.mp3" type="audio/mpeg"/>
+            <guid>https://puadhpunjabipodcast.com/audio/ep13.mp3</guid>
+        </item>
+
+        <item>
+            <title>Ep 12: Teacher to Trailblazer</title>
+            <link>https://puadhpunjabipodcast.com/episode/ep12-teacher-navneet-sharma</link>
+            <description>Education and entrepreneurship journey.</description>
+            <pubDate>Sun, 15 Jun 2025</pubDate>
+            <enclosure url="https://puadhpunjabipodcast.com/audio/ep12.mp3" type="audio/mpeg"/>
+            <guid>https://puadhpunjabipodcast.com/audio/ep12.mp3</guid>
+        </item>
+
+        <item>
+            <title>Ep 11: Bhangra Passion to Profession</title>
+            <link>https://puadhpunjabipodcast.com/episode/ep11-kamaljeet-singh</link>
+            <description>How bhangra turned into a career.</description>
+            <pubDate>Sun, 01 Jun 2025</pubDate>
+            <enclosure url="https://puadhpunjabipodcast.com/audio/ep11.mp3" type="audio/mpeg"/>
+            <guid>https://puadhpunjabipodcast.com/audio/ep11.mp3</guid>
+        </item>
+
+        <item>
+            <title>Ep 10: Corporate to Cab Driver</title>
+            <link>https://puadhpunjabipodcast.com/episode/ep10-rajvinder-singh</link>
+            <description>Reality of Indian job market.</description>
+            <pubDate>Sun, 01 Jun 2025</pubDate>
+            <enclosure url="https://puadhpunjabipodcast.com/audio/ep10.mp3" type="audio/mpeg"/>
+            <guid>https://puadhpunjabipodcast.com/audio/ep10.mp3</guid>
+        </item>
+        <item>
+            <title>Ep 9: Election Strategy – Punjab Haryana Himachal</title>
+            <link>https://puadhpunjabipodcast.com/episode/ep9-deepak-kaul</link>
+            <description>Political strategist Deepak Kaul discusses election campaigns and ground strategy in North India.</description>
+            <pubDate>Sun, 25 May 2025 12:00:00 GMT</pubDate>
+            <enclosure url="https://puadhpunjabipodcast.com/audio/ep9.mp3" type="audio/mpeg"/>
+            <guid>https://puadhpunjabipodcast.com/audio/ep9.mp3</guid>
+        </item>
+
+        <item>
+            <title>Ep 8: Harsimarpreet Singh – Baker to Rental Car Business</title>
+            <link>https://puadhpunjabipodcast.com/episode/ep8-harsimarpreet</link>
+            <description>Entrepreneur journey from bakery startup to building a rental car company.</description>
+            <pubDate>Sun, 18 May 2025 12:00:00 GMT</pubDate>
+            <enclosure url="https://puadhpunjabipodcast.com/audio/ep8.mp3" type="audio/mpeg"/>
+            <guid>https://puadhpunjabipodcast.com/audio/ep8.mp3</guid>
+        </item>
+
+        <item>
+            <title>Ep 7: Gurjeet Kamboj – Faculty to Founder</title>
+            <link>https://puadhpunjabipodcast.com/episode/ep7-gurjeet-kamboj</link>
+            <description>How a college faculty member transitioned into building his own company.</description>
+            <pubDate>Sun, 11 May 2025 12:00:00 GMT</pubDate>
+            <enclosure url="https://puadhpunjabipodcast.com/audio/ep7.mp3" type="audio/mpeg"/>
+            <guid>https://puadhpunjabipodcast.com/audio/ep7.mp3</guid>
+        </item>
+
+        <item>
+            <title>Ep 6: Jarman Sheikh – From Subway to Singing</title>
+            <link>https://puadhpunjabipodcast.com/episode/ep6-jarman-sheikh</link>
+            <description>Story of a singer who worked in Subway before chasing his music dream.</description>
+            <pubDate>Sun, 04 May 2025 12:00:00 GMT</pubDate>
+            <enclosure url="https://puadhpunjabipodcast.com/audio/ep6.mp3" type="audio/mpeg"/>
+            <guid>https://puadhpunjabipodcast.com/audio/ep6.mp3</guid>
+        </item>
+
+        <item>
+            <title>Ep 5: Ghost Story – Chandigarh University</title>
+            <link>https://puadhpunjabipodcast.com/episode/ep5-ghost-story</link>
+            <description>Strange ghost stories and late night experiences from Chandigarh University.</description>
+            <pubDate>Sun, 27 Apr 2025 12:00:00 GMT</pubDate>
+            <enclosure url="https://puadhpunjabipodcast.com/audio/ep5.mp3" type="audio/mpeg"/>
+            <guid>https://puadhpunjabipodcast.com/audio/ep5.mp3</guid>
+        </item>
+
+        <item>
+            <title>Ep 4: Bharat Kaushal – Mr North India</title>
+            <link>https://puadhpunjabipodcast.com/episode/ep4-bharat-kaushal</link>
+            <description>Fitness journey and bodybuilding career of Mr North India Bharat Kaushal.</description>
+            <pubDate>Sun, 20 Apr 2025 12:00:00 GMT</pubDate>
+            <enclosure url="https://puadhpunjabipodcast.com/audio/ep4.mp3" type="audio/mpeg"/>
+            <guid>https://puadhpunjabipodcast.com/audio/ep4.mp3</guid>
+        </item>
+
+        <item>
+            <title>Ep 3: Mr Bhatia – From Cold Calls to Boardrooms</title>
+            <link>https://puadhpunjabipodcast.com/episode/ep3-mr-bhatia</link>
+            <description>An inspiring story of building success starting from cold calls.</description>
+            <pubDate>Sun, 13 Apr 2025 12:00:00 GMT</pubDate>
+            <enclosure url="https://puadhpunjabipodcast.com/audio/ep3.mp3" type="audio/mpeg"/>
+            <guid>https://puadhpunjabipodcast.com/audio/ep3.mp3</guid>
+        </item>
+
+        <item>
+            <title>Ep 2: Raman Sharma – Hotel Industry Secrets</title>
+            <link>https://puadhpunjabipodcast.com/episode/ep2-raman-sharma</link>
+            <description>Behind the scenes of the hotel industry and hospitality business.</description>
+            <pubDate>Sun, 06 Apr 2025 12:00:00 GMT</pubDate>
+            <enclosure url="https://puadhpunjabipodcast.com/audio/ep2.mp3" type="audio/mpeg"/>
+            <guid>https://puadhpunjabipodcast.com/audio/ep2.mp3</guid>
+        </item>
+
+        <item>
+            <title>Ep 1: Dr Navneet Sharma – Farmer Protest and Adani</title>
+            <link>https://puadhpunjabipodcast.com/episode/ep1-navneet-sharma</link>
+            <description>Discussion about farmer protests, politics and agriculture economy.</description>
+            <pubDate>Sun, 30 Mar 2025 12:00:00 GMT</pubDate>
+            <enclosure url="https://puadhpunjabipodcast.com/audio/ep1.mp3" type="audio/mpeg"/>
+            <guid>https://puadhpunjabipodcast.com/audio/ep1.mp3</guid>
+        </item>
+    </channel>
+</rss>

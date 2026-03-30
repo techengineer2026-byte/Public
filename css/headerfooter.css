@@ -1,0 +1,333 @@
+/* css/headerfooter.css */
+
+/* ========================================
+   CSS VARIABLES
+   ======================================== */
+:root {
+    --accent: #FFD700;
+    --accent-glow: rgba(255, 215, 0, 0.4);
+    --accent-glow-strong: rgba(255, 215, 0, 0.6);
+    --nav-bg: rgba(0, 0, 0, 0.4);
+    --nav-bg-scrolled: rgba(0, 0, 0, 0.85);
+    --nav-border: rgba(255, 255, 255, 0.08);
+    --nav-border-scrolled: rgba(255, 215, 0, 0.15);
+    --nav-transition: all 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+/* ========================================
+   1. GLASS NAVBAR — STICKY + BLUR
+   ======================================== */
+.navbar-glass {
+    background: var(--nav-bg);
+    backdrop-filter: blur(14px) saturate(180%);
+    -webkit-backdrop-filter: blur(14px) saturate(180%);
+    border-bottom: 1px solid var(--nav-border);
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    transition: var(--nav-transition);
+    z-index: 1050;
+}
+
+/* Scroll effect — smaller, darker, shadow */
+.navbar-glass.navbar-scrolled {
+    background: var(--nav-bg-scrolled);
+    backdrop-filter: blur(20px) saturate(200%);
+    -webkit-backdrop-filter: blur(20px) saturate(200%);
+    border-bottom: 1px solid var(--nav-border-scrolled);
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+    box-shadow:
+        0 4px 30px rgba(0, 0, 0, 0.4),
+        0 1px 15px var(--accent-glow);
+}
+
+/* ========================================
+   2. LOGO
+   ======================================== */
+.logo-container img {
+    height: 65px;
+    width: 65px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid var(--accent);
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.3);
+    transition: var(--nav-transition);
+}
+
+.navbar-scrolled .logo-container img {
+    height: 50px;
+    width: 50px;
+}
+
+/* ========================================
+   3. NAV LINKS — SPACING + ACTIVE + HOVER
+   ======================================== */
+.nav-menu-enhanced .nav-item {
+    margin: 0 0.35rem;
+}
+
+.nav-link-animated {
+    position: relative;
+    color: rgba(255, 255, 255, 0.75) !important;
+    font-size: 0.95rem;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+    padding: 0.5rem 0.85rem !important;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+    overflow: hidden;
+}
+
+/* Priority pages (Studio, Episodes) — slightly bolder */
+.nav-link-priority {
+    font-weight: 700 !important;
+    font-size: 1rem !important;
+}
+
+/* Hover underline animation — smooth slide from left */
+.nav-link-animated::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, var(--accent), #FFA500);
+    border-radius: 2px;
+    transition: width 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+        left 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.nav-link-animated:hover::after,
+.nav-link-animated:focus::after {
+    width: 70%;
+    left: 15%;
+}
+
+.nav-link-animated:hover {
+    color: #fff !important;
+    text-shadow: 0 0 8px var(--accent-glow);
+}
+
+/* ========================================
+   4. ACTIVE PAGE HIGHLIGHT
+   ======================================== */
+.nav-link-animated.active {
+    color: var(--accent) !important;
+    text-shadow: 0 0 12px var(--accent-glow);
+}
+
+.nav-link-animated.active::after {
+    width: 70%;
+    left: 15%;
+    height: 2.5px;
+    background: linear-gradient(90deg, var(--accent), #FFA500, var(--accent));
+    box-shadow: 0 0 8px var(--accent-glow);
+}
+
+/* Active glow dot (optional extra flair) */
+.nav-link-animated.active::before {
+    content: '';
+    position: absolute;
+    top: 6px;
+    right: 8px;
+    width: 5px;
+    height: 5px;
+    background: var(--accent);
+    border-radius: 50%;
+    box-shadow: 0 0 6px var(--accent-glow-strong);
+    animation: activePulse 2s ease-in-out infinite;
+}
+
+@keyframes activePulse {
+
+    0%,
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    50% {
+        opacity: 0.5;
+        transform: scale(1.3);
+    }
+}
+
+/* ========================================
+   5. CTA BUTTON — BIGGER + GLOW + PULSE
+   ======================================== */
+.btn-book-studio {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4rem;
+    background: linear-gradient(135deg, var(--accent), #FFA500);
+    color: #000 !important;
+    font-weight: 700;
+    font-size: 1rem;
+    border: none;
+    border-radius: 50px;
+    text-decoration: none;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    box-shadow:
+        0 4px 15px var(--accent-glow),
+        0 0 25px rgba(255, 215, 0, 0.15);
+}
+
+/* Desktop CTA — larger */
+.btn-book-studio-desktop {
+    font-size: 1.05rem;
+    padding: 0.7rem 1.8rem !important;
+    animation: ctaGentlePulse 3s ease-in-out infinite;
+}
+
+/* Mobile CTA — compact */
+.btn-book-studio-mobile {
+    font-size: 0.85rem;
+    padding: 0.45rem 1rem !important;
+}
+
+/* Hover glow effect */
+.btn-book-studio:hover {
+    transform: translateY(-2px) scale(1.05);
+    box-shadow:
+        0 6px 25px var(--accent-glow-strong),
+        0 0 40px rgba(255, 215, 0, 0.3),
+        0 0 60px rgba(255, 165, 0, 0.15);
+    background: linear-gradient(135deg, #FFE44D, #FF8C00);
+}
+
+.btn-book-studio:active {
+    transform: translateY(0) scale(0.98);
+}
+
+/* Shimmer sweep on hover */
+.btn-book-studio::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg,
+            transparent,
+            rgba(255, 255, 255, 0.3),
+            transparent);
+    transition: left 0.5s ease;
+}
+
+.btn-book-studio:hover::before {
+    left: 100%;
+}
+
+/* Gentle pulse animation (attention grabber) */
+@keyframes ctaGentlePulse {
+
+    0%,
+    100% {
+        box-shadow:
+            0 4px 15px var(--accent-glow),
+            0 0 25px rgba(255, 215, 0, 0.15);
+    }
+
+    50% {
+        box-shadow:
+            0 4px 20px var(--accent-glow-strong),
+            0 0 40px rgba(255, 215, 0, 0.25);
+    }
+}
+
+/* ========================================
+   6. TOGGLER STYLES
+   ======================================== */
+.navbar-toggler {
+    border: 1px solid rgba(255, 255, 255, 0.15) !important;
+    padding: 0.35rem 0.55rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.navbar-toggler:hover {
+    border-color: var(--accent) !important;
+    box-shadow: 0 0 10px var(--accent-glow);
+}
+
+.navbar-toggler:focus {
+    box-shadow: 0 0 10px var(--accent-glow) !important;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 215, 0, 0.9%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+    width: 1.3em;
+    height: 1.3em;
+}
+
+/* ========================================
+   7. MOBILE RESPONSIVE
+   ======================================== */
+@media (max-width: 991.98px) {
+    .navbar-glass {
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+    }
+
+    .navbar-collapse {
+        background: rgba(0, 0, 0, 0.92);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        border-radius: 0 0 16px 16px;
+        margin-top: 0.5rem;
+        padding: 1rem 0.5rem;
+        border: 1px solid rgba(255, 255, 255, 0.06);
+        border-top: 1px solid rgba(255, 215, 0, 0.1);
+    }
+
+    .nav-menu-enhanced .nav-item {
+        margin: 0.15rem 0;
+    }
+
+    .nav-link-animated {
+        font-size: 1.05rem;
+        padding: 0.65rem 1rem !important;
+        border-radius: 10px;
+        transition: background 0.2s ease, color 0.2s ease;
+    }
+
+    .nav-link-animated:hover {
+        background: rgba(255, 215, 0, 0.08);
+    }
+
+    .nav-link-animated.active {
+        background: rgba(255, 215, 0, 0.1);
+    }
+
+    /* Hide underline effect on mobile — use background instead */
+    .nav-link-animated::after {
+        display: none;
+    }
+
+    .nav-link-animated.active::before {
+        top: 50%;
+        right: 12px;
+        transform: translateY(-50%);
+    }
+
+    .logo-container img {
+        height: 50px;
+        width: 50px;
+    }
+}
+
+/* ========================================
+   8. UTILITY CLASSES
+   ======================================== */
+.text-accent {
+    color: var(--accent);
+}
+
+.display-4 {
+    font-weight: 700;
+    letter-spacing: -1px;
+}
