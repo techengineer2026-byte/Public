@@ -331,3 +331,386 @@
     font-weight: 700;
     letter-spacing: -1px;
 }
+
+/* ═══════════════════════════════════════════════════════════ */
+/* FOOTER CSS — Puadh Podcast (PRO UPGRADE)                   */
+/* ═══════════════════════════════════════════════════════════ */
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+/* 1. FOOTER BASE                                              */
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+.footer-main {
+    background-color: #000;
+    color: #888;
+    border-top: 1px solid #1a1a1a;
+}
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+/* 2. RESPONSIVE PADDING                                       */
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+.footer-padding {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+@media (min-width: 768px) {
+    .footer-padding {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .footer-padding {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+}
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+/* 3. CTA BANNER — MONEY SECTION 💰                            */
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+.footer-cta-banner {
+    background: linear-gradient(135deg, rgba(255, 215, 0, 0.08) 0%, rgba(255, 165, 0, 0.05) 100%);
+    border: 1px solid rgba(255, 215, 0, 0.15);
+    border-radius: 16px;
+    padding: 1.5rem 2rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.footer-cta-banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(ellipse at 20% 50%, rgba(255, 215, 0, 0.06) 0%, transparent 70%);
+    pointer-events: none;
+}
+
+.footer-cta-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1.2rem;
+    position: relative;
+    z-index: 1;
+}
+
+.footer-cta-content {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.footer-cta-emoji {
+    font-size: 2.2rem;
+    line-height: 1;
+}
+
+.footer-cta-title {
+    color: #fff;
+    font-weight: 800;
+    font-size: 1.25rem;
+    margin: 0;
+    letter-spacing: -0.3px;
+}
+
+.footer-cta-subtitle {
+    color: #999;
+    font-size: 0.85rem;
+    margin: 0.2rem 0 0 0;
+}
+
+.btn-footer-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    background: linear-gradient(135deg, #FFD700, #FFA500);
+    color: #000 !important;
+    font-weight: 700;
+    font-size: 1rem;
+    padding: 0.7rem 1.8rem;
+    border-radius: 50px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 20px rgba(255, 215, 0, 0.25);
+    white-space: nowrap;
+}
+
+.btn-footer-cta:hover {
+    transform: translateY(-2px) scale(1.04);
+    box-shadow:
+        0 6px 30px rgba(255, 215, 0, 0.4),
+        0 0 50px rgba(255, 215, 0, 0.15);
+    color: #000 !important;
+    background: linear-gradient(135deg, #FFE44D, #FF8C00);
+}
+
+.btn-footer-cta:active {
+    transform: translateY(0) scale(0.98);
+}
+
+@media (max-width: 575px) {
+    .footer-cta-banner {
+        padding: 1.2rem 1.2rem;
+        text-align: center;
+    }
+
+    .footer-cta-inner {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-cta-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-cta-title {
+        font-size: 1.1rem;
+    }
+}
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+/* 4. DIVIDER LINES                                            */
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+.footer-divider {
+    border: none;
+    height: 1px;
+    background: linear-gradient(90deg, transparent 0%, #333 20%, rgba(255, 215, 0, 0.15) 50%, #333 80%, transparent 100%);
+    margin: 1rem 0 2rem 0;
+    opacity: 1;
+}
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+/* 5. SECTION TITLES — VISUAL HIERARCHY                        */
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+.footer-section-title {
+    color: #fff;
+    font-weight: 700;
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    margin-bottom: 1rem;
+    position: relative;
+    padding-bottom: 0.6rem;
+}
+
+.footer-section-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30px;
+    height: 2px;
+    background: linear-gradient(90deg, #FFD700, #FFA500);
+    border-radius: 2px;
+}
+
+@media (min-width: 992px) {
+    .footer-section-title::after {
+        left: 0;
+        transform: none;
+    }
+}
+
+.footer-section-title-sm {
+    color: #fff;
+    font-weight: 700;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+    margin-bottom: 0.5rem;
+}
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+/* 6. FOOTER LINKS — GROUPED & STYLED                          */
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+.footer-link-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.55rem;
+}
+
+.footer-link-list a {
+    color: #888;
+    text-decoration: none;
+    font-size: 0.88rem;
+    transition: color 0.25s ease, padding-left 0.25s ease;
+    display: inline-block;
+}
+
+.footer-link-list a:hover {
+    color: #FFD700;
+    padding-left: 5px;
+}
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+/* 7. CONTACT LINKS (no shift on hover)                        */
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+.footer-contact-link {
+    color: #888;
+    text-decoration: none;
+    transition: color 0.25s ease;
+}
+
+.footer-contact-link:hover {
+    color: #FFD700;
+    padding-left: 0 !important;
+}
+
+.footer-icon {
+    color: rgba(255, 215, 0, 0.6);
+    font-size: 0.85rem;
+}
+
+.footer-text-muted {
+    color: #777;
+}
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+/* 8. LOGO                                                     */
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+.footer-logo-img {
+    border: 2px solid rgba(255, 215, 0, 0.3);
+    box-shadow: 0 0 12px rgba(255, 215, 0, 0.15);
+}
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+/* 9. SOCIAL ICONS                                             */
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+.social-icons a {
+    width: 38px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #111;
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+    border: 1px solid #2a2a2a;
+    transition: background 0.3s ease,
+        color 0.3s ease,
+        border-color 0.3s ease,
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.social-icons a:hover {
+    background: #FFD700;
+    color: #000;
+    border-color: #FFD700;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 15px rgba(255, 215, 0, 0.3);
+    padding-left: 0;
+}
+
+.social-icons a:focus-visible {
+    outline: 2px solid #FFD700;
+    outline-offset: 3px;
+}
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+/* 10. SUBSCRIBE FORM                                          */
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+.footer-input {
+    background-color: #0a0a0a !important;
+    border: 1px solid #2a2a2a !important;
+    color: #fff !important;
+    font-size: 0.9rem;
+    padding: 0.6rem 1rem;
+    border-radius: 8px 0 0 8px !important;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.footer-input::placeholder {
+    color: #555;
+    opacity: 1;
+}
+
+.footer-input:focus {
+    box-shadow: 0 0 0 2px rgba(255, 215, 0, 0.15) !important;
+    border-color: rgba(255, 215, 0, 0.4) !important;
+    background-color: #050505 !important;
+}
+
+.footer-input:-webkit-autofill,
+.footer-input:-webkit-autofill:hover,
+.footer-input:-webkit-autofill:focus {
+    -webkit-text-fill-color: #fff;
+    -webkit-box-shadow: 0 0 0 1000px #0a0a0a inset;
+    border-color: rgba(255, 215, 0, 0.4);
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+/* 11. SUBSCRIBE BUTTON                                        */
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+.btn-footer-subscribe {
+    background: linear-gradient(135deg, #FFD700, #FFA500);
+    color: #000;
+    border: none;
+    font-weight: 700;
+    font-size: 0.88rem;
+    border-radius: 0 8px 8px 0 !important;
+    padding: 0.6rem 1.2rem;
+    transition: all 0.3s ease;
+}
+
+.btn-footer-subscribe:hover {
+    background: linear-gradient(135deg, #FFE44D, #FF8C00);
+    color: #000;
+    box-shadow: 0 4px 15px rgba(255, 215, 0, 0.3);
+}
+
+.btn-footer-subscribe:active {
+    transform: scale(0.97);
+}
+
+.btn-footer-subscribe:focus-visible {
+    outline: 2px solid #FFD700;
+    outline-offset: 3px;
+}
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+/* 12. BOTTOM BAR                                              */
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+.footer-bottom p {
+    font-size: 0.82rem;
+    color: #555;
+}
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+/* 13. MOBILE TWEAKS                                           */
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+@media (max-width: 767px) {
+    .footer-link-list {
+        align-items: center;
+    }
+
+    .footer-link-list a:hover {
+        padding-left: 0;
+    }
+
+    .footer-contact-link {
+        padding: 4px 0;
+    }
+
+    .footer-section-title {
+        margin-top: 0.5rem;
+    }
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+    .footer-link-list {
+        gap: 0.45rem;
+    }
+}
