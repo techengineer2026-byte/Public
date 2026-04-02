@@ -127,57 +127,65 @@
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K2DN29GZ" height="0" width="0"
       style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
-  <header>
-    <nav class="navbar navbar-expand-lg navbar-glass fixed-top">
-      <div class="container">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-glass fixed-top" id="mainNavbar">
+            <div class="container">
 
-        <!-- Logo -->
-        <a class="navbar-brand logo-container" href="/" aria-label="Puadh Podcast Homepage">
-          <img src="/img/logo.webp" alt="Puadh Podcast Logo" width="60" height="60" />
-        </a>
+                <!-- Logo -->
+                <a class="navbar-brand logo-container" href="/" aria-label="Puadh Podcast Homepage">
+                    <img src="/img/logo.webp" alt="Puadh Podcast Logo" width="60" height="60" />
+                </a>
 
-        <!-- Mobile Toggle -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-          aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+                <!-- Mobile CTA (visible only on mobile, before toggler) -->
+                <a href="/studio" class="btn-custom btn-book-studio btn-book-studio-mobile fw-bold px-3 d-lg-none me-2"
+                    aria-label="Book Podcast Studio">
+                    🎙️ Book Studio
+                </a>
 
-        <!-- Nav Content -->
-        <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+                <!-- Mobile Toggle -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-          <!-- Center Menu -->
-          <ul class="navbar-nav mx-auto mb-2 mb-lg-0 text-center">
-            <li class="nav-item">
-              <a class="nav-link" href="/episodes">Episodes</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-puadh" href="/clips">⚡ Clips</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link fw-bold text-warning" href="/studio">🎙️ Studio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/blog">Blog</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/about-us">About Us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/contact">Contact Us</a>
-            </li>
-          </ul>
+                <!-- Nav Content -->
+                <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
 
-          <!-- Single CTA -->
-          <div class="d-flex justify-content-center align-items-center mt-3 mt-lg-0">
-            <a href="/studio" class="btn-custom btn-book-studio fw-bold px-4" aria-label="Book Podcast Studio">
-              🎙️ Book Studio
-            </a>
-          </div>
+                    <!-- Center Menu -->
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0 text-center nav-menu-enhanced">
+                        <li class="nav-item">
+                            <a class="nav-link nav-link-animated" href="/episodes" data-page="episodes">Episodes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-link-animated text-puadh" href="/clips" data-page="clips">⚡ Clips</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-link-animated nav-link-priority fw-bold text-warning" href="/studio"
+                                data-page="studio">🎙️ Studio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-link-animated" href="/blog" data-page="blog">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-link-animated" href="/about-us" data-page="about-us">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-link-animated" href="/contact" data-page="contact">Contact Us</a>
+                        </li>
+                    </ul>
 
-        </div>
-      </div>
-    </nav>
-  </header>
+                    <!-- Desktop CTA -->
+                    <div class="d-none d-lg-flex justify-content-center align-items-center mt-3 mt-lg-0">
+                        <a href="/studio" class="btn-custom btn-book-studio btn-book-studio-desktop fw-bold px-4 py-2"
+                            aria-label="Book Podcast Studio">
+                            🎙️ Book Studio
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+    </header>
 
   <main>
     <section class="hero-section">

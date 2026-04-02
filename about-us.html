@@ -16,7 +16,7 @@
   <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
   <link rel="canonical" href="https://puadhpunjabipodcast.com/about-us" />
 
-  <link rel="preload" as="image" href="/img/host.webp" fetchpriority="high">
+  <link rel="preload" as="image" href="/img/about-bg.webp" fetchpriority="high">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
@@ -39,7 +39,7 @@
   <meta property="og:title" content="About Puadh Punjabi Podcast | Host & Mission" />
   <meta property="og:description"
     content="The #1 podcast from the Puadh region — 29+ episodes, 1M+ views, preserving the Puadhi dialect from Mohali, Punjab." />
-  <meta property="og:image" content="https://puadhpunjabipodcast.com/img/host.webp" />
+  <meta property="og:image" content="https://puadhpunjabipodcast.com/img/about-bg.webp" />
   <meta property="og:image:width" content="800" />
   <meta property="og:image:height" content="1000" />
   <meta property="og:url" content="https://puadhpunjabipodcast.com/about-us" />
@@ -51,7 +51,7 @@
   <meta name="twitter:creator" content="@PuadhP37620">
   <meta name="twitter:title" content="About Puadh Punjabi Podcast | Host & Mission">
   <meta name="twitter:description" content="Preserving Puadhi dialect from Mohali, Punjab." />
-  <meta name="twitter:image" content="https://puadhpunjabipodcast.com/img/host.webp">
+  <meta name="twitter:image" content="https://puadhpunjabipodcast.com/img/about-bg.webp">
 
   <!-- ═══════════════════════════════════════════════════════════
        SCHEMA: Profile + Person + PodcastSeries + FAQ
@@ -67,7 +67,7 @@
         "url": "https://puadhpunjabipodcast.com/about-us",
         "name": "About Puadh Punjabi Podcast Host",
         "primaryImageOfPage": {
-          "@id": "https://puadhpunjabipodcast.com/img/host.webp"
+          "@id": "https://puadhpunjabipodcast.com/img/about-bg.webp"
         },
         "dateModified": "2026-06-15",
         "breadcrumb": {
@@ -82,7 +82,7 @@
         "@type": "Person",
         "@id": "https://puadhpunjabipodcast.com/#host",
         "jobTitle": "Podcast Host & Founder",
-        "image": "https://puadhpunjabipodcast.com/img/host.webp",
+        "image": "https://puadhpunjabipodcast.com/img/about-bg.webp",
         "description": "The creator and host of Puadh Punjabi Podcast, based in Mohali, Punjab. Launched the show in 2024 to preserve the Puadhi dialect and represent the Puadh region.",
         "url": "https://puadhpunjabipodcast.com/about-us",
         "knowsLanguage": ["Punjabi", "Hindi", "English"],
@@ -180,472 +180,7 @@
   <!-- GTM -->
   <script>(function (w, d, s, l, i) { w[l] = w[l] || []; w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' }); var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f); })(window, document, 'script', 'dataLayer', 'GTM-K2DN29GZ');</script>
 
-  <style>
-    .text-accent {
-      color: #d4a017;
-    }
 
-    .bg-black {
-      background-color: #000 !important;
-    }
-
-    /* ════════════════════════════════════════════════════════════
-       GEO SUMMARY
-       ════════════════════════════════════════════════════════════ */
-    .geo-summary {
-      background: rgba(212, 160, 23, 0.08);
-      border-left: 3px solid #d4a017;
-      padding: 16px 20px;
-      border-radius: 0 8px 8px 0;
-      margin-bottom: 2rem;
-    }
-
-    .geo-summary p {
-      color: rgba(255, 255, 255, 0.8);
-      font-size: 0.92rem;
-      line-height: 1.7;
-      margin: 0;
-    }
-
-    .last-updated {
-      font-size: 11px;
-      color: rgba(255, 255, 255, 0.35);
-      margin-top: 6px;
-    }
-
-    /* ════════════════════════════════════════════════════════════
-       FIX #2: SOCIAL MEDIA CARDS WITH FOLLOWER COUNTS
-       ════════════════════════════════════════════════════════════ */
-    .social-stats-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-      gap: 12px;
-    }
-
-    .social-stat-card {
-      background: #111;
-      border: 1px solid #222;
-      border-radius: 12px;
-      padding: 20px 16px;
-      text-align: center;
-      transition: all 0.3s ease;
-      text-decoration: none;
-      display: block;
-    }
-
-    .social-stat-card:hover {
-      border-color: #d4a017;
-      transform: translateY(-4px);
-      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
-    }
-
-    .social-stat-card i {
-      font-size: 1.8rem;
-      margin-bottom: 8px;
-      display: block;
-    }
-
-    .social-stat-card .count {
-      font-size: 1.3rem;
-      font-weight: 800;
-      color: #fff;
-      display: block;
-    }
-
-    .social-stat-card .platform {
-      font-size: 0.75rem;
-      color: #888;
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
-    }
-
-    .social-stat-card.yt i {
-      color: #ff0000;
-    }
-
-    .social-stat-card.ig i {
-      color: #e4405f;
-    }
-
-    .social-stat-card.sp i {
-      color: #1ed760;
-    }
-
-    .social-stat-card.fb i {
-      color: #1877f2;
-    }
-
-    .social-stat-card.tw i {
-      color: #fff;
-    }
-
-    .social-stat-card.wa i {
-      color: #25d366;
-    }
-
-    /* ════════════════════════════════════════════════════════════
-       FIX #3: GUEST SPOTLIGHT / SUCCESS STORIES
-       ════════════════════════════════════════════════════════════ */
-    .guest-spotlight {
-      background: linear-gradient(180deg, #050505 0%, #0a0a0a 100%);
-    }
-
-    .section-label {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      background: rgba(212, 160, 23, 0.1);
-      border: 1px solid rgba(212, 160, 23, 0.2);
-      color: #d4a017;
-      font-weight: 600;
-      font-size: 0.8rem;
-      padding: 6px 16px;
-      border-radius: 20px;
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
-    }
-
-    .guest-card {
-      background: #111;
-      border: 1px solid #222;
-      border-radius: 14px;
-      overflow: hidden;
-      transition: all 0.3s ease;
-      height: 100%;
-    }
-
-    .guest-card:hover {
-      transform: translateY(-6px);
-      border-color: rgba(212, 160, 23, 0.3);
-      box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
-    }
-
-    .guest-img {
-      width: 100%;
-      height: 200px;
-      object-fit: cover;
-      background: #1a1a1a;
-    }
-
-    .guest-card-body {
-      padding: 20px;
-    }
-
-    .guest-name {
-      font-weight: 700;
-      font-size: 1.05rem;
-      color: #fff;
-      margin-bottom: 4px;
-    }
-
-    .guest-title {
-      font-size: 0.78rem;
-      color: #d4a017;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 0.3px;
-      margin-bottom: 10px;
-    }
-
-    .guest-quote {
-      font-size: 0.85rem;
-      color: #999;
-      line-height: 1.6;
-      font-style: italic;
-      margin-bottom: 14px;
-    }
-
-    .guest-ep-link {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      font-size: 0.78rem;
-      color: #ff4444;
-      text-decoration: none;
-      font-weight: 600;
-      transition: all 0.2s;
-    }
-
-    .guest-ep-link:hover {
-      color: #ff6666;
-      gap: 10px;
-    }
-
-    /* ════════════════════════════════════════════════════════════
-       FIX #6: PODCAST STATISTICS / DEMOGRAPHICS
-       ════════════════════════════════════════════════════════════ */
-    .stats-section {
-      background: linear-gradient(135deg, #1a1a2e 0%, #0f3460 100%);
-      border: 1px solid rgba(212, 160, 23, 0.15);
-      border-radius: 16px;
-      padding: 3rem 2rem;
-      position: relative;
-      overflow: hidden;
-    }
-
-    .stats-section::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      height: 3px;
-      background: linear-gradient(90deg, #d4a017, #f0c040, #d4a017);
-    }
-
-    .stat-big {
-      text-align: center;
-      padding: 16px;
-    }
-
-    .stat-big-number {
-      font-size: 2.5rem;
-      font-weight: 800;
-      color: #d4a017;
-      font-family: 'Outfit', sans-serif;
-      line-height: 1;
-    }
-
-    .stat-big-label {
-      font-size: 0.82rem;
-      color: #adb5bd;
-      margin-top: 6px;
-    }
-
-    .demo-bar {
-      background: #1a1a2e;
-      border-radius: 8px;
-      height: 8px;
-      overflow: hidden;
-      margin-bottom: 10px;
-    }
-
-    .demo-bar-fill {
-      height: 100%;
-      border-radius: 8px;
-      background: linear-gradient(90deg, #d4a017, #f0c040);
-    }
-
-    .demo-label {
-      display: flex;
-      justify-content: space-between;
-      font-size: 0.78rem;
-      color: #adb5bd;
-      margin-bottom: 4px;
-    }
-
-    /* ════════════════════════════════════════════════════════════
-       FIX #7: LISTENER TESTIMONIALS
-       ════════════════════════════════════════════════════════════ */
-    .testimonial-card {
-      background: #111;
-      border: 1px solid #222;
-      border-radius: 12px;
-      padding: 24px;
-      height: 100%;
-      position: relative;
-    }
-
-    .testimonial-card::before {
-      content: '"';
-      position: absolute;
-      top: 12px;
-      right: 20px;
-      font-size: 4rem;
-      color: rgba(212, 160, 23, 0.15);
-      font-family: Georgia, serif;
-      line-height: 1;
-    }
-
-    .testimonial-text {
-      font-size: 0.9rem;
-      color: #ccc;
-      line-height: 1.7;
-      font-style: italic;
-      margin-bottom: 16px;
-    }
-
-    .testimonial-author {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
-
-    .testimonial-avatar {
-      width: 36px;
-      height: 36px;
-      border-radius: 50%;
-      background: linear-gradient(135deg, #d4a017, #f0c040);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-weight: 800;
-      font-size: 0.85rem;
-      color: #000;
-    }
-
-    .testimonial-name {
-      font-weight: 600;
-      font-size: 0.85rem;
-      color: #fff;
-    }
-
-    .testimonial-source {
-      font-size: 0.72rem;
-      color: #888;
-    }
-
-    .stars {
-      color: #d4a017;
-      font-size: 0.8rem;
-      margin-bottom: 10px;
-    }
-
-    /* ════════════════════════════════════════════════════════════
-       FIX #4: GUEST SUBMISSION CTA
-       ════════════════════════════════════════════════════════════ */
-    .guest-cta-section {
-      background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #0f3460 100%);
-      position: relative;
-      overflow: hidden;
-    }
-
-    .guest-cta-section::before {
-      content: '';
-      position: absolute;
-      top: -50%;
-      left: -50%;
-      width: 200%;
-      height: 200%;
-      background: radial-gradient(circle, rgba(212, 160, 23, 0.04) 0%, transparent 70%);
-      pointer-events: none;
-    }
-
-    .guest-form-card {
-      background: rgba(255, 255, 255, 0.03);
-      border: 1px solid rgba(255, 255, 255, 0.08);
-      border-radius: 16px;
-      padding: 2.5rem;
-    }
-
-    .guest-form-card .form-control {
-      background: rgba(0, 0, 0, 0.4);
-      border: 1px solid #333;
-      color: #fff;
-      border-radius: 8px;
-      padding: 12px 16px;
-    }
-
-    .guest-form-card .form-control:focus {
-      border-color: #d4a017;
-      box-shadow: 0 0 0 2px rgba(212, 160, 23, 0.2);
-    }
-
-    .guest-form-card .form-control::placeholder {
-      color: #666;
-    }
-
-    .guest-form-card select.form-control {
-      appearance: auto;
-    }
-
-    .btn-submit-guest {
-      background: linear-gradient(135deg, #d4a017, #f0c040);
-      color: #000;
-      border: none;
-      font-weight: 700;
-      padding: 14px 32px;
-      border-radius: 10px;
-      font-size: 1rem;
-      transition: all 0.3s;
-      width: 100%;
-    }
-
-    .btn-submit-guest:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 8px 24px rgba(212, 160, 23, 0.4);
-    }
-
-    /* ════════════════════════════════════════════════════════════
-       FIX #5: MEDIA KIT / SPONSORSHIP
-       ════════════════════════════════════════════════════════════ */
-    .media-kit-section {
-      background: #0a0a0a;
-    }
-
-    .media-kit-card {
-      background: #111;
-      border: 1px solid #222;
-      border-radius: 14px;
-      padding: 2rem;
-      text-align: center;
-      transition: all 0.3s ease;
-    }
-
-    .media-kit-card:hover {
-      border-color: #d4a017;
-      transform: translateY(-4px);
-    }
-
-    .media-kit-card i {
-      font-size: 2.5rem;
-      color: #d4a017;
-      margin-bottom: 16px;
-    }
-
-    .media-kit-card h4 {
-      font-weight: 700;
-      font-size: 1.1rem;
-      color: #fff;
-      margin-bottom: 10px;
-    }
-
-    .media-kit-card p {
-      color: #888;
-      font-size: 0.85rem;
-      line-height: 1.6;
-    }
-
-    /* ════════════════════════════════════════════════════════════
-       FAQ
-       ════════════════════════════════════════════════════════════ */
-    .faq-item {
-      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-      padding: 18px 0;
-    }
-
-    .faq-item:last-child {
-      border-bottom: none;
-    }
-
-    .faq-q {
-      color: #fff;
-      font-weight: 600;
-      font-size: 1rem;
-      margin-bottom: 8px;
-    }
-
-    .faq-a {
-      color: rgba(255, 255, 255, 0.65);
-      font-size: 0.92rem;
-      line-height: 1.7;
-      margin: 0;
-    }
-
-    @media (max-width: 768px) {
-      .stat-big-number {
-        font-size: 1.8rem;
-      }
-
-      .social-stats-grid {
-        grid-template-columns: repeat(3, 1fr);
-      }
-
-      .guest-form-card {
-        padding: 1.5rem;
-      }
-    }
-  </style>
 </head>
 
 <body>
@@ -655,57 +190,65 @@
   <!-- ═══════════════════════════════════════════════════════════
        HEADER
        ═══════════════════════════════════════════════════════════ -->
-  <header>
-    <nav class="navbar navbar-expand-lg navbar-glass fixed-top">
-      <div class="container">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-glass fixed-top" id="mainNavbar">
+            <div class="container">
 
-        <!-- Logo -->
-        <a class="navbar-brand logo-container" href="/" aria-label="Puadh Podcast Homepage">
-          <img src="/img/logo.webp" alt="Puadh Podcast Logo" width="60" height="60" />
-        </a>
+                <!-- Logo -->
+                <a class="navbar-brand logo-container" href="/" aria-label="Puadh Podcast Homepage">
+                    <img src="/img/logo.webp" alt="Puadh Podcast Logo" width="60" height="60" />
+                </a>
 
-        <!-- Mobile Toggle -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-          aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+                <!-- Mobile CTA (visible only on mobile, before toggler) -->
+                <a href="/studio" class="btn-custom btn-book-studio btn-book-studio-mobile fw-bold px-3 d-lg-none me-2"
+                    aria-label="Book Podcast Studio">
+                    🎙️ Book Studio
+                </a>
 
-        <!-- Nav Content -->
-        <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+                <!-- Mobile Toggle -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-          <!-- Center Menu -->
-          <ul class="navbar-nav mx-auto mb-2 mb-lg-0 text-center">
-            <li class="nav-item">
-              <a class="nav-link" href="/episodes">Episodes</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-puadh" href="/clips">⚡ Clips</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link fw-bold text-warning" href="/studio">🎙️ Studio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/blog">Blog</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/about-us">About Us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/contact">Contact Us</a>
-            </li>
-          </ul>
+                <!-- Nav Content -->
+                <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
 
-          <!-- Single CTA -->
-          <div class="d-flex justify-content-center align-items-center mt-3 mt-lg-0">
-            <a href="/studio" class="btn-custom btn-book-studio fw-bold px-4" aria-label="Book Podcast Studio">
-              🎙️ Book Studio
-            </a>
-          </div>
+                    <!-- Center Menu -->
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0 text-center nav-menu-enhanced">
+                        <li class="nav-item">
+                            <a class="nav-link nav-link-animated" href="/episodes" data-page="episodes">Episodes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-link-animated text-puadh" href="/clips" data-page="clips">⚡ Clips</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-link-animated nav-link-priority fw-bold text-warning" href="/studio"
+                                data-page="studio">🎙️ Studio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-link-animated" href="/blog" data-page="blog">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-link-animated" href="/about-us" data-page="about-us">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-link-animated" href="/contact" data-page="contact">Contact Us</a>
+                        </li>
+                    </ul>
 
-        </div>
-      </div>
-    </nav>
-  </header>
+                    <!-- Desktop CTA -->
+                    <div class="d-none d-lg-flex justify-content-center align-items-center mt-3 mt-lg-0">
+                        <a href="/studio" class="btn-custom btn-book-studio btn-book-studio-desktop fw-bold px-4 py-2"
+                            aria-label="Book Podcast Studio">
+                            🎙️ Book Studio
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+    </header>
 
   <!-- ═══════════════════════════════════════════════════════════
        HERO SECTION — FIX #1: Prominent host photo + bio

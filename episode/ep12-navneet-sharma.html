@@ -102,16 +102,53 @@
       style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
   <header>
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top"
-      style="background: rgba(0, 0, 0, 0.8); backdrop-filter: blur(5px)">
+    <nav class="navbar navbar-expand-lg navbar-glass fixed-top">
       <div class="container">
-        <a class="navbar-brand logo-container" href="/" aria-label="Homepage">
-          <img src="/img/logo.webp" width="40" height="40" alt="Logo" />
+
+        <!-- Logo -->
+        <a class="navbar-brand logo-container" href="/" aria-label="Puadh Podcast Homepage">
+          <img src="/img/logo.webp" alt="Puadh Podcast Logo" width="60" height="60" />
         </a>
 
-        <a href="/episodes" class="btn btn-outline-light btn-sm rounded-pill px-3">
-          <i class="fas fa-arrow-left me-2"></i> All Episodes
-        </a>
+        <!-- Mobile Toggle -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Nav Content -->
+        <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+
+          <!-- Center Menu -->
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0 text-center">
+            <li class="nav-item">
+              <a class="nav-link" href="/episodes">Episodes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-puadh" href="/clips">⚡ Clips</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-bold text-warning" href="/studio">🎙️ Studio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/blog">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/about-us">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/contact">Contact Us</a>
+            </li>
+          </ul>
+
+          <!-- Single CTA -->
+          <div class="d-flex justify-content-center align-items-center mt-3 mt-lg-0">
+            <a href="/studio" class="btn-custom btn-book-studio fw-bold px-4" aria-label="Book Podcast Studio">
+              🎙️ Book Studio
+            </a>
+          </div>
+
+        </div>
       </div>
     </nav>
   </header>
