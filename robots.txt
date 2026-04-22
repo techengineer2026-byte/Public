@@ -1,3 +1,11 @@
-User-agent: * 
-Allow: / 
+# /robots.txt
+
+User-agent: *
+Disallow: /output.txt
+Disallow: /urls.txt
+Disallow: /blog/note-week.pdf
+Disallow: /.stylelintrc.json
+
+# Allow crawlers to access important parts of the site
+Allow: /
 Sitemap: https://puadhpunjabipodcast.com/sitemap.xml

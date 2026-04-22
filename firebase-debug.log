@@ -1,0 +1,24 @@
+[debug] [2026-04-22T07:15:47.713Z] ----------------------------------------------------------------------
+[debug] [2026-04-22T07:15:47.724Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\teche\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2026-04-22T07:15:47.725Z] CLI Version:   15.6.0
+[debug] [2026-04-22T07:15:47.725Z] Platform:      win32
+[debug] [2026-04-22T07:15:47.725Z] Node Version:  v20.18.0
+[debug] [2026-04-22T07:15:47.726Z] Time:          Wed Apr 22 2026 12:45:47 GMT+0530 (India Standard Time)
+[debug] [2026-04-22T07:15:47.726Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2026-04-22T07:15:47.729Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2026-04-22T07:15:50.763Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-04-22T07:15:50.763Z] > authorizing via signed-in user (techengineer2026@gmail.com)
+[debug] [2026-04-22T07:15:50.763Z] [iam] checking project pppodcast-fb08b for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2026-04-22T07:15:50.764Z] Checked if tokens are valid: false, expires at: 1776679076364
+[debug] [2026-04-22T07:15:50.764Z] Checked if tokens are valid: false, expires at: 1776679076364
+[debug] [2026-04-22T07:15:50.765Z] > refreshing access token with scopes: []
+[debug] [2026-04-22T07:15:50.767Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2026-04-22T07:15:50.767Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2026-04-22T07:15:51.141Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2026-04-22T07:15:51.142Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2026-04-22T07:15:51.154Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/pppodcast-fb08b:testIamPermissions [none]
+[debug] [2026-04-22T07:15:51.154Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/pppodcast-fb08b:testIamPermissions  x-goog-user-project=pppodcast-fb08b
+[debug] [2026-04-22T07:15:51.154Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/pppodcast-fb08b:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2026-04-22T07:15:51.366Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2026-04-22T07:15:51.366Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}

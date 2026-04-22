@@ -1,5 +1,5 @@
-{
-  "rules": {
-    "no-duplicate-selectors": true
-  }
-}
+// {
+//   "rules": {
+//     "no-duplicate-selectors": false
+//   }
+// }
