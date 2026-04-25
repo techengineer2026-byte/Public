@@ -4,14 +4,21 @@ Public
 ├─ .stylelintrc.json
 ├─ 404.html
 ├─ about-us.html
+├─ be-a-guest
+│  └─ index.html
 ├─ best-punjabi-podcast.html
 ├─ blog
+│  ├─ 10-things-nris-wish-they-knew-before-moving-abroad
+│  │  └─ index.html
+│  ├─ ai-is-coming-for-your-job
+│  │  └─ index.html
 │  ├─ best-punjabi-entrepreneurs
 │  │  └─ index.html
 │  ├─ best-punjabi-podcasts-2026
 │  │  └─ index.html
+│  ├─ famous-puadhi-villages-stories-from-our-roots
+│  │  └─ index.html
 │  ├─ index.html
-│  ├─ note-week.pdf
 │  ├─ punjabi-entrepreneurs-2026
 │  │  └─ index.html
 │  └─ what-is-puadhi-dialect
@@ -25,9 +32,12 @@ Public
 │  ├─ headerfooter.css
 │  └─ style.css
 ├─ data
+│  ├─ blog.json
 │  ├─ clips.json
+│  ├─ data.py
 │  ├─ episodes-seo-enhanced.json
-│  └─ episodes.json
+│  ├─ episodes.json
+│  └─ thumbnails
 ├─ episode
 │  ├─ ep1-navneet-sharma.html
 │  ├─ ep10-rajvinder-singh.html
@@ -53,18 +63,22 @@ Public
 │  ├─ ep28-vikram-airbnb-chubara-business-cyber-scam.html
 │  ├─ ep29-seerat-child-actress-interview.html
 │  ├─ ep3-mr-bhatia.html
+│  ├─ ep30-ayurvedic-health-secrets-for-daily-life--dr-pushp-sharman--puadh-punjabi-podcast-ayurvedic.html
 │  ├─ ep4-bharat-kaushal.html
 │  ├─ ep5-ghost-story.html
 │  ├─ ep6-jarman-sheikh.html
 │  ├─ ep7-gurjeet-kamboj.html
 │  ├─ ep8-harsimarpreet.html
-│  ├─ ep9-deepak-kaul.html
-│  └─ template-episode.html
+│  └─ ep9-deepak-kaul.html
 ├─ episodes.html
+├─ gallery
+│  └─ index.html
 ├─ img
 │  ├─ 561728282_17843287533592819_6450418964770221122_n.jpg
 │  ├─ 648852675_122167162070796777_4772838280011767830_n.jpg
 │  ├─ about-bg.webp
+│  ├─ ai_job_coming.png
+│  ├─ anri-life.webp
 │  ├─ author-gurinder.webp
 │  ├─ bg-podcast.jpg
 │  ├─ bg-podcast.webp
@@ -80,6 +94,7 @@ Public
 │  ├─ mic-setup.webp
 │  ├─ mohali-it-park.webp
 │  ├─ music-industry.webp
+│  ├─ nri-life.png
 │  ├─ nri-life.webp
 │  ├─ podcast-setup.webp
 │  ├─ profile-img.jpg
@@ -118,6 +133,7 @@ Public
 │     ├─ ep28-vikram-entrepreneur-tech-investor-shares-business-insights.jpg
 │     ├─ ep29-savage-seerat-kid-actress-outsmarts-the-host.jpg
 │     ├─ ep3-mr-bhatias-insane-rise-from-cold-calls-to-boardrooms.jpg
+│     ├─ ep30-podcast-with-ayurvedic-doctor.jpg
 │     ├─ ep4-bharat-kaushal-mr-north-india.jpg
 │     ├─ ep5-food-delivery-struggles-chandigarh-university-ghost.jpg
 │     ├─ ep6-from-subway-to-singing-jarman-sheikh-journey.jpg
@@ -131,6 +147,8 @@ Public
 │  ├─ firebase-init.js
 │  ├─ Javascript.js
 │  └─ main.js
+├─ mohali-podcast
+│  └─ index.html
 ├─ output.txt
 ├─ pinterest-61fd8.html
 ├─ privacy
@@ -140,11 +158,18 @@ Public
 ├─ punjab-podcast
 │  └─ index.html
 ├─ punjabi-entrepreneur-podcast.html
+├─ README.md
 ├─ robots.txt
 ├─ rss.xml
 ├─ sitemap.xml
 ├─ studio
+│  ├─ equipment
+│  │  ├─ index.html
+│  │  └─ patiala-podcast
+│  │     └─ index.html
 │  ├─ index.html
+│  ├─ packages
+│  │  └─ index.html
 │  ├─ podcast-anchor
 │  │  └─ index.html
 │  ├─ podcast-editing

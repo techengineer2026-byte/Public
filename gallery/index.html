@@ -1,2 +1,1009 @@
-<!-- gallery/index.html -->
+<!doctype html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Puadh Podcast Gallery | Studio, Behind the Scenes & Moments</title>
+    <meta name="description"
+        content="Browse the Puadh Punjabi Podcast gallery. See our studio setup, behind-the-scenes moments, episode highlights, and the faces behind the voices." />
+    <link rel="canonical" href="https://puadhpunjabipodcast.com/gallery" />
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="Puadh Punjabi Podcast" />
+
+    <meta property="og:title" content="Puadh Podcast Gallery | Studio & Behind the Scenes" />
+    <meta property="og:description"
+        content="Step inside the Puadh Podcast studio. See our setup, behind-the-scenes moments, and episode highlights." />
+    <meta property="og:image" content="https://puadhpunjabipodcast.com/img/studio-hero.webp" />
+    <meta property="og:url" content="https://puadhpunjabipodcast.com/gallery" />
+    <meta property="og:type" content="website" />
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Puadh Podcast Gallery | Studio & Behind the Scenes">
+    <meta name="twitter:description"
+        content="Step inside the Puadh Podcast studio. See our setup, behind-the-scenes moments, and episode highlights.">
+    <meta name="twitter:image" content="https://puadhpunjabipodcast.com/img/studio-hero.webp">
+
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/headerfooter.css" />
+
+    <!-- BreadcrumbList Schema -->
+    <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://puadhpunjabipodcast.com" },
+      { "@type": "ListItem", "position": 2, "name": "Gallery", "item": "https://puadhpunjabipodcast.com/gallery" }
+    ]
+  }
+  </script>
+
+    <!-- ImageGallery Schema -->
+    <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ImageGallery",
+    "name": "Puadh Punjabi Podcast Gallery",
+    "description": "Studio setup, behind-the-scenes moments, and episode highlights from the Puadh Punjabi Podcast.",
+    "url": "https://puadhpunjabipodcast.com/gallery"
+  }
+  </script>
+
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
+            var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true; j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-K2DN29GZ');</script>
+
+    <style>
+        body {
+            background: #0a0a0a;
+            font-family: 'Poppins', sans-serif;
+            color: #fff;
+        }
+
+        /* ═══════════════════════════════════════════════════════════════
+       PAGE HEADER
+       ═══════════════════════════════════════════════════════════════ */
+        .gallery-hero {
+            padding: 140px 0 60px;
+            text-align: center;
+            background: linear-gradient(180deg, #111 0%, #0a0a0a 100%);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .gallery-hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle at 50% 50%, rgba(253, 181, 21, 0.03) 0%, transparent 60%);
+            pointer-events: none;
+        }
+
+        .gallery-hero h1 {
+            font-family: 'Outfit', sans-serif;
+            font-size: 3rem;
+            font-weight: 800;
+            margin-bottom: 12px;
+        }
+
+        .gallery-hero h1 .gold {
+            color: #FDB515;
+        }
+
+        .gallery-hero p {
+            color: #999;
+            font-size: 1.1rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .gallery-stats {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin-top: 28px;
+            flex-wrap: wrap;
+        }
+
+        .gallery-stat {
+            text-align: center;
+        }
+
+        .gallery-stat-num {
+            font-family: 'Outfit', sans-serif;
+            font-size: 1.8rem;
+            font-weight: 800;
+            color: #FDB515;
+            display: block;
+        }
+
+        .gallery-stat-label {
+            font-size: 0.78rem;
+            color: #777;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* ═══════════════════════════════════════════════════════════════
+       FILTER BUTTONS
+       ═══════════════════════════════════════════════════════════════ */
+        .filter-bar {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-bottom: 40px;
+        }
+
+        .filter-btn {
+            background: #111;
+            border: 1px solid #333;
+            color: #ccc;
+            padding: 8px 22px;
+            border-radius: 50px;
+            font-size: 0.85rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .filter-btn:hover,
+        .filter-btn.active {
+            background: #FDB515;
+            color: #000;
+            border-color: #FDB515;
+            font-weight: 700;
+        }
+
+        /* ═══════════════════════════════════════════════════════════════
+       MASONRY-STYLE GRID
+       ═══════════════════════════════════════════════════════════════ */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 16px;
+        }
+
+        @media (min-width: 992px) {
+            .gallery-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+            .gallery-grid .gal-item:nth-child(1) {
+                grid-column: span 2;
+                grid-row: span 2;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .gallery-grid {
+                grid-template-columns: 1fr 1fr;
+                gap: 10px;
+            }
+
+            .gallery-hero h1 {
+                font-size: 2rem;
+            }
+        }
+
+        /* ═══════════════════════════════════════════════════════════════
+       GALLERY ITEM
+       ═══════════════════════════════════════════════════════════════ */
+        .gal-item {
+            position: relative;
+            border-radius: 12px;
+            overflow: hidden;
+            cursor: pointer;
+            background: #111;
+            aspect-ratio: 4/3;
+            transition: all 0.4s ease;
+            border: 1px solid #1a1a1a;
+        }
+
+        .gal-item.featured {
+            aspect-ratio: auto;
+        }
+
+        .gal-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.6s ease, filter 0.4s ease;
+        }
+
+        .gal-item:hover img {
+            transform: scale(1.08);
+            filter: brightness(0.5);
+        }
+
+        .gal-item:hover {
+            border-color: #FDB515;
+            box-shadow: 0 10px 30px rgba(253, 181, 21, 0.08);
+        }
+
+        /* Overlay */
+        .gal-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.7) 0%, transparent 50%);
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            padding: 20px;
+            opacity: 0;
+            transition: opacity 0.4s ease;
+            z-index: 2;
+        }
+
+        .gal-item:hover .gal-overlay {
+            opacity: 1;
+        }
+
+        .gal-overlay h4 {
+            font-family: 'Outfit', sans-serif;
+            font-size: 1rem;
+            font-weight: 700;
+            color: #fff;
+            margin-bottom: 4px;
+        }
+
+        .gal-overlay p {
+            font-size: 0.78rem;
+            color: #ccc;
+            margin: 0;
+        }
+
+        /* Zoom Icon */
+        .gal-zoom {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(0.5);
+            width: 50px;
+            height: 50px;
+            background: rgba(253, 181, 21, 0.9);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #000;
+            font-size: 1.1rem;
+            opacity: 0;
+            transition: all 0.3s ease;
+            z-index: 3;
+        }
+
+        .gal-item:hover .gal-zoom {
+            opacity: 1;
+            transform: translate(-50%, -50%) scale(1);
+        }
+
+        /* Category Tag on Image */
+        .gal-cat-tag {
+            position: absolute;
+            top: 12px;
+            left: 12px;
+            background: rgba(0, 0, 0, 0.6);
+            backdrop-filter: blur(6px);
+            -webkit-backdrop-filter: blur(6px);
+            color: #FDB515;
+            font-size: 0.65rem;
+            font-weight: 700;
+            padding: 4px 10px;
+            border-radius: 4px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            z-index: 2;
+        }
+
+        /* ═══════════════════════════════════════════════════════════════
+       LIGHTBOX
+       ═══════════════════════════════════════════════════════════════ */
+        .lightbox {
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.92);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            z-index: 9999;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .lightbox.active {
+            display: flex;
+        }
+
+        .lightbox img {
+            max-width: 90%;
+            max-height: 85vh;
+            border-radius: 12px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+            animation: lbFadeIn 0.3s ease;
+        }
+
+        @keyframes lbFadeIn {
+            from {
+                opacity: 0;
+                transform: scale(0.9);
+            }
+
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        .lightbox-close {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            color: #fff;
+            font-size: 2rem;
+            cursor: pointer;
+            transition: color 0.3s;
+            background: none;
+            border: none;
+            z-index: 10000;
+        }
+
+        .lightbox-close:hover {
+            color: #FDB515;
+        }
+
+        .lightbox-caption {
+            position: absolute;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: #fff;
+            font-family: 'Outfit', sans-serif;
+            font-size: 1rem;
+            font-weight: 600;
+            text-align: center;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 8px 20px;
+            border-radius: 8px;
+        }
+
+        /* ═══════════════════════════════════════════════════════════════
+       CTA BANNER
+       ═══════════════════════════════════════════════════════════════ */
+        .gallery-cta {
+            background: linear-gradient(135deg, #111, #0d0d0d);
+            border: 1px solid #222;
+            border-radius: 16px;
+            padding: 50px 30px;
+            text-align: center;
+            margin-top: 60px;
+        }
+
+        .gallery-cta h2 {
+            font-family: 'Outfit', sans-serif;
+            font-weight: 800;
+            margin-bottom: 10px;
+        }
+
+        .gallery-cta p {
+            color: #999;
+            margin-bottom: 24px;
+        }
+
+        .btn-gallery-cta {
+            background: #FDB515;
+            color: #000;
+            font-weight: 700;
+            padding: 12px 32px;
+            border-radius: 50px;
+            text-decoration: none;
+            transition: all 0.3s;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .btn-gallery-cta:hover {
+            background: #f0c040;
+            color: #000;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(253, 181, 21, 0.2);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- GTM noscript -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K2DN29GZ" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+
+    <!-- ═══════════════════════════════════════════════════════════════
+       HEADER
+       ═══════════════════════════════════════════════════════════════ -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-glass fixed-top" id="mainNavbar">
+            <div class="container">
+                <a class="navbar-brand logo-container" href="/" aria-label="Puadh Podcast Homepage">
+                    <img src="/img/logo.webp" alt="Puadh Podcast Logo" width="60" height="60" />
+                </a>
+                <a href="/studio" class="btn-custom btn-book-studio btn-book-studio-mobile fw-bold px-3 d-lg-none me-2"
+                    aria-label="Book Podcast Studio">🎙️ Book Studio</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0 text-center nav-menu-enhanced">
+                        <li class="nav-item"><a class="nav-link nav-link-animated" href="/episodes"
+                                data-page="episodes">Episodes</a></li>
+                        <li class="nav-item"><a class="nav-link nav-link-animated text-puadh" href="/clips"
+                                data-page="clips">⚡ Clips</a></li>
+                        <li class="nav-item"><a
+                                class="nav-link nav-link-animated nav-link-priority fw-bold text-warning" href="/studio"
+                                data-page="studio">🎙️ Studio</a></li>
+                        <li class="nav-item"><a class="nav-link nav-link-animated" href="/blog/"
+                                data-page="blog/">Blog</a></li>
+                        <li class="nav-item"><a class="nav-link nav-link-animated" href="/about-us"
+                                data-page="about-us">About Us</a></li>
+                        <li class="nav-item"><a class="nav-link nav-link-animated" href="/contact"
+                                data-page="contact">Contact Us</a></li>
+                    </ul>
+                    <div class="d-none d-lg-flex justify-content-center align-items-center mt-3 mt-lg-0">
+                        <a href="/studio" class="btn-custom btn-book-studio btn-book-studio-desktop fw-bold px-4 py-2"
+                            aria-label="Book Podcast Studio">🎙️ Book Studio</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ═══════════════════════════════════════════════════════════════
+       PAGE HEADER
+       ═══════════════════════════════════════════════════════════════ -->
+    <section class="gallery-hero">
+        <div class="container">
+            <h1>The <span class="gold">Gallery</span></h1>
+            <p>Step inside our studio, meet the faces behind the voices, and relive our favourite moments.</p>
+            <div class="gallery-stats">
+                <div class="gallery-stat">
+                    <span class="gallery-stat-num">30+</span>
+                    <span class="gallery-stat-label">Photos</span>
+                </div>
+                <div class="gallery-stat">
+                    <span class="gallery-stat-num">5</span>
+                    <span class="gallery-stat-label">Categories</span>
+                </div>
+                <div class="gallery-stat">
+                    <span class="gallery-stat-num">1</span>
+                    <span class="gallery-stat-label">Studio</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════════
+       FILTER BAR
+       ═══════════════════════════════════════════════════════════════ -->
+    <section class="container py-4">
+        <div class="filter-bar">
+            <button class="filter-btn active" onclick="filterGallery('all', this)">All Photos</button>
+            <button class="filter-btn" onclick="filterGallery('studio', this)">🎙️ Studio</button>
+            <button class="filter-btn" onclick="filterGallery('bts', this)">🎬 Behind the Scenes</button>
+            <button class="filter-btn" onclick="filterGallery('episodes', this)">📺 Episodes</button>
+            <button class="filter-btn" onclick="filterGallery('team', this)">👥 Team</button>
+        </div>
+
+        <!-- ═══════════════════════════════════════════════════════════════
+         GALLERY GRID
+         ═══════════════════════════════════════════════════════════════ -->
+        <div class="gallery-grid" id="galleryGrid">
+
+            <!-- 1. Studio Hero (FEATURED — spans 2 cols) -->
+            <div class="gal-item featured" data-category="studio" onclick="openLightbox(this)">
+                <span class="gal-cat-tag">Studio</span>
+                <img src="/img/studio-hero.webp" alt="Puadh Podcast Studio wide shot" loading="lazy" />
+                <div class="gal-zoom"><i class="fas fa-expand"></i></div>
+                <div class="gal-overlay">
+                    <h4>Puadh Podcast Studio</h4>
+                    <p>Our recording space in Mohali</p>
+                </div>
+            </div>
+
+            <!-- 2. Studio Mic -->
+            <div class="gal-item" data-category="studio" onclick="openLightbox(this)">
+                <span class="gal-cat-tag">Studio</span>
+                <img src="/img/studio-mic.webp" alt="Professional podcast microphone setup" loading="lazy" />
+                <div class="gal-zoom"><i class="fas fa-expand"></i></div>
+                <div class="gal-overlay">
+                    <h4>The Mic Setup</h4>
+                    <p>Crystal clear audio every episode</p>
+                </div>
+            </div>
+
+            <!-- 3. Host -->
+            <div class="gal-item" data-category="team" onclick="openLightbox(this)">
+                <span class="gal-cat-tag">Team</span>
+                <img src="/img/host.webp" alt="Puadh Podcast Host" loading="lazy" />
+                <div class="gal-zoom"><i class="fas fa-expand"></i></div>
+                <div class="gal-overlay">
+                    <h4>The Host</h4>
+                    <p>Bringing Puadhi stories to life</p>
+                </div>
+            </div>
+
+            <!-- 4. Studio Camera -->
+            <div class="gal-item" data-category="studio" onclick="openLightbox(this)">
+                <span class="gal-cat-tag">Studio</span>
+                <img src="/img/studio-camera.webp" alt="Canon M3 to Sony FX3 camera rig" loading="lazy" />
+                <div class="gal-zoom"><i class="fas fa-expand"></i></div>
+                <div class="gal-overlay">
+                    <h4>Camera Rig</h4>
+                    <p>Canon M3 to Sony FX3</p>
+                </div>
+            </div>
+
+            <!-- 5. Studio Desk -->
+            <div class="gal-item" data-category="studio" onclick="openLightbox(this)">
+                <span class="gal-cat-tag">Studio</span>
+                <img src="/img/studio-desk.webp" alt="Podcast recording desk setup" loading="lazy" />
+                <div class="gal-zoom"><i class="fas fa-expand"></i></div>
+                <div class="gal-overlay">
+                    <h4>The Desk</h4>
+                    <p>Where the magic happens</p>
+                </div>
+            </div>
+
+            <!-- 6. Studio Lights -->
+            <div class="gal-item" data-category="studio" onclick="openLightbox(this)">
+                <span class="gal-cat-tag">Studio</span>
+                <img src="/img/studio-lights.webp" alt="Professional studio lighting setup" loading="lazy" />
+                <div class="gal-zoom"><i class="fas fa-expand"></i></div>
+                <div class="gal-overlay">
+                    <h4>Lighting Setup</h4>
+                    <p>Cinematic lighting for every shot</p>
+                </div>
+            </div>
+
+            <!-- 7. Mic Setup (Blog) -->
+            <div class="gal-item" data-category="studio" onclick="openLightbox(this)">
+                <span class="gal-cat-tag">Studio</span>
+                <img src="/img/mic-setup.webp" alt="Podcast microphone close up" loading="lazy" />
+                <div class="gal-zoom"><i class="fas fa-expand"></i></div>
+                <div class="gal-overlay">
+                    <h4>Mic Close-Up</h4>
+                    <p>Studio-grade audio capture</p>
+                </div>
+            </div>
+
+            <!-- 8. Podcast Setup -->
+            <div class="gal-item" data-category="bts" onclick="openLightbox(this)">
+                <span class="gal-cat-tag">Behind the Scenes</span>
+                <img src="/img/podcast-setup.webp" alt="Podcast setup and equipment" loading="lazy" />
+                <div class="gal-zoom"><i class="fas fa-expand"></i></div>
+                <div class="gal-overlay">
+                    <h4>Setup Day</h4>
+                    <p>Getting ready for recording</p>
+                </div>
+            </div>
+
+            <!-- 9. BTS Instagram 1 -->
+            <div class="gal-item" data-category="bts" onclick="openLightbox(this)">
+                <span class="gal-cat-tag">Behind the Scenes</span>
+                <img src="/img/561728282_17843287533592819_6450418964770221122_n.jpg" alt="Behind the scenes moment"
+                    loading="lazy" />
+                <div class="gal-zoom"><i class="fas fa-expand"></i></div>
+                <div class="gal-overlay">
+                    <h4>Behind the Scenes</h4>
+                    <p>Funny moments between takes</p>
+                </div>
+            </div>
+
+            <!-- 10. BTS Instagram 2 -->
+            <div class="gal-item" data-category="bts" onclick="openLightbox(this)">
+                <span class="gal-cat-tag">Behind the Scenes</span>
+                <img src="/img/648852675_122167162070796777_4772838280011767830_n.jpg" alt="Behind the scenes moment 2"
+                    loading="lazy" />
+                <div class="gal-zoom"><i class="fas fa-expand"></i></div>
+                <div class="gal-overlay">
+                    <h4>Behind the Scenes</h4>
+                    <p>More laughs off camera</p>
+                </div>
+            </div>
+
+            <!-- 11. Episode Thumb -->
+            <div class="gal-item" data-category="episodes" onclick="openLightbox(this)">
+                <span class="gal-cat-tag">Episodes</span>
+                <img src="/img/Episodethumb.webp" alt="Puadh Podcast episode thumbnail" loading="lazy" />
+                <div class="gal-zoom"><i class="fas fa-expand"></i></div>
+                <div class="gal-overlay">
+                    <h4>Episode Highlights</h4>
+                    <p>Favourite moments from our interviews</p>
+                </div>
+            </div>
+
+            <!-- 12. IT Jobs -->
+            <div class="gal-item" data-category="episodes" onclick="openLightbox(this)">
+                <span class="gal-cat-tag">Episodes</span>
+                <img src="/img/it-jobs-mohali.webp" alt="IT Jobs in Mohali episode" loading="lazy" />
+                <div class="gal-zoom"><i class="fas fa-expand"></i></div>
+                <div class="gal-overlay">
+                    <h4>IT & Career Episodes</h4>
+                    <p>Tech stories from Punjab</p>
+                </div>
+            </div>
+
+            <!-- 13. Music Industry -->
+            <div class="gal-item" data-category="episodes" onclick="openLightbox(this)">
+                <span class="gal-cat-tag">Episodes</span>
+                <img src="/img/music-industry.webp" alt="Punjabi Music Industry episode" loading="lazy" />
+                <div class="gal-zoom"><i class="fas fa-expand"></i></div>
+                <div class="gal-overlay">
+                    <h4>Music Industry</h4>
+                    <p>The dark reality of Punjabi music</p>
+                </div>
+            </div>
+
+            <!-- 14. NRI Life -->
+            <div class="gal-item" data-category="episodes" onclick="openLightbox(this)">
+                <span class="gal-cat-tag">Episodes</span>
+                <img src="/img/nri-life.webp" alt="NRI Life episode discussion" loading="lazy" />
+                <div class="gal-zoom"><i class="fas fa-expand"></i></div>
+                <div class="gal-overlay">
+                    <h4>NRI Life Stories</h4>
+                    <p>Canada, Australia, Doha & more</p>
+                </div>
+            </div>
+
+            <!-- 15. Real Estate -->
+            <div class="gal-item" data-category="episodes" onclick="openLightbox(this)">
+                <span class="gal-cat-tag">Episodes</span>
+                <img src="/img/real-estate.webp" alt="Real Estate Punjab vs Dubai episode" loading="lazy" />
+                <div class="gal-zoom"><i class="fas fa-expand"></i></div>
+                <div class="gal-overlay">
+                    <h4>Real Estate Talks</h4>
+                    <p>Punjab vs Dubai investments</p>
+                </div>
+            </div>
+
+            <!-- 16. Puadh Dialect -->
+            <div class="gal-item" data-category="episodes" onclick="openLightbox(this)">
+                <span class="gal-cat-tag">Episodes</span>
+                <img src="/img/puadh-dial.webp" alt="Puadhi dialect discussion" loading="lazy" />
+                <div class="gal-zoom"><i class="fas fa-expand"></i></div>
+                <div class="gal-overlay">
+                    <h4>Puadhi Dialect</h4>
+                    <p>Celebrating our mother tongue</p>
+                </div>
+            </div>
+
+            <!-- 17. Puadh History -->
+            <div class="gal-item" data-category="episodes" onclick="openLightbox(this)">
+                <span class="gal-cat-tag">Episodes</span>
+                <img src="/img/puadh-history.webp" alt="Puadh region history and heritage" loading="lazy" />
+                <div class="gal-zoom"><i class="fas fa-expand"></i></div>
+                <div class="gal-overlay">
+                    <h4>Puadh History</h4>
+                    <p>Heritage of our region</p>
+                </div>
+            </div>
+
+            <!-- 18. Entrepreneurship -->
+            <div class="gal-item" data-category="episodes" onclick="openLightbox(this)">
+                <span class="gal-cat-tag">Episodes</span>
+                <img src="/img/EnterITpunjab.webp" alt="Punjabi entrepreneurs success stories" loading="lazy" />
+                <div class="gal-zoom"><i class="fas fa-expand"></i></div>
+                <div class="gal-overlay">
+                    <h4>Entrepreneur Stories</h4>
+                    <p>From Punjab to the world</p>
+                </div>
+            </div>
+
+            <!-- 19. Author / Host -->
+            <div class="gal-item" data-category="team" onclick="openLightbox(this)">
+                <span class="gal-cat-tag">Team</span>
+                <img src="/img/author-gurinder.webp" alt="Gurinder - Puadh Podcast Host" loading="lazy" />
+                <div class="gal-zoom"><i class="fas fa-expand"></i></div>
+                <div class="gal-overlay">
+                    <h4>Gurinder</h4>
+                    <p>Host & Creator</p>
+                </div>
+            </div>
+
+            <!-- 20. Host Thumb -->
+            <div class="gal-item" data-category="team" onclick="openLightbox(this)">
+                <span class="gal-cat-tag">Team</span>
+                <img src="/img/hostthumb.jpg" alt="Host thumbnail photo" loading="lazy" />
+                <div class="gal-zoom"><i class="fas fa-expand"></i></div>
+                <div class="gal-overlay">
+                    <h4>Host Portrait</h4>
+                    <p>Behind the mic</p>
+                </div>
+            </div>
+
+            <!-- 21. Profile Image -->
+            <div class="gal-item" data-category="team" onclick="openLightbox(this)">
+                <span class="gal-cat-tag">Team</span>
+                <img src="/img/profile-img.jpg" alt="Puadh Podcast team profile" loading="lazy" />
+                <div class="gal-zoom"><i class="fas fa-expand"></i></div>
+                <div class="gal-overlay">
+                    <h4>Team Profile</h4>
+                    <p>The people behind the podcast</p>
+                </div>
+            </div>
+
+            <!-- 22. Studio Map -->
+            <div class="gal-item" data-category="studio" onclick="openLightbox(this)">
+                <span class="gal-cat-tag">Studio</span>
+                <img src="/img/studio-map.jpg" alt="Studio location map Mohali Phase 8B" loading="lazy" />
+                <div class="gal-zoom"><i class="fas fa-expand"></i></div>
+                <div class="gal-overlay">
+                    <h4>Find Us</h4>
+                    <p>Phase 8B, Mohali — 10 min from Chandigarh</p>
+                </div>
+            </div>
+
+            <!-- 23. Background Podcast -->
+            <div class="gal-item" data-category="bts" onclick="openLightbox(this)">
+                <span class="gal-cat-tag">Behind the Scenes</span>
+                <img src="/img/bg-podcast.webp" alt="Podcast background atmosphere" loading="lazy" />
+                <div class="gal-zoom"><i class="fas fa-expand"></i></div>
+                <div class="gal-overlay">
+                    <h4>The Vibe</h4>
+                    <p>Atmosphere of every recording</p>
+                </div>
+            </div>
+
+            <!-- 24. Mohali IT Park -->
+            <div class="gal-item" data-category="episodes" onclick="openLightbox(this)">
+                <span class="gal-cat-tag">Episodes</span>
+                <img src="/img/mohali-it-park.webp" alt="Mohali IT Park tech hub" loading="lazy" />
+                <div class="gal-zoom"><i class="fas fa-expand"></i></div>
+                <div class="gal-overlay">
+                    <h4>Mohali IT Hub</h4>
+                    <p>Where tech meets Punjab</p>
+                </div>
+            </div>
+
+            <!-- 25. About Background -->
+            <div class="gal-item" data-category="bts" onclick="openLightbox(this)">
+                <span class="gal-cat-tag">Behind the Scenes</span>
+                <img src="/img/about-bg.webp" alt="About us background" loading="lazy" />
+                <div class="gal-zoom"><i class="fas fa-expand"></i></div>
+                <div class="gal-overlay">
+                    <h4>Our Story</h4>
+                    <p>How it all started</p>
+                </div>
+            </div>
+
+            <!-- 26. Hero Background -->
+            <div class="gal-item" data-category="bts" onclick="openLightbox(this)">
+                <span class="gal-cat-tag">Behind the Scenes</span>
+                <img src="/img/hero-bg.webp" alt="Puadh Podcast hero background" loading="lazy" />
+                <div class="gal-zoom"><i class="fas fa-expand"></i></div>
+                <div class="gal-overlay">
+                    <h4>The Beginning</h4>
+                    <p>Where every story starts</p>
+                </div>
+            </div>
+
+            <!-- 27. Social Share Image -->
+            <div class="gal-item" data-category="bts" onclick="openLightbox(this)">
+                <span class="gal-cat-tag">Behind the Scenes</span>
+                <img src="/img/social-share-image.jpg" alt="Puadh Podcast social share image" loading="lazy" />
+                <div class="gal-zoom"><i class="fas fa-expand"></i></div>
+                <div class="gal-overlay">
+                    <h4>Social Media</h4>
+                    <p>Follow us @puadhpunjabipodcast</p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- ═══════════════════════════════════════════════════════════════
+         CTA BANNER
+         ═══════════════════════════════════════════════════════════════ -->
+        <div class="gallery-cta">
+            <h2>Want to Record Here? 🎙️</h2>
+            <p>Book our professional podcast studio in Mohali. Same setup, same quality — your story.</p>
+            <a href="/studio" class="btn-gallery-cta">
+                <i class="fas fa-microphone-alt"></i> Book the Studio
+            </a>
+        </div>
+
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════════
+       LIGHTBOX
+       ═══════════════════════════════════════════════════════════════ -->
+    <div class="lightbox" id="lightbox" onclick="closeLightbox(event)">
+        <button class="lightbox-close" aria-label="Close lightbox" onclick="closeLightbox(event)">
+            <i class="fas fa-times"></i>
+        </button>
+        <img id="lightbox-img" src="" alt="Enlarged gallery photo" />
+        <div class="lightbox-caption" id="lightbox-caption"></div>
+    </div>
+
+    <!-- ═══════════════════════════════════════════════════════════════
+       FOOTER
+       ═══════════════════════════════════════════════════════════════ -->
+    <footer class="footer-main pt-4 pb-2">
+        <div class="container-fluid footer-padding">
+            <div class="row justify-content-between text-center text-lg-start">
+                <div class="col-lg-3 col-md-6 mb-5">
+                    <div class="d-flex align-items-center justify-content-center justify-content-lg-start gap-3 mb-3">
+                        <img src="/img/logo.webp" alt="Puadh Podcast Logo" width="55" height="55"
+                            class="rounded-circle footer-logo-img" loading="lazy" />
+                        <p class="h5 m-0 text-white fw-bold">Puadh Podcast</p>
+                    </div>
+                    <p class="small footer-text-muted mb-4 mx-auto mx-lg-0" style="max-width: 320px;">
+                        The #1 Podcast representing the Puadh region. Unfiltered, Unscripted, Unapologetic.
+                    </p>
+                    <div class="small footer-text-muted mx-auto mx-lg-0" style="max-width: 320px;">
+                        <div class="d-flex justify-content-center justify-content-lg-start mb-2">
+                            <i class="fas fa-map-marker-alt footer-icon mt-1 me-3"></i>
+                            <a href="https://maps.google.com/?q=Plot+F-298,+R%26R+Tower,+Phase+8B,+Ind.+Area,+Sector+74,+Mohali,+Punjab+160055"
+                                target="_blank" rel="noopener noreferrer" class="footer-contact-link text-start">
+                                Plot F-298, R&R Tower, Phase 8B,<br>Sector 74, Mohali, Punjab 160055
+                            </a>
+                        </div>
+                        <div class="d-flex justify-content-center justify-content-lg-start">
+                            <i class="fas fa-phone-alt footer-icon mt-1 me-3"></i>
+                            <a href="tel:+918360769451" class="footer-contact-link">+91 83607 69451</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-6 mb-5">
+                    <p class="footer-section-title">Explore</p>
+                    <ul class="list-unstyled footer-link-list">
+                        <li><a href="/episodes">Episodes</a></li>
+                        <li><a href="/clips">Clips</a></li>
+                        <li><a href="/blog/">Blog</a></li>
+                        <li><a href="/about-us">About Us</a></li>
+                        <li><a href="/gallery">Gallery</a></li>
+                        <li><a href="/puadh-region">Puadh Region</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-3 col-6 mb-5">
+                    <p class="footer-section-title">Studio</p>
+                    <ul class="list-unstyled footer-link-list mb-4">
+                        <li><a href="/studio/">Studio Services</a></li>
+                        <li><a href="/contact">Contact Us</a></li>
+                    </ul>
+                    <p class="footer-section-title">Legal</p>
+                    <ul class="list-unstyled footer-link-list">
+                        <li><a href="/privacy/">Privacy Policy</a></li>
+                        <li><a href="/terms/">Terms of Use</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6 mb-5">
+                    <p class="footer-section-title">Popular</p>
+                    <ul class="list-unstyled footer-link-list">
+                                        <div class="col-lg-2 col-md-4 col-6 mb-5">
+                    <p class="footer-section-title">Popular</p>
+                    <ul class="list-unstyled footer-link-list">
+                        <li><a href="/best-punjabi-podcast">Best Punjabi Podcast</a></li>
+                        <li><a href="/chandigarh-podcast">Chandigarh Podcast</a></li>
+                        <li><a href="/punjab-podcast/">Punjab Podcast</a></li>
+                        <li><a href="/punjabi-entrepreneur-podcast">Entrepreneur Podcast</a></li>
+                        <li><a href="/india-podcasts">India Podcasts</a></li>
+                    </ul>
+                </div>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-8 mb-4">
+                    <p class="footer-section-title">Follow Us</p>
+                    <div
+                        class="social-icons d-flex flex-wrap justify-content-center justify-content-lg-start gap-2 mb-4">
+                        <a href="https://www.instagram.com/puadhpunjabipodcast/" aria-label="Follow us on Instagram"
+                            target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                        <a href="https://wa.me/918360769451" aria-label="Contact via WhatsApp" target="_blank"
+                            rel="noopener noreferrer"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://www.youtube.com/@puadhpunjabipodcast" aria-label="Subscribe on YouTube"
+                            target="_blank" rel="noopener noreferrer"><i class="fab fa-youtube"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=61573903336128" aria-label="Follow on Facebook"
+                            target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook"></i></a>
+                        <a href="https://x.com/PuadhP37620" aria-label="Follow on X (Twitter)" target="_blank"
+                            rel="noopener noreferrer"><i class="fab fa-x-twitter"></i></a>
+                        <a href="https://open.spotify.com/show/4S1Lqp4l1Huu1MZJuKibcV" aria-label="Listen on Spotify"
+                            target="_blank" rel="noopener noreferrer"><i class="fab fa-spotify"></i></a>
+                        <a href="/rss.xml" aria-label="RSS Feed" target="_blank" rel="noopener noreferrer"><i
+                                class="fas fa-rss"></i></a>
+                    </div>
+                    <p class="footer-section-title-sm">Never Miss an Episode</p>
+                    <p class="small footer-text-muted mb-3">Fresh episodes, guest updates & exclusive Puadhi stories —
+                        straight to your inbox.</p>
+                    <form class="footer-subscribe-form mx-auto mx-lg-0" style="max-width: 380px;"
+                        onsubmit="return false;">
+                        <label for="footer-email" class="visually-hidden">Email Address</label>
+                        <div class="input-group">
+                            <input id="footer-email" type="email" class="form-control footer-input"
+                                placeholder="Enter your email" aria-label="Email Address" required />
+                            <button class="btn btn-footer-subscribe fw-bold px-4" type="submit">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <hr class="footer-divider" />
+            <div class="footer-bottom text-center py-3">
+                <p class="small footer-text-muted mb-0">
+                    &copy;
+                    <script>document.write(new Date().getFullYear())</script> Puadh Punjabi Podcast Studio. All rights
+                    reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        // ═══════════════════════════════════════════════════════════════
+        // CATEGORY FILTER
+        // ═══════════════════════════════════════════════════════════════
+        function filterGallery(category, clickedBtn) {
+            document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
+            clickedBtn.classList.add('active');
+
+            const items = document.querySelectorAll('.gal-item');
+            items.forEach(item => {
+                if (category === 'all' || item.dataset.category === category) {
+                    item.style.display = '';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        }
+
+        // ═══════════════════════════════════════════════════════════════
+        // LIGHTBOX
+        // ═══════════════════════════════════════════════════════════════
+        function openLightbox(item) {
+            const img = item.querySelector('img');
+            const overlay = item.querySelector('.gal-overlay h4');
+            const lightbox = document.getElementById('lightbox');
+            const lightboxImg = document.getElementById('lightbox-img');
+            const lightboxCaption = document.getElementById('lightbox-caption');
+
+            lightboxImg.src = img.src;
+            lightboxImg.alt = img.alt;
+            lightboxCaption.textContent = overlay ? overlay.textContent : '';
+            lightbox.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeLightbox(event) {
+            const lightbox = document.getElementById('lightbox');
+            // Close if clicking the background, close button, or the image itself isn't clicked
+            if (event.target === lightbox || event.target.closest('.lightbox-close')) {
+                lightbox.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+        }
+
+        // Close on ESC key
+        document.addEventListener('keydown', function (e) {
+            if (e.key === 'Escape') {
+                const lightbox = document.getElementById('lightbox');
+                lightbox.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+        });
+    </script>
+</body>
+
+</html>

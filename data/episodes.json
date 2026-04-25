@@ -1,49 +1,363 @@
 [
   {
-    "id": 1,
-    "slug": "ep1-navneet-sharma",
-    "title": "Dark Reality of Migration, Canada Jobs & AI Truth",
-    "metaDescription": "Dr. Navneet Sharma exposes the hard truth about Canada migration for Punjabi students, the job market crisis, and how AI is impacting careers in Punjab. An essential listen.",
-    "h1": "The Dark Side of Foreign Migration & AI Jobs",
-    "guest": {
-      "name": "Dr. Navneet Sharma",
-      "title": "Academic Strategist",
-      "credentials": "Former Professor & Government Media Advisor. Expert in Education Policy.",
-      "image": "/img/guest-thumbnails/navneet-sharma.jpg"
-    },
-    "youtubeId": "fhRIqX6bEiA",
-    "audioUrl": "/audio/ep1.mp3",
-    "duration": "PT1H5M",
-    "thumbnail": "/img/thumbnails/ep1-dr-navneet-sharma-farmer-protest-adani-secrets.jpg",
-    "summary": "Is Canada still the dreamland for Punjabi students? In this eye-opening episode, host Gurinder Singh Dhanoa sits down with Dr. Navneet Sharma to dismantle the myths of foreign migration. We tackle the tough questions: Why is there a brain drain crisis in Punjab? Is the Indian education system failing our youth? Dr. Sharma provides a stark reality check on the Canadian job market, discussing the struggles many face after landing. The conversation also pivots to the future, exploring the real impact of Artificial Intelligence (AI) on jobs in Punjab and beyond. This is not just another conversation; it's a strategic analysis of the economic and social pressures shaping the future for a generation of Punjabis. Discover the unfiltered truth you won't hear from immigration consultants.",
-    "keyInsights": [
-      "The 'Canadian Dream' is often a marketing illusion with a harsh reality of underemployment.",
-      "Punjab's education system needs a drastic overhaul to prevent the ongoing 'brain drain' to western countries.",
-      "AI is not just a 'tech city' problem; it is set to automate jobs in agriculture, services, and manufacturing in Punjab within 5 years."
-    ],
-    "faq": [
-      {
-        "question": "What does Dr. Navneet say about Canada jobs for Punjabi students?",
-        "answer": "Dr. Navneet Sharma warns that many Punjabi students in Canada face underemployment, often working low-wage jobs unrelated to their studies due to a saturated market and visa complications."
-      },
-      {
-        "question": "Is AI a real threat to jobs in Punjab?",
-        "answer": "Yes. Dr. Sharma explains that AI will significantly impact the job market in Punjab, automating tasks not just in IT but also in traditional sectors. He advises students to focus on skills that AI cannot easily replicate, like critical thinking and creativity."
-      }
-    ],
-    "timestamps": [
-      {
-        "time": 240,
-        "label": "The Brain Drain Crisis in Punjab"
-      },
-      {
-        "time": 570,
-        "label": "Failure of the Indian Education System"
-      },
-      {
-        "time": 1200,
-        "label": "The Harsh Reality of the Canadian Job Market"
-      }
-    ]
+    "id": "Ep 30",
+    "title": "Ayurvedic Health Secrets for Daily Life | Dr Pushp Sharman | Puadh Punjabi Podcast #ayurvedic",
+    "videoId": "dHcCyvyRGuw",
+    "time": "50 min",
+    "date": "2026-04-12",
+    "link": "/episode/ep30-ayurvedic-health-secrets-for-daily-life--dr-pushp-sharman--puadh-punjabi-podcast-ayurvedic",
+    "yt": "https://www.youtube.com/watch?v=dHcCyvyRGuw",
+    "sp": "https://open.spotify.com/show/4S1Lqp4l1Huu1MZJuKibcV",
+    "desc": "",
+    "thumbnail": "data/thumbnails/dHcCyvyRGuw.jpg",
+    "views": 78
+  },
+  {
+    "id": "Ep 29",
+    "title": "Savage Seerat: Kid Actress Outsmarts the Host",
+    "videoId": "jsTVsBW1l7g",
+    "time": "42 min",
+    "date": "2025-06-15",
+    "desc": "10-year-old child actress Seerat steals the show with savage comebacks and hilarious stories about school and acting.",
+    "link": "/episode/ep29-seerat-child-actress-interview",
+    "yt": "https://www.youtube.com/watch?v=jsTVsBW1l7g",
+    "sp": "https://open.spotify.com/show/4S1Lqp4l1Huu1MZJuKibcV",
+    "views": 180
+  },
+  {
+    "id": "Ep 28",
+    "title": "Vikram – Entrepreneur & Tech Investor Shares Business Insights",
+    "videoId": "MxkcfD5tZn8",
+    "time": "59 min",
+    "date": "2025-06-08",
+    "desc": "Vikram opens up about Airbnb chubara business in Punjab, surviving a cyber scam, and why tech investing is booming.",
+    "link": "/episode/ep28-vikram-airbnb-chubara-business-cyber-scam",
+    "yt": "https://www.youtube.com/watch?v=MxkcfD5tZn8",
+    "sp": "https://open.spotify.com/show/4S1Lqp4l1Huu1MZJuKibcV",
+    "views": 82
+  },
+  {
+    "id": "Ep 27",
+    "title": "Mindset of Rich People – 'Buy, Borrow, Die' Strategy",
+    "videoId": "lKTid7MMYYU",
+    "time": "60 min",
+    "date": "2025-06-01",
+    "desc": "How wealthy people think differently. The 'Buy, Borrow, Die' wealth strategy and building generational wealth.",
+    "link": "/episode/ep27-rich-mindset",
+    "yt": "https://www.youtube.com/watch?v=lKTid7MMYYU",
+    "sp": "https://open.spotify.com/show/4S1Lqp4l1Huu1MZJuKibcV",
+    "views": 134
+  },
+  {
+    "id": "Ep 26",
+    "title": "The Science of Manifestation – Attract Success",
+    "videoId": "N_c3_b87tes",
+    "time": "72 min",
+    "date": "2025-05-25",
+    "desc": "Does manifestation actually work? We explore the science behind the Law of Attraction and visualization techniques.",
+    "link": "/episode/ep26-manifestation",
+    "yt": "https://www.youtube.com/watch?v=N_c3_b87tes",
+    "sp": "https://open.spotify.com/show/4S1Lqp4l1Huu1MZJuKibcV",
+    "views": 208
+  },
+  {
+    "id": "Ep 25",
+    "title": "Software Engineer Job in Doha – Salary & Lifestyle",
+    "videoId": "lGXvqDtw72Q",
+    "time": "70 min",
+    "date": "2025-05-18",
+    "desc": "A Punjabi software engineer shares the reality of working in Doha, Qatar. Salary, work culture, and visa comparisons.",
+    "link": "/episode/ep25-doha-engineer",
+    "yt": "https://www.youtube.com/watch?v=lGXvqDtw72Q",
+    "sp": "https://open.spotify.com/show/4S1Lqp4l1Huu1MZJuKibcV",
+    "views": 112
+  },
+  {
+    "id": "Ep 24",
+    "title": "IT Evolution & Job Hunting 2025",
+    "videoId": "juB1D78uWZ8",
+    "time": "60 min",
+    "date": "2025-05-11",
+    "desc": "How the IT industry changed in 2025. Tips for freshers, impact of AI on jobs, and strategies for landing your first tech role.",
+    "link": "/episode/ep24-it-journey",
+    "yt": "https://www.youtube.com/watch?v=juB1D78uWZ8",
+    "sp": "https://open.spotify.com/show/4S1Lqp4l1Huu1MZJuKibcV",
+    "views": 65
+  },
+  {
+    "id": "Ep 23",
+    "title": "Anshul Bansal – Real Estate Investment (Punjab/Dubai)",
+    "videoId": "3tCZEjqOuYg",
+    "time": "55 min",
+    "date": "2025-05-04",
+    "desc": "Real estate investor Anshul Bansal reveals the truth about property investing in Punjab vs Dubai. Common scams to avoid.",
+    "link": "/episode/ep23-real-estate",
+    "yt": "https://www.youtube.com/watch?v=3tCZEjqOuYg",
+    "sp": "https://open.spotify.com/show/4S1Lqp4l1Huu1MZJuKibcV",
+    "views": 103
+  },
+  {
+    "id": "Ep 22",
+    "title": "Gurinder Gauri – Mrs. Chandigarh, Education & Social Work",
+    "videoId": "If4RgcDfr4o",
+    "time": "45 min",
+    "date": "2025-04-27",
+    "desc": "Mrs. Chandigarh title holder Gurinder Gauri shares her journey in education, family balance, and community service.",
+    "link": "/episode/ep22-gurinder-gauri",
+    "yt": "https://www.youtube.com/watch?v=If4RgcDfr4o",
+    "sp": "https://open.spotify.com/show/4S1Lqp4l1Huu1MZJuKibcV",
+    "views": 641
+  },
+  {
+    "id": "Ep 21",
+    "title": "Sheena Dhawan – Life in Delhi vs Mohali & AI Impact",
+    "videoId": "ewupEpHJ8gI",
+    "time": "49 min",
+    "date": "2025-04-20",
+    "desc": "Corporate professional Sheena compares Delhi vs Mohali life and discusses how AI is reshaping the IT job market.",
+    "link": "/episode/ep21-sheena-dhawan",
+    "yt": "https://www.youtube.com/watch?v=ewupEpHJ8gI",
+    "sp": "https://open.spotify.com/show/4S1Lqp4l1Huu1MZJuKibcV",
+    "views": 104
+  },
+  {
+    "id": "Ep 20",
+    "title": "Brutal Crime Confessions – Punjab Police SIs",
+    "videoId": "fUrRC8iksMw",
+    "time": "51 min",
+    "date": "2025-04-13",
+    "desc": "Two Punjab Police Sub-Inspectors share real crime stories. Drug busts, robbery cases, and policing Punjab's streets.",
+    "link": "/episode/ep20-police-confessions",
+    "yt": "https://www.youtube.com/watch?v=fUrRC8iksMw",
+    "sp": "https://open.spotify.com/show/4S1Lqp4l1Huu1MZJuKibcV",
+    "views": 1022
+  },
+  {
+    "id": "Ep 19",
+    "title": "Gurjeet Mattaur – Punjabi Singers te ਪੁਆਧ",
+    "videoId": "K8U1Nf7HlCc",
+    "time": "44 min",
+    "date": "2025-04-06",
+    "desc": "Music lover Gurjeet talks about Punjabi music culture, underrated Puadhi singers, and why they deserve more recognition.",
+    "link": "/episode/ep19-gurjeet-mattaur",
+    "yt": "https://www.youtube.com/watch?v=K8U1Nf7HlCc",
+    "sp": "https://open.spotify.com/show/4S1Lqp4l1Huu1MZJuKibcV",
+    "views": 288
+  },
+  {
+    "id": "Ep 18",
+    "title": "Akash – From E-commerce Hustle to Smart Farming",
+    "videoId": "n78_bi6lvQg",
+    "time": "44 min",
+    "date": "2025-03-30",
+    "desc": "Akash shares his pivot from running an e-commerce business to smart farming. Lessons on failure and finding your calling.",
+    "link": "/episode/ep18-akash-ecommerce",
+    "yt": "https://www.youtube.com/watch?v=n78_bi6lvQg",
+    "sp": "https://open.spotify.com/show/4S1Lqp4l1Huu1MZJuKibcV",
+    "views": 1353
+  },
+  {
+    "id": "Ep 17",
+    "title": "Satwinder Singh – News Channel Sales to Digital Empire",
+    "videoId": "TgwRb2Rv-uE",
+    "time": "38 min",
+    "date": "2025-03-23",
+    "desc": "Satwinder reveals how he went from selling ad slots for news channels to building his own digital media empire.",
+    "link": "/episode/ep17-satwinder-singh",
+    "yt": "https://www.youtube.com/watch?v=TgwRb2Rv-uE",
+    "sp": "https://open.spotify.com/show/4S1Lqp4l1Huu1MZJuKibcV",
+    "views": 188
+  },
+  {
+    "id": "Ep 16",
+    "title": "Dr. Parvinder Kaur – Balancing Family, Passion & Profession",
+    "videoId": "jzVCJubqdXo",
+    "time": "42 min",
+    "date": "2025-03-16",
+    "desc": "Dr. Parvinder Kaur shares how Punjabi women can balance family, professional ambitions, and personal passions.",
+    "link": "/episode/ep16-parvinder-kaur",
+    "yt": "https://www.youtube.com/watch?v=jzVCJubqdXo",
+    "sp": "https://open.spotify.com/show/4S1Lqp4l1Huu1MZJuKibcV",
+    "views": 888
+  },
+  {
+    "id": "Ep 15",
+    "title": "Jobanjeet Singh: Journey of a Coder",
+    "videoId": "5trn3YOA8i4",
+    "time": "54 min",
+    "date": "2025-03-09",
+    "desc": "Jobanjeet talks about his coding journey from a small Punjab town to the tech industry. DSA tips and interview prep.",
+    "link": "/episode/ep15-jobanjeet-singh",
+    "yt": "https://www.youtube.com/watch?v=5trn3YOA8i4",
+    "sp": "https://open.spotify.com/show/4S1Lqp4l1Huu1MZJuKibcV",
+    "views": 221
+  },
+  {
+    "id": "Ep 14",
+    "title": "Manish Shahi – Faith or Fraud? Astrology Myths",
+    "videoId": "ZnuV_W9GFS0",
+    "time": "64 min",
+    "date": "2025-03-02",
+    "desc": "Is astrology real science or fraud? Kundli matching, gemstones, and vastu – everything gets questioned here.",
+    "link": "/episode/ep14-manish-shahi",
+    "yt": "https://www.youtube.com/watch?v=ZnuV_W9GFS0",
+    "sp": "https://open.spotify.com/show/4S1Lqp4l1Huu1MZJuKibcV",
+    "views": 413
+  },
+  {
+    "id": "Ep 13",
+    "title": "Passion Ya Paisa? Dark Reality of Music Industry",
+    "videoId": "Z2NKIarYRFI",
+    "time": "90 min",
+    "date": "2025-02-23",
+    "desc": "Unfiltered look at the Punjabi music industry. Artist earnings, the role of labels, and why most singers quit within 2 years.",
+    "link": "/episode/ep13-music-industry",
+    "yt": "https://www.youtube.com/watch?v=Z2NKIarYRFI",
+    "sp": "https://open.spotify.com/show/4S1Lqp4l1Huu1MZJuKibcV",
+    "views": 295
+  },
+  {
+    "id": "Ep 12",
+    "title": "Ms. Navneet Sharma – Teacher to Trailblazer",
+    "videoId": "in6BKo7X8Ds",
+    "time": "54 min",
+    "date": "2025-02-16",
+    "desc": "Navneet Sharma's inspiring journey from school teacher to community leader. Education reform and women empowerment.",
+    "link": "/episode/ep12-teacher-navneet-sharma",
+    "yt": "https://www.youtube.com/watch?v=in6BKo7X8Ds",
+    "sp": "https://open.spotify.com/show/4S1Lqp4l1Huu1MZJuKibcV",
+    "views": 540
+  },
+  {
+    "id": "Ep 11",
+    "title": "Kamal Jeet Singh: From College to Career – Bhangra",
+    "videoId": "9yIoeblfLhE",
+    "time": "49 min",
+    "date": "2025-02-09",
+    "desc": "Juggling college life, bhangra competitions, and landing a career. The real student experience in Punjab's colleges.",
+    "link": "/episode/ep11-kamaljeet-singh",
+    "yt": "https://www.youtube.com/watch?v=9yIoeblfLhE",
+    "sp": "https://open.spotify.com/show/4S1Lqp4l1Huu1MZJuKibcV",
+    "views": 182
+  },
+  {
+    "id": "Ep 10",
+    "title": "Rajvinder Singh: Corporate to Cab Driver Journey",
+    "videoId": "bcVTMvt5F6A",
+    "time": "49 min",
+    "date": "2025-02-02",
+    "desc": "From corporate IT job to driving a cab. Why he made the switch, freedom of self-employment, and honest income comparisons.",
+    "link": "/episode/ep10-rajvinder-singh",
+    "yt": "https://www.youtube.com/watch?v=bcVTMvt5F6A",
+    "sp": "https://open.spotify.com/show/4S1Lqp4l1Huu1MZJuKibcV",
+    "views": 556
+  },
+  {
+    "id": "Ep 9",
+    "title": "Election Strategy: Winning Punjab, Haryana & Himachal",
+    "videoId": "OiVJtdqCkeg",
+    "time": "34 min",
+    "date": "2025-01-26",
+    "desc": "Political strategist Deepak Kaul breaks down how elections are won. Caste dynamics, booth management, and campaigns.",
+    "link": "/episode/ep9-deepak-kaul",
+    "yt": "https://www.youtube.com/watch?v=OiVJtdqCkeg",
+    "sp": "https://open.spotify.com/show/4S1Lqp4l1Huu1MZJuKibcV",
+    "views": 308
+  },
+  {
+    "id": "Ep 8",
+    "title": "Harsimarpreet Singh – Baker to Rental Car Business",
+    "videoId": "vvfIG99IkHs",
+    "time": "42 min",
+    "date": "2025-01-19",
+    "desc": "From baking cakes to running a successful rental car business in Mohali. Startup lessons and scaling without investors.",
+    "link": "/episode/ep8-harsimarpreet",
+    "yt": "https://www.youtube.com/watch?v=vvfIG99IkHs",
+    "sp": "https://open.spotify.com/show/4S1Lqp4l1Huu1MZJuKibcV",
+    "views": 427
+  },
+  {
+    "id": "Ep 7",
+    "title": "Gurjeet Kamboj – From Faculty to Founder",
+    "videoId": "8V0lYYRrPpY",
+    "time": "58 min",
+    "date": "2025-01-12",
+    "desc": "Left a comfortable teaching job to start his own coaching institute. Risks of entrepreneurship and education business.",
+    "link": "/episode/ep7-gurjeet-kamboj",
+    "yt": "https://www.youtube.com/watch?v=8V0lYYRrPpY",
+    "sp": "https://open.spotify.com/show/4S1Lqp4l1Huu1MZJuKibcV",
+    "views": 3631
+  },
+  {
+    "id": "Ep 6",
+    "title": "From Subway to Singing – Jarman Sheikh's Journey",
+    "videoId": "PLszc6DiVuM",
+    "time": "38 min",
+    "date": "2025-01-05",
+    "desc": "Jarman Sheikh worked at Subway to fund his music career. His struggle, first viral song, and surviving as an independent artist.",
+    "link": "/episode/ep6-jarman-sheikh",
+    "yt": "https://www.youtube.com/watch?v=PLszc6DiVuM",
+    "sp": "https://open.spotify.com/show/4S1Lqp4l1Huu1MZJuKibcV",
+    "views": 448
+  },
+  {
+    "id": "Ep 5",
+    "title": "Food Delivery Struggles – Chandigarh University Ghost",
+    "videoId": "ZdNROcivoSw",
+    "time": "43 min",
+    "date": "2024-12-29",
+    "desc": "A food delivery rider shares his scariest experiences including a ghost encounter near Chandigarh University campus.",
+    "link": "/episode/ep5-ghost-story",
+    "yt": "https://www.youtube.com/watch?v=ZdNROcivoSw",
+    "sp": "https://open.spotify.com/show/4S1Lqp4l1Huu1MZJuKibcV",
+    "views": 926
+  },
+  {
+    "id": "Ep 4",
+    "title": "Bharat Kaushal – MR North India",
+    "videoId": "rjOLiLWZ508",
+    "time": "61 min",
+    "date": "2024-12-22",
+    "desc": "Bodybuilder Bharat Kaushal shares his MR North India journey. Diet plans, steroid truths, and gym culture in Punjab.",
+    "link": "/episode/ep4-bharat-kaushal",
+    "yt": "https://www.youtube.com/watch?v=rjOLiLWZ508",
+    "sp": "https://open.spotify.com/show/4S1Lqp4l1Huu1MZJuKibcV",
+    "views": 297
+  },
+  {
+    "id": "Ep 3",
+    "title": "Mr. Bhatia's INSANE Rise – From Cold Calls to Boardrooms",
+    "videoId": "4feVkfsOyvQ",
+    "time": "78 min",
+    "date": "2024-12-15",
+    "desc": "Mr. Bhatia shares his insane corporate rise from making cold calls to sitting in boardrooms. Sales psychology and career hacks.",
+    "link": "/episode/ep3-mr-bhatia",
+    "yt": "https://www.youtube.com/watch?v=4feVkfsOyvQ",
+    "sp": "https://open.spotify.com/show/4S1Lqp4l1Huu1MZJuKibcV",
+    "views": 222
+  },
+  {
+    "id": "Ep 2",
+    "title": "Mr. Raman Sharma – Hotel Industry Secrets",
+    "videoId": "D2rxUfcL49A",
+    "time": "48 min",
+    "date": "2024-12-08",
+    "desc": "Hotel industry veteran Raman Sharma reveals behind-the-scenes hospitality secrets. Room pricing tricks and guest horror stories.",
+    "link": "/episode/ep2-raman-sharma",
+    "yt": "https://www.youtube.com/watch?v=D2rxUfcL49A",
+    "sp": "https://open.spotify.com/show/4S1Lqp4l1Huu1MZJuKibcV",
+    "views": 305
+  },
+  {
+    "id": "Ep 1",
+    "title": "Dr. Navneet Sharma – Farmer Protest & Adani Secrets",
+    "videoId": "fhRIqX6bEiA",
+    "time": "39 min",
+    "date": "2024-12-01",
+    "desc": "The first episode! Dr. Navneet Sharma discusses farmer protests, Adani controversies, and Punjab's political landscape.",
+    "link": "/episode/ep1-navneet-sharma",
+    "yt": "https://www.youtube.com/watch?v=fhRIqX6bEiA",
+    "sp": "https://open.spotify.com/show/4S1Lqp4l1Huu1MZJuKibcV",
+    "views": 252
   }
 ]

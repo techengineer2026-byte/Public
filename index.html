@@ -5,11 +5,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Puadh Punjabi Podcast | The #1 Podcast for Puadhi Dialect & Culture</title>
+    <title>Puadh Punjabi Podcast | Podcast Studio in Mohali, Kharar, Zirakpur & Landran</title>
     <meta name="description"
-        content="Listen to Puadh Punjabi Podcast with Gurinder Singh Dhanoa—29+ episodes on Puadhi dialect, IT careers, and stories from Mohali & Chandigarh.">
+        content="Puadh Punjabi Podcast — the #1 podcast from Mohali, Punjab. Book our professional podcast studio serving Kharar, Zirakpur, Landran, Kurali & Chandigarh. New episodes weekly. Starting ₹2,000/hr.">
     <meta name="keywords"
-        content="Puadh Punjabi Podcast, Puadhi dialect, Punjabi comedy podcast, Gurinder Singh Dhanoa, Chandigarh Podcast, Mohali History, Punjabi Entrepreneur stories" />
+        content="podcast in mohali, podcast in kharar, podcast in zirakpur, podcast in landran, podcast in kurali, podcast studio mohali, podcast studio kharar, recording studio mohali, podcast near chandigarh, Puadh Punjabi Podcast, Puadhi dialect, Punjabi podcast, Mohali podcast studio, best podcast studio punjab" />
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
     <link rel="canonical" href="https://puadhpunjabipodcast.com/" />
     <meta name="author" content="Gurinder Singh Dhanoa">
@@ -26,13 +26,13 @@
     <meta http-equiv="content-language" content="en, pa" />
 
     <meta property="og:site_name" content="Puadh Punjabi Podcast" />
-    <meta property="og:title" content="Puadh Punjabi Podcast - The Voice of the Region" />
+    <meta property="og:title" content="Puadh Punjabi Podcast — Podcast Studio in Mohali, Kharar & Zirakpur" />
     <meta property="og:description"
-        content="The first digital platform dedicated to Puadhi dialect. Join Gurinder Singh Dhanoa for unscripted conversations on culture, tech, and history." />
+        content="The #1 podcast from the Puadh region. Book our professional podcast studio in Mohali serving Kharar, Zirakpur, Landran, Kurali & Chandigarh." />
     <meta property="og:image" content="https://puadhpunjabipodcast.com/img/social-share-image.jpg" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
-    <meta property="og:image:alt" content="Puadh Punjabi Podcast Host and Logo" />
+    <meta property="og:image:alt" content="Puadh Punjabi Podcast Studio in Mohali" />
     <meta property="og:url" content="https://puadhpunjabipodcast.com/" />
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="en_IN" />
@@ -41,8 +41,9 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@PuadhP37620">
     <meta name="twitter:creator" content="@PuadhP37620">
-    <meta name="twitter:title" content="Puadh Punjabi Podcast | Culture & Comedy">
-    <meta name="twitter:description" content="Unscripted comedy and culture from the heart of Puadh. Listen now." />
+    <meta name="twitter:title" content="Puadh Punjabi Podcast — Studio in Mohali, Kharar & Zirakpur">
+    <meta name="twitter:description"
+        content="Book our podcast studio in Mohali. Serving Kharar, Zirakpur, Landran, Kurali & Chandigarh." />
     <meta name="twitter:image" content="https://puadhpunjabipodcast.com/img/social-share-image.jpg">
 
     <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
@@ -60,6 +61,418 @@
     <noscript>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
     </noscript>
+
+    <style>
+        .ep-grid-card {
+            background: #111;
+            border: 1px solid #222;
+            border-radius: 16px;
+            overflow: hidden;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+
+        .ep-grid-card:hover {
+            transform: translateY(-8px);
+            border-color: #FDB515;
+            box-shadow: 0 20px 50px rgba(253, 181, 21, 0.1);
+        }
+
+        .ep-thumb-wrap {
+            position: relative;
+            aspect-ratio: 16/9;
+            overflow: hidden;
+            background: #0a0a0a;
+        }
+
+        .ep-thumb-wrap img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease, filter 0.5s ease;
+        }
+
+        .ep-grid-card:hover .ep-thumb-wrap img {
+            transform: scale(1.08);
+            filter: brightness(0.7);
+        }
+
+        .ep-thumb-wrap::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 50%;
+            background: linear-gradient(to top, rgba(17, 17, 17, 0.8), transparent);
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        .ep-play-btn {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 56px;
+            height: 56px;
+            background: rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            z-index: 2;
+            padding: 0;
+        }
+
+        .ep-play-btn i {
+            margin-left: 3px;
+        }
+
+        .ep-grid-card:hover .ep-play-btn {
+            background: #FDB515;
+            color: #000;
+            border-color: #FDB515;
+            transform: translate(-50%, -50%) scale(1.1);
+            box-shadow: 0 0 30px rgba(253, 181, 21, 0.4);
+        }
+
+        .ep-card-body {
+            padding: 24px;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+        }
+
+        .ep-tag {
+            display: inline-block;
+            padding: 5px 14px;
+            border-radius: 50px;
+            font-size: 0.65rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.8px;
+            width: fit-content;
+            margin-bottom: 14px;
+        }
+
+        .ep-tag-trending {
+            background: linear-gradient(135deg, #FDB515, #f0c040);
+            color: #000;
+            animation: pulse-glow 2s infinite;
+        }
+
+        .ep-tag-default {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid #333;
+            color: #aaa;
+        }
+
+        @keyframes pulse-glow {
+
+            0%,
+            100% {
+                box-shadow: 0 0 0 0 rgba(253, 181, 21, 0.4);
+            }
+
+            50% {
+                box-shadow: 0 0 12px 3px rgba(253, 181, 21, 0.15);
+            }
+        }
+
+        .ep-title {
+            font-family: 'Outfit', sans-serif;
+            font-size: 1.15rem;
+            font-weight: 700;
+            color: #fff;
+            line-height: 1.4;
+            margin-bottom: 10px;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            transition: color 0.3s;
+        }
+
+        .ep-grid-card:hover .ep-title {
+            color: #FDB515;
+        }
+
+        .ep-desc {
+            color: #777;
+            font-size: 0.88rem;
+            line-height: 1.65;
+            margin-bottom: 16px;
+            flex-grow: 1;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .ep-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 16px;
+            border-top: 1px solid #1a1a1a;
+            margin-top: auto;
+        }
+        
+        .btn-bookmark {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: #ffffff;
+            font-weight: 600;
+            font-size: 0.85rem;
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+
+        .btn-bookmark:hover {
+            color: #FDB515;
+            transform: translateX(4px);
+            text-shadow: 0 0 10px rgba(29, 185, 84, 0.3);
+        }
+
+        .ep-meta-inline {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            color: #555;
+            font-size: 0.78rem;
+            font-weight: 500;
+        }
+
+        .ep-meta-inline span {
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .ep-views {
+            color: #FDB515;
+            font-weight: 600;
+        }
+
+        /* ─── AREAS WE SERVE ─── */
+        .areas-section {
+            background: #050505;
+            padding: 80px 0;
+        }
+
+        .areas-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 16px;
+        }
+
+        .area-card {
+            background: #111;
+            border: 1px solid #222;
+            border-radius: 14px;
+            padding: 28px 20px;
+            text-align: center;
+            text-decoration: none;
+            transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .area-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #FDB515, #f0c040);
+            transform: scaleX(0);
+            transition: transform 0.35s;
+        }
+
+        .area-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .area-card:hover {
+            border-color: rgba(253, 181, 21, 0.4);
+            transform: translateY(-6px);
+            box-shadow: 0 10px 30px rgba(253, 181, 21, 0.1);
+        }
+
+        .area-card-icon {
+            font-size: 1.6rem;
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        .area-card-name {
+            color: #fff;
+            font-weight: 700;
+            font-size: 1rem;
+            margin-bottom: 4px;
+        }
+
+        .area-card-dist {
+            color: #FDB515;
+            font-size: 0.75rem;
+            font-weight: 600;
+            margin-bottom: 6px;
+        }
+
+        .area-card-tag {
+            color: #666;
+            font-size: 0.7rem;
+        }
+
+        /* ─── STICKY BOTTOM CTA ─── */
+        .sticky-cta-bar {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(10, 10, 10, 0.95);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border-top: 1px solid #222;
+            padding: 12px 0;
+            z-index: 1000;
+            transform: translateY(100%);
+            transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .sticky-cta-bar.visible {
+            transform: translateY(0);
+        }
+
+        .sticky-cta-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 12px;
+        }
+
+        .sticky-cta-text {
+            color: #fff;
+            font-weight: 600;
+            font-size: 0.88rem;
+            white-space: nowrap;
+        }
+
+        .sticky-cta-text span {
+            color: #FDB515;
+        }
+
+        .sticky-cta-buttons {
+            display: flex;
+            gap: 8px;
+            flex-shrink: 0;
+        }
+
+        .btn-sticky-wa {
+            background: #25d366;
+            color: #fff;
+            border: none;
+            padding: 8px 18px;
+            border-radius: 8px;
+            font-weight: 700;
+            font-size: 0.82rem;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            transition: all 0.3s;
+        }
+
+        .btn-sticky-wa:hover {
+            background: #1ebe57;
+            color: #fff;
+            transform: translateY(-1px);
+        }
+
+        .btn-sticky-studio {
+            background: #FDB515;
+            color: #000;
+            border: none;
+            padding: 8px 18px;
+            border-radius: 8px;
+            font-weight: 700;
+            font-size: 0.82rem;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            transition: all 0.3s;
+        }
+
+        .btn-sticky-studio:hover {
+            background: #f0c040;
+            color: #000;
+            transform: translateY(-1px);
+        }
+
+        @media (max-width: 768px) {
+            .ep-card-body {
+                padding: 18px;
+            }
+
+            .ep-title {
+                font-size: 1.05rem;
+            }
+
+            .ep-play-btn {
+                width: 46px;
+                height: 46px;
+                font-size: 0.9rem;
+            }
+
+            .areas-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 12px;
+            }
+
+            .area-card {
+                padding: 20px 14px;
+            }
+
+            .sticky-cta-text {
+                font-size: 0.75rem;
+            }
+
+            .btn-sticky-wa,
+            .btn-sticky-studio {
+                padding: 7px 12px;
+                font-size: 0.75rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .sticky-cta-text {
+                display: none;
+            }
+
+            .sticky-cta-buttons {
+                width: 100%;
+            }
+
+            .btn-sticky-wa,
+            .btn-sticky-studio {
+                flex: 1;
+                justify-content: center;
+            }
+        }
+    </style>
 
     <script type="application/ld+json">
   {
@@ -96,21 +509,18 @@
         "@id": "https://puadhpunjabipodcast.com/#website",
         "url": "https://puadhpunjabipodcast.com",
         "name": "Puadh Punjabi Podcast",
-        "description": "The Voice of the Puadh Region",
-        "publisher": {
-          "@id": "https://puadhpunjabipodcast.com/#organization"
-        },
+        "description": "The Voice of the Puadh Region — Podcast Studio in Mohali",
+        "publisher": { "@id": "https://puadhpunjabipodcast.com/#organization" },
         "inLanguage": "en-IN"
       },
       {
         "@type": "PodcastSeries",
         "@id": "https://puadhpunjabipodcast.com/#podcast",
         "name": "Puadh Punjabi Podcast",
-        "description": "Puadh Punjabi Podcast is the first digital platform dedicated to the culture, history, and humor of the Puadh region of Punjab, India. Hosted by Gurinder Singh Dhanoa, the show features 29+ unscripted conversations about Puadhi dialect, NRI lifestyle, IT careers, desi comedy, and village stories.",
+        "description": "Puadh Punjabi Podcast is the first digital platform dedicated to the culture, history, and humor of the Puadh region of Punjab, India. Hosted by Gurinder Singh Dhanoa, the show features weekly unscripted conversations about Puadhi dialect, NRI lifestyle, IT careers, desi comedy, and village stories. Recorded at our professional podcast studio in Mohali, serving Kharar, Zirakpur, Landran, Kurali, and Chandigarh.",
         "url": "https://puadhpunjabipodcast.com",
         "image": "https://puadhpunjabipodcast.com/img/logo.webp",
         "inLanguage": "pa",
-        "numberOfEpisodes": 29,
         "isAccessibleForFree": true,
         "genre": ["Comedy", "Culture", "Education", "Society & Culture"],
         "author": {
@@ -120,14 +530,62 @@
           "jobTitle": "Host & Founder",
           "image": "https://puadhpunjabipodcast.com/img/host.webp"
         },
-        "publisher": {
-          "@id": "https://puadhpunjabipodcast.com/#organization"
-        },
+        "publisher": { "@id": "https://puadhpunjabipodcast.com/#organization" },
         "sameAs": [
           "https://open.spotify.com/show/4S1Lqp4l1Huu1MZJuKibcV",
           "https://podcasts.apple.com/in/podcast/punjabi-podcast/id1702326740",
           "https://www.youtube.com/@puadhpunjabipodcast"
         ]
+      },
+      {
+        "@type": "LocalBusiness",
+        "@id": "https://puadhpunjabipodcast.com/#studio",
+        "name": "Puadh Podcast Studio — Best Podcast Studio in Mohali",
+        "description": "Professional podcast recording studio in Mohali Phase 8B, serving Kharar, Zirakpur, Landran, Kurali, Chandigarh, and the Tricity. Canon M3 to Sony FX3 cameras, full editing, Reels, professional anchor. Starting ₹2,000/hr.",
+        "url": "https://puadhpunjabipodcast.com/studio",
+        "image": "https://puadhpunjabipodcast.com/img/studio-setup.webp",
+        "telephone": "+91-83607-69451",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Plot F-298, R&R Tower, Phase 8B, Industrial Area, Sector 74",
+          "addressLocality": "Mohali",
+          "addressRegion": "Punjab",
+          "postalCode": "160055",
+          "addressCountry": "IN"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 30.7333,
+          "longitude": 76.7794
+        },
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+            "opens": "10:00",
+            "closes": "20:00"
+          }
+        ],
+        "priceRange": "₹2,000–₹8,000",
+        "areaServed": [
+          { "@type": "City", "name": "Mohali" },
+          { "@type": "City", "name": "Kharar" },
+          { "@type": "City", "name": "Zirakpur" },
+          { "@type": "City", "name": "Landran" },
+          { "@type": "City", "name": "Kurali" },
+          { "@type": "City", "name": "Chandigarh" },
+          { "@type": "City", "name": "Ropar" },
+          { "@type": "City", "name": "Patiala" },
+          { "@type": "City", "name": "Dera Bassi" },
+          { "@type": "City", "name": "Morinda" }
+        ],
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.9",
+          "reviewCount": "87",
+          "bestRating": "5"
+        },
+        "parentOrganization": { "@id": "https://puadhpunjabipodcast.com/#organization" }
       },
       {
         "@type": "FAQPage",
@@ -138,7 +596,7 @@
             "name": "What is the best Punjabi podcast to listen to?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Puadh Punjabi Podcast is consistently ranked as the #1 Punjabi podcast for authentic entrepreneur stories and cultural content. It features 29+ episodes in the authentic Puadhi dialect."
+              "text": "Puadh Punjabi Podcast is consistently ranked as the #1 Punjabi podcast for authentic entrepreneur stories and cultural content. It features weekly unscripted interviews in the authentic Puadhi dialect."
             }
           },
           {
@@ -164,6 +622,46 @@
               "@type": "Answer",
               "text": "The podcast is hosted by Gurinder Singh Dhanoa from Chandigarh, Punjab."
             }
+          },
+          {
+            "@type": "Question",
+            "name": "Is there a podcast studio in Mohali?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Puadh Podcast Studio is a professional podcast recording studio in Mohali Phase 8B, Sector 74. Canon M3 to Sony FX3 cameras, full editing, 6 Reels, professional anchor. Starting ₹2,000/hr. Book via WhatsApp at +91 83607 69451."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is there a podcast studio near Kharar?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Puadh Podcast Studio in Phase 8B, Mohali is just 15 minutes from Kharar via the Kharar-Mohali road. Professional video recording, editing, and Reels starting from ₹2,000/hr."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I record a podcast in Zirakpur or Landran?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Puadh Podcast Studio in Phase 8B, Mohali is 20 minutes from Zirakpur and 15 minutes from Landran. Professional recording with cameras, editing, and Reels starting from ₹2,000/hr."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is there a podcast studio near Kurali?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Puadh Podcast Studio in Phase 8B, Mohali is 25 minutes from Kurali via the Kurali-Mohali road. Professional podcast recording, editing, and Reels starting from ₹2,000/hr."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Where can I record a podcast in Mohali or Chandigarh?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Puadh Podcast Studio in Phase 8B, Sector 74, Mohali offers professional podcast recording, video shooting, and editing. Just 10 minutes from Chandigarh. Equipped with Canon M3, Sony FX3, and professional audio gear. Starting at ₹2,000/hr. Book at +91 83607 69451 or reserve online at puadhpunjabipodcast.com/studio."
+            }
           }
         ]
       }
@@ -184,26 +682,23 @@
 <body>
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K2DN29GZ" height="0" width="0"
             style="display:none;visibility:hidden"></iframe></noscript>
+
+    <!-- HEADER -->
     <header>
         <nav class="navbar navbar-expand-lg navbar-glass fixed-top" id="mainNavbar">
             <div class="container">
-
                 <a class="navbar-brand logo-container" href="/" aria-label="Puadh Podcast Homepage">
-                    <img src="/img/logo.webp" alt="Puadh Punjabi Podcast Logo with Gurinder Singh" width="60" height="60" />
+                    <img src="/img/logo.webp" alt="Puadh Punjabi Podcast Logo" width="60" height="60" />
                 </a>
-
                 <a href="/studio" class="btn-custom btn-book-studio btn-book-studio-mobile fw-bold px-3 d-lg-none me-2"
                     aria-label="Book Podcast Studio">
                     🎙️ Book Studio
                 </a>
-
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-
                 <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
-
                     <ul class="navbar-nav mx-auto mb-2 mb-lg-0 text-center nav-menu-enhanced">
                         <li class="nav-item">
                             <a class="nav-link nav-link-animated" href="/episodes" data-page="episodes">Episodes</a>
@@ -225,32 +720,39 @@
                             <a class="nav-link nav-link-animated" href="/contact" data-page="contact">Contact Us</a>
                         </li>
                     </ul>
-
                     <div class="d-none d-lg-flex justify-content-center align-items-center mt-3 mt-lg-0">
                         <a href="/studio" class="btn-custom btn-book-studio btn-book-studio-desktop fw-bold px-4 py-2"
                             aria-label="Book Podcast Studio">
                             🎙️ Book Studio
                         </a>
                     </div>
-
                 </div>
             </div>
         </nav>
     </header>
+
+    <!-- ═══════════════════════════════════════════════════════════
+         HERO SECTION
+         ═══════════════════════════════════════════════════════════ -->
     <section class="hero-section" aria-label="Puadh Punjabi Podcast Introduction">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-8">
                     <p class="hero-tagline">The Voice of the Region</p>
-
+                    <p class="hero-social-proof">
+                        <strong>New Episodes Weekly</strong> &nbsp;·&nbsp;
+                        <strong>10K+</strong> Listeners &nbsp;·&nbsp;
+                        <span class="badge-rank">🏆 #1 Puadhi Podcast</span>
+                    </p>
                     <h1 class="hero-heading">
                         Puadh Punjabi Podcast — Authentic Stories from Punjab
                     </h1>
-
                     <p class="hero-description">
                         Deep diving into Punjabi culture, local history, and comedy.
                         No scripts, just raw conversation in the
                         <strong>Puadhi dialect</strong> from the heart of Punjab.
+                        Recorded at our <a href="/studio" style="color:#FDB515;">podcast studio in Mohali</a>
+                        — serving <strong>Kharar, Zirakpur, Landran, Kurali</strong> & Chandigarh.
                     </p>
 
                     <div class="hero-buttons">
@@ -260,18 +762,15 @@
                             <i class="fab fa-spotify" aria-hidden="true"></i>
                             Subscribe on Spotify
                         </a>
-
-                        <a href="https://podcasts.apple.com/in/podcast/punjabi-podcast/id1702326740"
-                            class="btn btn-hero btn-hero-apple" target="_blank" rel="noopener noreferrer"
-                            aria-label="Subscribe on Apple Podcasts">
-                            <i class="fab fa-apple" aria-hidden="true"></i>
-                            Apple Podcasts
-                        </a>
-
                         <a href="https://www.youtube.com/@puadhpunjabipodcast" class="btn btn-hero btn-hero-youtube"
-                            target="_blank" rel="noopener noreferrer" aria-label="Watch on YouTube">
+                            target="_blank" rel="noopener noreferrer" aria-label="Subscribe on YouTube">
                             <i class="fab fa-youtube" aria-hidden="true"></i>
-                            Watch on YouTube
+                            YouTube
+                        </a>
+                        <a href="/studio" class="btn btn-hero btn-hero-studio"
+                            aria-label="Book our podcast studio in Mohali">
+                            <i class="fas fa-microphone" aria-hidden="true"></i>
+                            Book Studio Session
                         </a>
                     </div>
 
@@ -284,59 +783,49 @@
             </div>
         </div>
     </section>
+
+    <!-- ═══════════════════════════════════════════════════════════
+         ABOUT SHORT SECTION
+         ═══════════════════════════════════════════════════════════ -->
     <section class="about-short-section" aria-label="About Puadh Punjabi Podcast">
         <div class="container">
             <div class="row align-items-center gy-5">
-
-                <!-- Text Column -->
                 <div class="col-lg-6">
                     <p class="about-label">The Mission</p>
-
                     <h2 class="about-heading">
                         Preserving the Puadhi Dialect Through Our Podcast
                     </h2>
-
                     <div class="border-gold-left">
                         <p class="lead text-gray mb-4">
                             The <strong>Puadh Punjabi Podcast</strong> is the first digital
                             platform dedicated to the culture, history, and humor of the
                             Puadh region.
                         </p>
-
                         <p class="text-secondary mb-0">
                             While the world knows Majha and Malwa, our stories often go
                             unheard. We are here to change that with unfiltered
                             conversations, raw comedy, and deep dives into our village
                             roots.
                         </p>
-
                         <p class="text-secondary mt-3">
-                            Puadh Punjabi Podcast is hosted by
-                            <strong>Gurinder Singh Dhanoa</strong> from Chandigarh, Punjab.
-                            The show covers the Puadh region — a historic area of Punjab
-                            including Mohali, Ropar, Patiala, and Ambala — through unscripted
-                            conversations about culture, NRI life, IT careers, and desi comedy.
+                            Hosted by <strong>Gurinder Singh Dhanoa</strong> from Chandigarh, Punjab.
+                            The show covers the Puadh region — Mohali, Ropar, Patiala, and Ambala —
+                            through unscripted conversations about culture, NRI life, IT careers, and desi comedy.
                         </p>
-
                         <p class="text-secondary mt-3">
                             Welcome to the Puadh Punjabi Podcast. We cover everything
-                            regarding the
-                            <a href="/puadh-podcast" class="gold-link">Puadh region and its culture</a>,
-                            stories from the
-                            <a href="/chandigarh-podcast" class="gold-link">Chandigarh Tricity area</a>,
-                            and hosting the best
-                            <a href="/punjab-podcast/" class="gold-link">Podcast in Punjab today</a>.
+                            regarding the <a href="/puadh-podcast" class="gold-link">Puadh region and its culture</a>,
+                            stories from the <a href="/chandigarh-podcast" class="gold-link">Chandigarh Tricity
+                                area</a>,
+                            and hosting the best <a href="/punjab-podcast" class="gold-link">Podcast in Punjab
+                                today</a>.
                         </p>
                     </div>
-
                     <a href="/episodes" class="btn btn-outline-light mt-4 rounded-pill px-4"
                         aria-label="Explore all podcast episodes">
-                        Explore Episodes
-                        <i class="fas fa-arrow-right ms-2" aria-hidden="true"></i>
+                        Explore Episodes <i class="fas fa-arrow-right ms-2" aria-hidden="true"></i>
                     </a>
                 </div>
-
-                <!-- Image Column -->
                 <div class="col-lg-5 offset-lg-1">
                     <div class="about-img-container">
                         <img src="/img/mic-setup.webp"
@@ -344,149 +833,169 @@
                             class="about-img" loading="lazy" />
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
-    <section class="episodes-section" id="episodes" aria-label="Latest Podcast Episodes">
-        <div class="container">
 
-            <!-- Section Header -->
-            <div class="episodes-header">
-                <div>
-                    <p class="episodes-label">Watch & Listen</p>
-                    <h2 class="episodes-heading">
-                        Latest Punjabi Podcast Episodes
+    <!-- ═══════════════════════════════════════════════════════════
+         STUDIO CTA BLOCK — Local keywords + strong CTA
+         ═══════════════════════════════════════════════════════════ -->
+    <section class="studio-cta-section" aria-label="Book Our Podcast Studio">
+        <div class="container">
+            <div class="row align-items-center gy-5">
+                <div class="col-lg-7">
+                    <p class="studio-cta-label">🎙️ Now Open for Bookings</p>
+                    <h2 class="studio-cta-heading">
+                        Best Podcast Studio in Mohali — Serving Kharar, Zirakpur, Landran & Kurali
                     </h2>
+                    <p class="studio-cta-text">
+                        Record your podcast at the same studio that produces award-winning content.
+                        Professional audio, cinematic video, and full post-production — all
+                        under one roof. Whether you're from <strong>Mohali</strong>, <strong>Kharar</strong>,
+                        <strong>Zirakpur</strong>, <strong>Landran</strong>, <strong>Kurali</strong>,
+                        or <strong>Chandigarh</strong> — we're just minutes away.
+                    </p>
+                    <ul class="studio-features-list">
+                        <li><i class="fas fa-video" aria-hidden="true"></i> Canon M3 &amp; Sony FX3 Cameras</li>
+                        <li><i class="fas fa-headphones" aria-hidden="true"></i> Professional Anchor Microphones</li>
+                        <li><i class="fas fa-film" aria-hidden="true"></i> Full Editing + 6 Reels Included</li>
+                        <li><i class="fas fa-user-tie" aria-hidden="true"></i> Professional Anchor Available</li>
+                        <li><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Phase 8B, Sector 74, Mohali — 10
+                            min from Chandigarh</li>
+                    </ul>
+                    <p class="studio-price-tag">Starting at <strong>₹2,000/hr</strong> · <span
+                            style="color:#FDB515;">4.9★ rated</span> by 87+ creators</p>
+                    <div class="studio-cta-buttons">
+                        <a href="/studio" class="btn btn-studio-primary" aria-label="Book a studio session">
+                            <i class="fas fa-calendar-check" aria-hidden="true"></i>
+                            Book a Session
+                        </a>
+                        <a href="https://wa.me/918360769451?text=Hi%2C%20I%20want%20to%20book%20the%20podcast%20studio"
+                            class="btn btn-studio-whatsapp" target="_blank" rel="noopener noreferrer"
+                            aria-label="WhatsApp us to book studio">
+                            <i class="fab fa-whatsapp" aria-hidden="true"></i>
+                            WhatsApp Us
+                        </a>
+                    </div>
                 </div>
-                <a href="https://www.youtube.com/channel/UC-CdiL2JN2GjV08p3ixs-HA"
-                    class="btn btn-outline-light rounded-pill px-4 d-none d-md-inline-block" target="_blank"
-                    rel="noopener noreferrer" aria-label="View all episodes on YouTube channel">
-                    View All on YouTube
+                <div class="col-lg-5">
+                    <div class="studio-img-wrap">
+                        <img src="/img/podcast-setup.webp"
+                            alt="Puadh Podcast Studio setup in Phase 8B Mohali serving Kharar Zirakpur Landran Kurali"
+                            width="500" height="400" class="studio-cta-img" loading="lazy" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════
+         AREAS WE SERVE — Local SEO grid
+         ═══════════════════════════════════════════════════════════ -->
+    <section class="areas-section" aria-label="Areas We Serve">
+        <div class="container">
+            <div class="text-center mb-5">
+                <p class="section-label"><i class="fas fa-map-marker-alt"></i> Areas We Serve</p>
+                <h2 class="text-white mt-3 h3">Podcast Studio Near You</h2>
+                <p class="text-secondary">Our studio in Phase 8B, Mohali is easily accessible from all these locations.
+                </p>
+            </div>
+
+            <div class="areas-grid">
+                <a href="/studio" class="area-card" aria-label="Podcast studio in Mohali">
+                    <span class="area-card-icon">📍</span>
+                    <p class="area-card-name">Mohali</p>
+                    <p class="area-card-dist">Phase 8B · 0 km</p>
+                    <p class="area-card-tag">Podcast Studio in Mohali</p>
+                </a>
+                <a href="/studio" class="area-card" aria-label="Podcast studio near Kharar">
+                    <span class="area-card-icon">📍</span>
+                    <p class="area-card-name">Kharar</p>
+                    <p class="area-card-dist">15 min drive</p>
+                    <p class="area-card-tag">Podcast in Kharar</p>
+                </a>
+                <a href="/studio" class="area-card" aria-label="Podcast studio near Zirakpur">
+                    <span class="area-card-icon">📍</span>
+                    <p class="area-card-name">Zirakpur</p>
+                    <p class="area-card-dist">20 min drive</p>
+                    <p class="area-card-tag">Podcast in Zirakpur</p>
+                </a>
+                <a href="/studio" class="area-card" aria-label="Podcast studio near Landran">
+                    <span class="area-card-icon">📍</span>
+                    <p class="area-card-name">Landran</p>
+                    <p class="area-card-dist">15 min drive</p>
+                    <p class="area-card-tag">Podcast in Landran</p>
+                </a>
+                <a href="/studio" class="area-card" aria-label="Podcast studio near Kurali">
+                    <span class="area-card-icon">📍</span>
+                    <p class="area-card-name">Kurali</p>
+                    <p class="area-card-dist">25 min drive</p>
+                    <p class="area-card-tag">Podcast in Kurali</p>
+                </a>
+                <a href="/studio" class="area-card" aria-label="Podcast studio near Chandigarh">
+                    <span class="area-card-icon">📍</span>
+                    <p class="area-card-name">Chandigarh</p>
+                    <p class="area-card-dist">10 min drive</p>
+                    <p class="area-card-tag">Podcast in Chandigarh</p>
+                </a>
+                <a href="/studio" class="area-card" aria-label="Podcast studio near Dera Bassi">
+                    <span class="area-card-icon">📍</span>
+                    <p class="area-card-name">Dera Bassi</p>
+                    <p class="area-card-dist">30 min drive</p>
+                    <p class="area-card-tag">Podcast near Dera Bassi</p>
+                </a>
+                <a href="/studio" class="area-card" aria-label="Podcast studio near Ropar">
+                    <span class="area-card-icon">📍</span>
+                    <p class="area-card-name">Ropar</p>
+                    <p class="area-card-dist">40 min drive</p>
+                    <p class="area-card-tag">Podcast in Ropar</p>
                 </a>
             </div>
 
-            <!-- Episodes Grid -->
-            <div class="row g-4">
-
-                <!-- Episode 24 -->
-                <div class="col-lg-4 col-md-6">
-                    <article class="video-card h-100">
-                        <div class="video-facade"
-                            data-src="https://www.youtube-nocookie.com/embed/uJoQYXpi3wI?rel=0&modestbranding=1">
-                            <img src="/img/thumbnails/ep24-it-evolution-job-hunting-2025.jpg"
-                                alt="Episode 24 thumbnail - IT journey discussion" class="facade-thumb" width="480"
-                                height="270" loading="lazy" />
-                            <button class="facade-play" aria-label="Play Episode 24 video">
-                                <i class="fas fa-play" aria-hidden="true"></i>
-                            </button>
-                        </div>
-                        <div class="video-card-body d-flex flex-column">
-                            <span class="episode-tag">LATEST DROP</span>
-                            <h3>From Floppy Disks to Cloud — Rajesh Kumar IT Journey</h3>
-                            <p class="episode-desc flex-grow-1">
-                                Discussing the initial days of computers in Punjab
-                                and the massive career growth in IT.
-                            </p>
-                            <div class="episode-footer">
-                                <a href="/episode/ep24-it-journey" class="btn-listen-sm"
-                                    aria-label="Listen to Episode 24 on Spotify">
-                                    <i class="fab fa-spotify" aria-hidden="true"></i>
-                                    Listen on Spotify
-                                </a>
-                                <span class="episode-duration">
-                                    <i class="far fa-clock" aria-hidden="true"></i> 45 Min
-                                </span>
-                            </div>
-                        </div>
-                    </article>
-                </div>
-
-                <!-- Episode 25 -->
-                <div class="col-lg-4 col-md-6">
-                    <article class="video-card h-100">
-                        <div class="video-facade"
-                            data-src="https://www.youtube-nocookie.com/embed/lGXvqDtw72Q?rel=0&modestbranding=1">
-                            <img src="/img/thumbnails/ep25-software-engineer-job-in-doha-salary-lifestyle.jpg"
-                                alt="Episode 25 thumbnail - Software engineer life in Doha" class="facade-thumb"
-                                width="480" height="270" loading="lazy" />
-                            <button class="facade-play" aria-label="Play Episode 25 video">
-                                <i class="fas fa-play" aria-hidden="true"></i>
-                            </button>
-                        </div>
-                        <div class="video-card-body d-flex flex-column">
-                            <span class="episode-tag">EPISODE 25</span>
-                            <h3>Software Engineer Job in Doha — Salary and Lifestyle Guide</h3>
-                            <p class="episode-desc flex-grow-1">
-                                A deep dive into the life of an engineer in Qatar.
-                                Is the tax-free salary worth it?
-                            </p>
-                            <div class="episode-footer">
-                                <a href="/episode/ep25-doha-engineer" class="btn-listen-sm"
-                                    aria-label="Listen to Episode 25 on Spotify">
-                                    <i class="fab fa-spotify" aria-hidden="true"></i>
-                                    Listen on Spotify
-                                </a>
-                                <span class="episode-duration">
-                                    <i class="far fa-clock" aria-hidden="true"></i> 52 Min
-                                </span>
-                            </div>
-                        </div>
-                    </article>
-                </div>
-
-                <!-- Episode 23 -->
-                <div class="col-lg-4 col-md-6">
-                    <article class="video-card h-100">
-                        <div class="video-facade"
-                            data-src="https://www.youtube-nocookie.com/embed/3tCZEjqOuYg?rel=0&modestbranding=1">
-                            <img src="/img/thumbnails/ep23-anshul-bansal-real-estate-investment-punjab-dubai.jpg"
-                                alt="Episode 23 thumbnail - International property dealer interview"
-                                class="facade-thumb" width="480" height="270" loading="lazy" />
-                            <button class="facade-play" aria-label="Play Episode 23 video">
-                                <i class="fas fa-play" aria-hidden="true"></i>
-                            </button>
-                        </div>
-                        <div class="video-card-body d-flex flex-column">
-                            <span class="episode-tag">EPISODE 23</span>
-                            <h3>Life of an International Property Dealer — Real Estate Business</h3>
-                            <p class="episode-desc flex-grow-1">
-                                The journey of selling international property and
-                                the reality of the real estate market.
-                            </p>
-                            <div class="episode-footer">
-                                <a href="/episode/ep23-real-estate" class="btn-listen-sm"
-                                    aria-label="Listen to Episode 23 on Spotify">
-                                    <i class="fab fa-spotify" aria-hidden="true"></i>
-                                    Listen on Spotify
-                                </a>
-                                <span class="episode-duration">
-                                    <i class="far fa-clock" aria-hidden="true"></i> 70 Min
-                                </span>
-                            </div>
-                        </div>
-                    </article>
-                </div>
-
+            <div class="text-center mt-4">
+                <a href="https://wa.me/918360769451?text=Hi!%20I%20want%20to%20book%20the%20podcast%20studio"
+                    class="btn px-4 py-3 rounded-pill fw-bold" style="background:#25d366;color:#fff;border:none;"
+                    target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-whatsapp me-2"></i> Book Studio — WhatsApp Now
+                </a>
             </div>
         </div>
     </section>
 
+    <!-- ═══════════════════════════════════════════════════════════
+         EPISODES SECTION
+         ═══════════════════════════════════════════════════════════ -->
+    <section class="episodes-section" id="episodes" aria-label="Latest Podcast Episodes">
+        <div class="container">
+            <div class="episodes-header">
+                <div>
+                    <p class="episodes-label">Watch & Listen</p>
+                    <h2 class="episodes-heading">Latest Punjabi Podcast Episodes</h2>
+                </div>
+                <a href="https://www.youtube.com/channel/UC-CdiL2JN2GjV08p3ixs-HA"
+                    class="btn btn-outline-light rounded-pill px-4 d-none d-md-inline-block" target="_blank"
+                    rel="noopener noreferrer" aria-label="View all episodes on YouTube">
+                    View All on YouTube
+                </a>
+            </div>
+            <div class="row g-4" id="homeEpisodeGrid"></div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════
+         FAQ SECTION — with local SEO questions
+         ═══════════════════════════════════════════════════════════ -->
     <section class="faq-section" id="faq" aria-label="Frequently Asked Questions">
         <div class="container">
             <div class="faq-header">
                 <p class="faq-label">Got Questions?</p>
                 <h2 class="faq-heading">Frequently Asked Questions</h2>
-                <p class="text-secondary">
-                    Common questions about Puadh Punjabi Podcast
-                </p>
+                <p class="text-secondary">Common questions about Puadh Punjabi Podcast and our studio</p>
             </div>
-
             <div class="row justify-content-center">
                 <div class="col-lg-8">
                     <div class="accordion" id="faqAccordion">
 
-                        <!-- FAQ 1 -->
                         <div class="accordion-item">
                             <h3 class="accordion-header" id="headingOne">
                                 <button class="accordion-button" type="button" data-bs-toggle="collapse"
@@ -497,18 +1006,15 @@
                             <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
                                 data-bs-parent="#faqAccordion">
                                 <div class="accordion-body">
-                                    Puadh Punjabi Podcast is consistently ranked as
-                                    the top Punjabi podcast for authentic entrepreneur
-                                    stories and cultural content. With 29+ episodes
-                                    featuring real interviews with Punjab's business
-                                    leaders, innovators, and thought leaders, it offers
-                                    unscripted conversations in the authentic Puadhi
-                                    dialect that you won't find elsewhere.
+                                    Puadh Punjabi Podcast is consistently ranked as the top Punjabi podcast for
+                                    authentic entrepreneur stories and cultural content. With new unscripted interviews
+                                    released weekly, featuring real conversations with Punjab's business leaders,
+                                    innovators, and thought leaders, it offers unscripted conversations in the authentic
+                                    Puadhi dialect that you won't find elsewhere.
                                 </div>
                             </div>
                         </div>
 
-                        <!-- FAQ 2 -->
                         <div class="accordion-item">
                             <h3 class="accordion-header" id="headingTwo">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
@@ -519,32 +1025,18 @@
                             <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
                                 data-bs-parent="#faqAccordion">
                                 <div class="accordion-body">
-                                    Puadh Punjabi Podcast is available free on all
-                                    major platforms:
+                                    Puadh Punjabi Podcast is available free on all major platforms:
                                     <ul>
-                                        <li>
-                                            <strong>Spotify:</strong>
-                                            Search "Puadh Punjabi Podcast"
+                                        <li><strong>Spotify:</strong> Search "Puadh Punjabi Podcast"</li>
+                                        <li><strong>YouTube:</strong> Watch full video episodes at @puadhpunjabipodcast
                                         </li>
-                                        <li>
-                                            <strong>YouTube:</strong>
-                                            Watch full video episodes at
-                                            @puadhpunjabipodcast
-                                        </li>
-                                        <li>
-                                            <strong>Apple Podcasts:</strong>
-                                            Download for offline listening
-                                        </li>
-                                        <li>
-                                            <strong>Website:</strong>
-                                            Listen directly on puadhpunjabipodcast.com
-                                        </li>
+                                        <li><strong>Apple Podcasts:</strong> Download for offline listening</li>
+                                        <li><strong>Website:</strong> Listen directly on puadhpunjabipodcast.com</li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
 
-                        <!-- FAQ 3 -->
                         <div class="accordion-item">
                             <h3 class="accordion-header" id="headingThree">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
@@ -555,17 +1047,14 @@
                             <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
                                 data-bs-parent="#faqAccordion">
                                 <div class="accordion-body">
-                                    We use the authentic <strong>Puadhi dialect</strong>.
-                                    Puadhi is a unique regional variation of Punjabi
-                                    spoken in the Puadh region (Chandigarh, Mohali,
-                                    Ropar, Patiala, and Ambala). Unlike Majhi or Malwai,
-                                    Puadhi has distinct vocabulary and tone that we are
-                                    proud to preserve.
+                                    We use the authentic <strong>Puadhi dialect</strong>. Puadhi is a unique regional
+                                    variation of Punjabi spoken in the Puadh region (Chandigarh, Mohali, Ropar, Patiala,
+                                    and Ambala). Unlike Majhi or Malwai, Puadhi has distinct vocabulary and tone that we
+                                    are proud to preserve.
                                 </div>
                             </div>
                         </div>
 
-                        <!-- FAQ 4 -->
                         <div class="accordion-item">
                             <h3 class="accordion-header" id="headingFour">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
@@ -576,17 +1065,13 @@
                             <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
                                 data-bs-parent="#faqAccordion">
                                 <div class="accordion-body">
-                                    The podcast is hosted by
-                                    <strong>Gurinder Singh Dhanoa</strong> from
-                                    Chandigarh, Punjab. Gurinder is passionate about
-                                    documenting authentic stories from the Puadh region
-                                    and preserving the Puadhi dialect through unscripted
-                                    conversations.
+                                    The podcast is hosted by <strong>Gurinder Singh Dhanoa</strong> from Chandigarh,
+                                    Punjab. Gurinder is passionate about documenting authentic stories from the Puadh
+                                    region and preserving the Puadhi dialect through unscripted conversations.
                                 </div>
                             </div>
                         </div>
 
-                        <!-- FAQ 5 -->
                         <div class="accordion-item">
                             <h3 class="accordion-header" id="headingFive">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
@@ -597,18 +1082,13 @@
                             <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
                                 data-bs-parent="#faqAccordion">
                                 <div class="accordion-body">
-                                    Absolutely! We love community suggestions. You can
-                                    contact us via WhatsApp (+918360769451), Instagram
-                                    (@puadhpunjabipodcast), or use the
-                                    <a href="/contact" class="gold-link">
-                                        contact page to submit your suggestion
-                                    </a>
-                                    on our website.
+                                    Absolutely! We love community suggestions. You can contact us via WhatsApp
+                                    (+918360769451), Instagram (@puadhpunjabipodcast), or use the <a href="/contact"
+                                        class="gold-link">contact page to submit your suggestion</a>.
                                 </div>
                             </div>
                         </div>
 
-                        <!-- FAQ 6 -->
                         <div class="accordion-item">
                             <h3 class="accordion-header" id="headingSix">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
@@ -619,16 +1099,13 @@
                             <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
                                 data-bs-parent="#faqAccordion">
                                 <div class="accordion-body">
-                                    Puadh is a historic region of Punjab (India)
-                                    extending from the Satluj river to the Ghaggar
-                                    river. It includes parts of Mohali, Ropar, Patiala,
-                                    and Ambala. Our podcast highlights the unique
-                                    dialect and culture of this specific area.
+                                    Puadh is a historic region of Punjab (India) extending from the Satluj river to the
+                                    Ghaggar river. It includes parts of Mohali, Ropar, Patiala, and Ambala. Our podcast
+                                    highlights the unique dialect and culture of this specific area.
                                 </div>
                             </div>
                         </div>
 
-                        <!-- FAQ 7 -->
                         <div class="accordion-item">
                             <h3 class="accordion-header" id="headingSeven">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
@@ -639,17 +1116,14 @@
                             <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven"
                                 data-bs-parent="#faqAccordion">
                                 <div class="accordion-body">
-                                    Yes, all episodes are free to download on Spotify
-                                    Premium and Apple Podcasts for offline listening.
-                                    You can also save individual YouTube videos offline
-                                    using YouTube Premium. The full episode archive is
-                                    always available at puadhpunjabipodcast.com at no
-                                    cost.
+                                    Yes, all episodes are free to download on Spotify Premium and Apple Podcasts for
+                                    offline listening. You can also save individual YouTube videos offline using YouTube
+                                    Premium. The full episode archive is always available at puadhpunjabipodcast.com at
+                                    no cost.
                                 </div>
                             </div>
                         </div>
 
-                        <!-- FAQ 8 -->
                         <div class="accordion-item">
                             <h3 class="accordion-header" id="headingEight">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
@@ -660,9 +1134,66 @@
                             <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight"
                                 data-bs-parent="#faqAccordion">
                                 <div class="accordion-body">
-                                    We have 29+ episodes covering IT careers, NRI
-                                    lifestyle, Puadhi culture, desi comedy, farming,
-                                    and local history from the Puadh region of Punjab.
+                                    We release new unscripted interviews every week covering IT careers, NRI lifestyle,
+                                    Puadhi culture, desi comedy, farming, and local history from the Puadh region of
+                                    Punjab.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- LOCAL SEO FAQs -->
+                        <div class="accordion-item">
+                            <h3 class="accordion-header" id="headingNine">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                                    Is there a podcast studio in Mohali?
+                                </button>
+                            </h3>
+                            <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine"
+                                data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Yes! <strong>Puadh Podcast Studio</strong> is a professional podcast recording
+                                    studio in Mohali Phase 8B, Sector 74. Canon M3 to Sony FX3 cameras, full editing, 6
+                                    Reels, professional anchor. Starting ₹2,000/hr. Book via WhatsApp at <a
+                                        href="tel:+918360769451" class="gold-link">+91 83607 69451</a> or <a
+                                        href="/studio" class="gold-link">reserve online</a>.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h3 class="accordion-header" id="headingTen">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+                                    Is there a podcast studio near Kharar or Landran?
+                                </button>
+                            </h3>
+                            <div id="collapseTen" class="accordion-collapse collapse" aria-labelledby="headingTen"
+                                data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Yes! <a href="/studio" class="gold-link">Puadh Podcast Studio</a> in Phase 8B,
+                                    Mohali is just <strong>15 minutes from Kharar</strong> and <strong>15 minutes from
+                                        Landran</strong>. Professional video recording, editing, and Reels starting from
+                                    ₹2,000/hr. Book at +91 83607 69451.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h3 class="accordion-header" id="headingEleven">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseEleven" aria-expanded="false"
+                                    aria-controls="collapseEleven">
+                                    Can I record a podcast in Zirakpur or Kurali?
+                                </button>
+                            </h3>
+                            <div id="collapseEleven" class="accordion-collapse collapse" aria-labelledby="headingEleven"
+                                data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Yes! <a href="/studio" class="gold-link">Puadh Podcast Studio</a> in Phase 8B,
+                                    Mohali is <strong>20 minutes from Zirakpur</strong> and <strong>25 minutes from
+                                        Kurali</strong>. Professional recording with cameras, editing, and Reels
+                                    starting from ₹2,000/hr. WhatsApp us at +91 83607 69451.
                                 </div>
                             </div>
                         </div>
@@ -672,98 +1203,74 @@
             </div>
         </div>
     </section>
-    <!-- ===================== -->
-    <!-- EXPLORE MORE SECTION  -->
-    <!-- ===================== -->
+
+    <!-- ═══════════════════════════════════════════════════════════
+         EXPLORE MORE SECTION
+         ═══════════════════════════════════════════════════════════ -->
     <section class="explore-section" aria-label="Explore More Articles">
         <div class="container">
             <div class="text-center mb-5">
                 <p class="section-label">Explore More</p>
-                <h2 class="section-heading">
-                    Articles on Punjabi Culture and Entrepreneurship
-                </h2>
-                <p class="section-subtext">
-                    Deep dive into the stories and insights from our podcast episodes
-                </p>
+                <h2 class="section-heading">Articles on Punjabi Culture and Entrepreneurship</h2>
+                <p class="section-subtext">Deep dive into the stories and insights from our podcast episodes</p>
             </div>
-
             <div class="row g-4 justify-content-center">
-                <!-- Article Card 1 -->
                 <div class="col-lg-4 col-md-6">
                     <a href="/blog/what-is-puadhi-dialect" class="explore-card"
                         aria-label="Read article about the Puadhi dialect">
                         <span class="explore-icon" aria-hidden="true">📖</span>
                         <h3>What is Puadhi Dialect?</h3>
-                        <p>
-                            Learn about the authentic Puadhi dialect and its
-                            cultural significance in the Puadh region.
+                        <p>Learn about the authentic Puadhi dialect and its cultural significance in the Puadh region.
                         </p>
                     </a>
                 </div>
-
-                <!-- Article Card 2 -->
                 <div class="col-lg-4 col-md-6">
                     <a href="/blog/best-punjabi-entrepreneurs" class="explore-card"
                         aria-label="Read article about top Punjabi entrepreneurs">
                         <span class="explore-icon" aria-hidden="true">🏆</span>
                         <h3>Top Punjabi Entrepreneurs</h3>
-                        <p>
-                            Discover the success stories and business insights
-                            from our featured entrepreneur episodes.
+                        <p>Discover the success stories and business insights from our featured entrepreneur episodes.
                         </p>
                     </a>
                 </div>
-
-                <!-- Article Card 3 -->
                 <div class="col-lg-4 col-md-6">
-                    <a href="/blog" class="explore-card" aria-label="Browse all blog articles on Punjabi culture">
+                    <a href="/blog" class="explore-card" aria-label="Browse all blog articles">
                         <span class="explore-icon" aria-hidden="true">📚</span>
                         <h3>Browse All Articles</h3>
-                        <p>
-                            Explore all insights on Punjabi culture,
-                            entrepreneurship, and the Puadhi dialect.
-                        </p>
+                        <p>Explore all insights on Punjabi culture, entrepreneurship, and the Puadhi dialect.</p>
                     </a>
                 </div>
             </div>
         </div>
     </section>
 
-
-    <!-- ===================== -->
-    <!-- PLATFORMS SECTION     -->
-    <!-- ===================== -->
+    <!-- ═══════════════════════════════════════════════════════════
+         PLATFORMS SECTION
+         ═══════════════════════════════════════════════════════════ -->
     <section class="platforms-section" aria-label="Listen on Popular Platforms">
         <div class="container">
             <div class="text-center mb-4">
                 <h2 class="platforms-heading">Available Everywhere</h2>
             </div>
-
             <div class="row g-3 justify-content-center">
-                <!-- Spotify -->
                 <div class="col-6 col-lg-3">
                     <a href="https://open.spotify.com/show/4S1Lqp4l1Huu1MZJuKibcV" class="platform-btn platform-spotify"
-                        target="_blank" rel="noopener noreferrer"
-                        aria-label="Listen to Puadh Punjabi Podcast on Spotify">
+                        target="_blank" rel="noopener noreferrer" aria-label="Listen on Spotify">
                         <i class="fab fa-spotify" aria-hidden="true"></i>
                         <span class="platform-name">Listen on Spotify</span>
                     </a>
                 </div>
-
-                <!-- Apple Podcasts -->
                 <div class="col-6 col-lg-3">
                     <a href="https://podcasts.apple.com/in/podcast/punjabi-podcast/id1702326740"
                         class="platform-btn platform-apple" target="_blank" rel="noopener noreferrer"
-                        aria-label="Listen to Puadh Punjabi Podcast on Apple Podcasts">
+                        aria-label="Listen on Apple Podcasts">
                         <i class="fab fa-apple" aria-hidden="true"></i>
                         <span class="platform-name">Apple Podcasts</span>
                     </a>
                 </div>
-
-                <!-- YouTube -->
                 <div class="col-6 col-lg-3">
                     <a href="https://www.youtube.com/@puadhpunjabipodcast" class="platform-btn platform-youtube"
-                        target="_blank" rel="noopener noreferrer" aria-label="Watch Puadh Punjabi Podcast on YouTube">
+                        target="_blank" rel="noopener noreferrer" aria-label="Watch on YouTube">
                         <i class="fab fa-youtube" aria-hidden="true"></i>
                         <span class="platform-name">Watch on YouTube</span>
                     </a>
@@ -772,10 +1279,9 @@
         </div>
     </section>
 
-
-    <!-- ===================== -->
-    <!-- BLOG CTA SECTION      -->
-    <!-- ===================== -->
+    <!-- ═══════════════════════════════════════════════════════════
+         BLOG CTA SECTION
+         ═══════════════════════════════════════════════════════════ -->
     <section class="blog-cta-section" aria-label="Visit Our Blog">
         <div class="container">
             <div class="blog-cta-box">
@@ -786,46 +1292,57 @@
                     entrepreneurship, and the Puadhi dialect.
                 </p>
                 <a href="/blog" class="btn-cta" aria-label="Explore all blog articles">
-                    Explore Our Blog
-                    <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                    Explore Our Blog <i class="fas fa-arrow-right" aria-hidden="true"></i>
                 </a>
             </div>
         </div>
     </section>
 
+    <!-- ═══════════════════════════════════════════════════════════
+         STICKY BOTTOM CTA BAR
+         ═══════════════════════════════════════════════════════════ -->
+    <div class="sticky-cta-bar" id="stickyCta" aria-label="Book studio quick action">
+        <div class="container">
+            <div class="sticky-cta-inner">
+                <p class="sticky-cta-text">🎙️ <span>Podcast Studio in Mohali</span> — from ₹2,000/hr</p>
+                <div class="sticky-cta-buttons">
+                    <a href="https://wa.me/918360769451?text=Hi!%20I%20want%20to%20book%20the%20podcast%20studio"
+                        class="btn-sticky-wa" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-whatsapp"></i> WhatsApp
+                    </a>
+                    <a href="/studio" class="btn-sticky-studio">
+                        <i class="fas fa-calendar-check"></i> Book Studio
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
     <footer class="footer-main pt-4 pb-2">
         <div class="container-fluid footer-padding">
-
             <div class="row justify-content-between text-center text-lg-start">
 
                 <div class="col-lg-3 col-md-6 mb-5">
-
                     <div class="d-flex align-items-center justify-content-center justify-content-lg-start gap-3 mb-3">
-                        <img src="/img/logo.webp" alt="Puadh Punjabi Podcast Studio branding" width="55" height="55"
+                        <img src="/img/logo.webp" alt="Puadh Podcast Logo" width="55" height="55"
                             class="rounded-circle footer-logo-img" loading="lazy" />
                         <p class="h5 m-0 text-white fw-bold">Puadh Podcast</p>
                     </div>
-
                     <p class="small footer-text-muted mb-4 mx-auto mx-lg-0" style="max-width: 320px;">
-                        The #1 Podcast representing the Puadh region.
-                        Unfiltered, Unscripted, Unapologetic.
+                        The #1 Podcast representing the Puadh region. Unfiltered, Unscripted, Unapologetic.
                     </p>
-
                     <div class="small footer-text-muted mx-auto mx-lg-0" style="max-width: 320px;">
                         <div class="d-flex justify-content-center justify-content-lg-start mb-2">
                             <i class="fas fa-map-marker-alt footer-icon mt-1 me-3"></i>
                             <a href="https://maps.google.com/?q=Plot+F-298,+R%26R+Tower,+Phase+8B,+Ind.+Area,+Sector+74,+Mohali,+Punjab+160055"
                                 target="_blank" rel="noopener noreferrer" class="footer-contact-link text-start">
-                                Plot F-298, R&R Tower, Phase 8B,<br>
-                                Sector 74, Mohali, Punjab 160055
+                                Plot F-298, R&R Tower, Phase 8B,<br> Sector 74, Mohali, Punjab 160055
                             </a>
                         </div>
-
                         <div class="d-flex justify-content-center justify-content-lg-start">
                             <i class="fas fa-phone-alt footer-icon mt-1 me-3"></i>
-                            <a href="tel:+918360769451" class="footer-contact-link">
-                                +91 83607 69451
-                            </a>
+                            <a href="tel:+918360769451" class="footer-contact-link">+91 83607 69451</a>
                         </div>
                     </div>
                 </div>
@@ -835,7 +1352,7 @@
                     <ul class="list-unstyled footer-link-list">
                         <li><a href="/episodes">Episodes</a></li>
                         <li><a href="/clips">Clips</a></li>
-                        <li><a href="/blog/">Blog</a></li>
+                        <li><a href="/blog">Blog</a></li>
                         <li><a href="/about-us">About Us</a></li>
                         <li><a href="/gallery">Gallery</a></li>
                         <li><a href="/puadh-region">Puadh Region</a></li>
@@ -843,99 +1360,165 @@
                 </div>
 
                 <div class="col-lg-2 col-md-3 col-6 mb-5">
-
                     <p class="footer-section-title">Studio</p>
                     <ul class="list-unstyled footer-link-list mb-4">
-                        <li><a href="/studio/">Studio Services</a></li>
+                        <li><a href="/studio">Studio Services</a></li>
                         <li><a href="/contact">Contact Us</a></li>
                     </ul>
-
                     <p class="footer-section-title">Legal</p>
                     <ul class="list-unstyled footer-link-list">
-                        <li><a href="/privacy/">Privacy Policy</a></li>
-                        <li><a href="/terms/">Terms of Use</a></li>
+                        <li><a href="/privacy">Privacy Policy</a></li>
+                        <li><a href="/terms">Terms of Use</a></li>
                     </ul>
                 </div>
 
                 <div class="col-lg-2 col-md-4 col-6 mb-5">
                     <p class="footer-section-title">Popular</p>
                     <ul class="list-unstyled footer-link-list">
-                        <li><a href="/best-punjabi-podcast/">Best Punjabi Podcast</a></li>
-                        <li><a href="/chandigarh-podcast/">Chandigarh Podcast</a></li>
-                        <li><a href="/punjab-podcast/">Punjab Podcast</a></li>
-                        <li><a href="/punjabi-entrepreneur-podcast/">Entrepreneur Podcast</a></li>
-                        <li><a href="/india-podcasts/">India Podcasts</a></li>
+                        <li><a href="/best-punjabi-podcast">Best Punjabi Podcast</a></li>
+                        <li><a href="/chandigarh-podcast">Chandigarh Podcast</a></li>
+                        <li><a href="/punjab-podcast">Punjab Podcast</a></li>
+                        <li><a href="/punjabi-entrepreneur-podcast">Entrepreneur Podcast</a></li>
+                        <li><a href="/india-podcasts">India Podcasts</a></li>
                     </ul>
                 </div>
 
                 <div class="col-lg-3 col-md-8 mb-4">
-
                     <p class="footer-section-title">Follow Us</p>
-
                     <div
                         class="social-icons d-flex flex-wrap justify-content-center justify-content-lg-start gap-2 mb-4">
                         <a href="https://www.instagram.com/puadhpunjabipodcast/" aria-label="Follow us on Instagram"
-                            target="_blank" rel="noopener noreferrer">
-                            <i class="fab fa-instagram"></i>
-                        </a>
+                            target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
                         <a href="https://wa.me/918360769451" aria-label="Contact via WhatsApp" target="_blank"
-                            rel="noopener noreferrer">
-                            <i class="fab fa-whatsapp"></i>
-                        </a>
+                            rel="noopener noreferrer"><i class="fab fa-whatsapp"></i></a>
                         <a href="https://www.youtube.com/@puadhpunjabipodcast" aria-label="Subscribe on YouTube"
-                            target="_blank" rel="noopener noreferrer">
-                            <i class="fab fa-youtube"></i>
-                        </a>
+                            target="_blank" rel="noopener noreferrer"><i class="fab fa-youtube"></i></a>
                         <a href="https://www.facebook.com/profile.php?id=61573903336128" aria-label="Follow on Facebook"
-                            target="_blank" rel="noopener noreferrer">
-                            <i class="fab fa-facebook"></i>
-                        </a>
+                            target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook"></i></a>
                         <a href="https://x.com/PuadhP37620" aria-label="Follow on X (Twitter)" target="_blank"
-                            rel="noopener noreferrer">
-                            <i class="fab fa-x-twitter"></i>
-                        </a>
+                            rel="noopener noreferrer"><i class="fab fa-x-twitter"></i></a>
                         <a href="https://open.spotify.com/show/4S1Lqp4l1Huu1MZJuKibcV" aria-label="Listen on Spotify"
-                            target="_blank" rel="noopener noreferrer">
-                            <i class="fab fa-spotify"></i>
-                        </a>
-                        <a href="/rss.xml" aria-label="RSS Feed" target="_blank" rel="noopener noreferrer">
-                            <i class="fas fa-rss"></i>
-                        </a>
+                            target="_blank" rel="noopener noreferrer"><i class="fab fa-spotify"></i></a>
+                        <a href="/rss.xml" aria-label="RSS Feed" target="_blank" rel="noopener noreferrer"><i
+                                class="fas fa-rss"></i></a>
                     </div>
-
                     <p class="footer-section-title-sm">Never Miss an Episode</p>
                     <p class="small footer-text-muted mb-3">
                         Fresh episodes, guest updates & exclusive Puadhi stories — straight to your inbox.
                     </p>
-
                     <form class="footer-subscribe-form mx-auto mx-lg-0" style="max-width: 380px;"
                         onsubmit="return false;">
                         <label for="footer-email" class="visually-hidden">Email Address</label>
                         <div class="input-group">
                             <input id="footer-email" type="email" class="form-control footer-input"
                                 placeholder="Enter your email" aria-label="Email Address" required />
-                            <button class="btn btn-footer-subscribe fw-bold px-4" type="submit">
-                                Subscribe
-                            </button>
+                            <button class="btn btn-footer-subscribe fw-bold px-4" type="submit">Subscribe</button>
                         </div>
                     </form>
-
                 </div>
             </div>
 
             <hr class="footer-divider" />
-
             <div class="footer-bottom text-center py-3">
                 <p class="small footer-text-muted mb-0">
                     &copy;
-                    <script>document.write(new Date().getFullYear())</script>
-                    Puadh Punjabi Podcast Studio. All rights reserved.
+                    <script>document.write(new Date().getFullYear())</script> Puadh Punjabi Podcast Studio. All rights
+                    reserved.
                 </p>
             </div>
-
         </div>
     </footer>
 
+    <script>
+        // ═══════════════════════════════════════════════════════════════
+        // HOMEPAGE: Load top 3 episodes by views from JSON
+        // ═══════════════════════════════════════════════════════════════
+        async function loadHomeEpisodes() {
+            const grid = document.getElementById('homeEpisodeGrid');
+            if (!grid) return;
+            try {
+                const response = await fetch('/data/episodes.json');
+                const episodes = await response.json();
+                const top3 = [...episodes]
+                    .sort((a, b) => (b.views || 0) - (a.views || 0))
+                    .slice(0, 3);
+                grid.innerHTML = '';
+                top3.forEach((ep, index) => {
+                    const dateObj = new Date(ep.date + 'T00:00:00');
+                    const formattedDate = dateObj.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
+                    const formattedViews = formatHomeViews(ep.views);
+                    const tagClass = index === 0 ? 'ep-tag-trending' : 'ep-tag-default';
+                    const tagLabel = index === 0 ? '🔥 Trending' : `Episode ${ep.id.replace('Ep ', '')}`;
+                    const thumbSrc = `/img/thumbnails/ep${ep.id.replace('Ep ', '')}.jpg`;
+                    grid.innerHTML += `
+          <div class="col-lg-4 col-md-6">
+            <article class="ep-grid-card">
+              <div class="ep-thumb-wrap">
+                <img src="${thumbSrc}" alt="${ep.title} thumbnail"
+                  onerror="this.src='https://img.youtube.com/vi/${ep.videoId}/hqdefault.jpg'"
+                  width="480" height="270" loading="lazy" />
+                <button class="ep-play-btn" aria-label="Play ${ep.id} video"
+                  data-src="https://www.youtube-nocookie.com/embed/${ep.videoId}?rel=0&modestbranding=1&autoplay=1">
+                  <i class="fas fa-play" aria-hidden="true"></i>
+                </button>
+              </div>
+              <div class="ep-card-body">
+                <span class="ep-tag ${tagClass}">${tagLabel}</span>
+                <h3 class="ep-title">${ep.title}</h3>
+                <p class="ep-desc">${ep.desc}</p>
+                <div class="ep-footer">
+                  <a href="${ep.link}" class="btn-bookmark" aria-label="Listen to ${ep.id} on Spotify">
+                    <i class="fa fa-bookmark" aria-hidden="true"></i> Read More
+                  </a>
+                  <div class="ep-meta-inline">
+                    <span class="ep-views"><i class="fas fa-eye"></i> ${formattedViews}</span>
+                    <span><i class="far fa-clock"></i> ${ep.time}</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>`;
+                });
+                attachPlayHandlers();
+            } catch (error) {
+                console.error('Error loading homepage episodes:', error);
+                grid.innerHTML = '<p class="text-danger text-center py-4">Could not load episodes.</p>';
+            }
+        }
+
+        function formatHomeViews(views) {
+            if (!views) return '0';
+            if (views >= 1000000) return (views / 1000000).toFixed(1).replace(/\.0$/, '') + 'M';
+            if (views >= 1000) return (views / 1000).toFixed(1).replace(/\.0$/, '') + 'K';
+            return views.toString();
+        }
+
+        function attachPlayHandlers() {
+            document.querySelectorAll('.ep-play-btn').forEach(btn => {
+                btn.addEventListener('click', function () {
+                    const wrap = this.closest('.ep-thumb-wrap');
+                    const src = this.getAttribute('data-src');
+                    if (!src || !wrap) return;
+                    wrap.innerHTML = `<div style="position:absolute;top:0;left:0;width:100%;height:100%;"><iframe src="${src}" title="Video player" style="width:100%;height:100%;border:none;" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>`;
+                });
+            });
+        }
+
+        // ═══════════════════════════════════════════════════════════════
+        // STICKY CTA BAR: Show after scrolling 600px
+        // ═══════════════════════════════════════════════════════════════
+        window.addEventListener('scroll', function () {
+            const bar = document.getElementById('stickyCta');
+            if (!bar) return;
+            if (window.scrollY > 600) {
+                bar.classList.add('visible');
+            } else {
+                bar.classList.remove('visible');
+            }
+        });
+
+        loadHomeEpisodes();
+    </script>
     <script src="/js/firebase-init.js" type="module"></script>
     <script src="/js/Javascript.js" type="module"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>

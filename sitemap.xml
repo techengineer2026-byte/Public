@@ -31,77 +31,50 @@
         <changefreq>yearly</changefreq>
         <priority>0.70</priority>
     </url>
-
-    <!-- SEO LANDING PAGES (The Money Pages) -->
     <url>
-        <loc>https://puadhpunjabipodcast.com/best-punjabi-podcast</loc>
-        <lastmod>2026-03-25</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.90</priority>
-    </url>
-    <url>
-        <loc>https://puadhpunjabipodcast.com/punjabi-entrepreneur-podcast</loc>
-        <lastmod>2026-03-25</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.90</priority>
-    </url>
-    <url>
-        <loc>https://puadhpunjabipodcast.com/chandigarh-podcast</loc>
+        <loc>https://puadhpunjabipodcast.com/be-a-guest</loc>
         <lastmod>2026-03-25</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.80</priority>
     </url>
     <url>
-        <loc>https://puadhpunjabipodcast.com/puadh-region</loc>
+        <loc>https://puadhpunjabipodcast.com/gallery</loc>
         <lastmod>2026-03-25</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.80</priority>
-    </url>
-    <url>
-        <loc>https://puadhpunjabipodcast.com/india-podcasts</loc>
-        <lastmod>2026-03-25</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.80</priority>
-    </url>
-    <url>
-        <loc>https://puadhpunjabipodcast.com/punjab-podcast</loc>
-        <lastmod>2026-03-25</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.80</priority>
-    </url>
-    <url>
-        <loc>https://puadhpunjabipodcast.com/puadh-podcast</loc>
-        <lastmod>2026-03-25</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.80</priority>
+        <priority>0.60</priority>
     </url>
 
-    <!-- BLOG -->
-    <url>
-        <loc>https://puadhpunjabipodcast.com/blog</loc>
-        <lastmod>2026-03-25</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.85</priority>
-    </url>
-    <url>
-        <loc>https://puadhpunjabipodcast.com/blog/best-punjabi-entrepreneurs</loc>
-        <lastmod>2026-03-25</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.80</priority>
-    </url>
-    <url>
-        <loc>https://puadhpunjabipodcast.com/blog/what-is-puadhi-dialect</loc>
-        <lastmod>2026-03-25</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.80</priority>
-    </url>
-    <url>
-      <loc>https://puadhpunjabipodcast.com/blog/punjabi-entrepreneurs-2026</loc>
-      <lastmod>2026-03-18</lastmod>
-      <changefreq>monthly</changefreq>
-      <priority>0.7</priority>
-    </url>
-    <!-- EPISODES (1-29) -->
+    <!-- SEO LANDING PAGES -->
+    <url><loc>https://puadhpunjabipodcast.com/best-punjabi-podcast</loc><priority>0.90</priority></url>
+    <url><loc>https://puadhpunjabipodcast.com/punjabi-entrepreneur-podcast</loc><priority>0.90</priority></url>
+    <url><loc>https://puadhpunjabipodcast.com/chandigarh-podcast</loc><priority>0.85</priority></url>
+    <url><loc>https://puadhpunjabipodcast.com/mohali-podcast</loc><priority>0.85</priority></url>
+    <url><loc>https://puadhpunjabipodcast.com/punjab-podcast</loc><priority>0.80</priority></url>
+    <url><loc>https://puadhpunjabipodcast.com/puadh-region</loc><priority>0.80</priority></url>
+    <url><loc>https://puadhpunjabipodcast.com/puadh-podcast</loc><priority>0.80</priority></url>
+    <url><loc>https://puadhpunjabipodcast.com/india-podcasts</loc><priority>0.70</priority></url>
+
+    <!-- PODCAST STUDIO SERVICES (New from Directory) -->
+    <url><loc>https://puadhpunjabipodcast.com/studio</loc><priority>0.90</priority></url>
+    <url><loc>https://puadhpunjabipodcast.com/studio/packages</loc><priority>0.85</priority></url>
+    <url><loc>https://puadhpunjabipodcast.com/studio/equipment</loc><priority>0.80</priority></url>
+    <url><loc>https://puadhpunjabipodcast.com/studio/podcast-studio-space</loc><priority>0.85</priority></url>
+    <url><loc>https://puadhpunjabipodcast.com/studio/podcast-shooting</loc><priority>0.80</priority></url>
+    <url><loc>https://puadhpunjabipodcast.com/studio/podcast-editing</loc><priority>0.80</priority></url>
+    <url><loc>https://puadhpunjabipodcast.com/studio/podcast-anchor</loc><priority>0.75</priority></url>
+    <url><loc>https://puadhpunjabipodcast.com/studio/podcast-scripting</loc><priority>0.75</priority></url>
+
+    <!-- BLOG POSTS -->
+    <url><loc>https://puadhpunjabipodcast.com/blog</loc><priority>0.85</priority></url>
+    <url><loc>https://puadhpunjabipodcast.com/blog/best-punjabi-podcasts-2026</loc><priority>0.80</priority></url>
+    <url><loc>https://puadhpunjabipodcast.com/blog/punjabi-entrepreneurs-2026</loc><priority>0.80</priority></url>
+    <url><loc>https://puadhpunjabipodcast.com/blog/best-punjabi-entrepreneurs</loc><priority>0.80</priority></url>
+    <url><loc>https://puadhpunjabipodcast.com/blog/ai-is-coming-for-your-job</loc><priority>0.80</priority></url>
+    <url><loc>https://puadhpunjabipodcast.com/blog/10-things-nris-wish-they-knew-before-moving-abroad</loc><priority>0.80</priority></url>
+    <url><loc>https://puadhpunjabipodcast.com/blog/what-is-puadhi-dialect</loc><priority>0.80</priority></url>
+    <url><loc>https://puadhpunjabipodcast.com/blog/famous-puadhi-villages-stories-from-our-roots</loc><priority>0.80</priority></url>
+
+    <!-- EPISODES (1-30) -->
     <url><loc>https://puadhpunjabipodcast.com/episode/ep1-navneet-sharma</loc><priority>0.7</priority></url>
     <url><loc>https://puadhpunjabipodcast.com/episode/ep2-raman-sharma</loc><priority>0.7</priority></url>
     <url><loc>https://puadhpunjabipodcast.com/episode/ep3-mr-bhatia</loc><priority>0.7</priority></url>
@@ -131,4 +104,9 @@
     <url><loc>https://puadhpunjabipodcast.com/episode/ep27-rich-mindset</loc><priority>0.7</priority></url>
     <url><loc>https://puadhpunjabipodcast.com/episode/ep28-vikram-airbnb-chubara-business-cyber-scam</loc><priority>0.7</priority></url>
     <url><loc>https://puadhpunjabipodcast.com/episode/ep29-seerat-child-actress-interview</loc><priority>0.7</priority></url>
+    <url><loc>https://puadhpunjabipodcast.com/episode/ep30-ayurvedic-health-secrets-for-daily-life--dr-pushp-sharman--puadh-punjabi-podcast-ayurvedic</loc><priority>0.8</priority></url>
+
+    <!-- LEGAL -->
+    <url><loc>https://puadhpunjabipodcast.com/privacy</loc><priority>0.3</priority></url>
+    <url><loc>https://puadhpunjabipodcast.com/terms</loc><priority>0.3</priority></url>
 </urlset>
