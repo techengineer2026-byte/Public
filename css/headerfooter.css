@@ -489,7 +489,7 @@
 }
 
 /* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
-/* 5. SECTION TITLES — VISUAL HIERARCHY                        */
+/* 5. SECTION TITLES — ACCORDION READY                        */
 /* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
 .footer-section-title {
     color: #fff;
@@ -500,6 +500,8 @@
     margin-bottom: 1rem;
     position: relative;
     padding-bottom: 0.6rem;
+    margin-top: 0;
+    padding-top: 0;
 }
 
 .footer-section-title::after {
@@ -514,10 +516,35 @@
     border-radius: 2px;
 }
 
+/* Mobile: Make title clickable look */
+@media (max-width: 991px) {
+    .footer-section-title {
+        cursor: pointer;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+    }
+
+    .footer-section-title .chevron {
+        font-size: 0.65rem;
+        transition: transform 0.3s ease;
+    }
+
+    .footer-section-title[aria-expanded="true"] .chevron {
+        transform: rotate(180deg);
+    }
+}
+
 @media (min-width: 992px) {
     .footer-section-title::after {
         left: 0;
         transform: none;
+    }
+
+    /* Hide chevron on desktop */
+    .footer-section-title .chevron {
+        display: none;
     }
 }
 
@@ -529,8 +556,10 @@
     margin-bottom: 0.5rem;
 }
 
+
+
 /* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
-/* 6. FOOTER LINKS — GROUPED & STYLED                          */
+/* 6. FOOTER LINKS — 2-COLUMN GRID ON DESKTOP                 */
 /* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
 .footer-link-list {
     display: flex;
@@ -549,6 +578,14 @@
 .footer-link-list a:hover {
     color: #FFD700;
     padding-left: 5px;
+}
+
+/* MAGIC: Split long lists into 2 columns on Desktop so it's not tall */
+@media (min-width: 992px) {
+    .footer-link-list {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.4rem 1rem;
+    }
 }
 
 /* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
@@ -659,7 +696,7 @@
     color: #000;
     border: none;
     font-weight: 700;
-    font-size: 0.88rem;
+    font-size: 0.8rem !important;
     border-radius: 0 8px 8px 0 !important;
     padding: 0.6rem 1.2rem;
     transition: all 0.3s ease;
@@ -694,6 +731,9 @@
 @media (max-width: 767px) {
     .footer-link-list {
         align-items: center;
+        gap: 0.5rem;
+        padding-bottom: 0.5rem;
+        /* space when accordion opens */
     }
 
     .footer-link-list a:hover {
@@ -712,5 +752,194 @@
 @media (max-width: 991px) and (min-width: 768px) {
     .footer-link-list {
         gap: 0.45rem;
+    }
+}
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+/* INLINE FLOW FOOTER (Spotify Style)                         */
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+.footer-inline-links {
+    line-height: 2;
+}
+
+.footer-inline-label {
+    color: #fff;
+    font-weight: 700;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-right: 8px;
+}
+
+.footer-inline-links a {
+    color: #888;
+    text-decoration: none;
+    font-size: 0.88rem;
+    transition: color 0.25s ease;
+}
+
+.footer-inline-links a:hover {
+    color: #FFD700;
+}
+
+.footer-inline-links .dot {
+    color: #333;
+    margin: 0 4px;
+}
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+/* NEW: FOOTER SUB-TITLE (For Grouping)                      */
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+.footer-sub-title {
+    color: #FDB515;
+    /* Puadh Gold */
+    font-weight: 700;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 0.6rem;
+    margin-top: 0.5rem;
+}
+
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+/* NEW: PLATFORM BADGES (Spotify/YouTube)                    */
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+.platform-badge {
+    background: #1a1a1a;
+    color: #fff;
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-decoration: none;
+    border: 1px solid #333;
+    transition: all 0.3s ease;
+}
+
+.platform-badge:hover {
+    background: #FFD700;
+    color: #000;
+    border-color: #FFD700;
+}
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+/* NEW: FOOTER CTA BUTTON (Book Studio)                      */
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+.btn-footer-cta {
+    background: linear-gradient(135deg, #FFD700, #FFA500);
+    color: #000 !important;
+    font-weight: 700;
+    font-size: 0.9rem;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    transition: all 0.3s ease;
+    border: none;
+    box-shadow: 0 4px 15px rgba(255, 215, 0, 0.2);
+}
+
+.btn-footer-cta:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(255, 215, 0, 0.3);
+    background: linear-gradient(135deg, #FFE44D, #FF8C00);
+}
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+/* TWEAK: LINK LIST SPACING                                  */
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+.footer-link-list {
+    gap: 0.45rem;
+    /* Slightly tighter */
+}
+
+/* 1. Fix the Popular Grid */
+.popular-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    /* City column slightly wider */
+    gap: 15px;
+}
+
+/* 2. Responsive: Stack Popular grid on tablet/mobile so it doesn't squash */
+@media (max-width: 1200px) {
+    .popular-grid {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+}
+
+/* 1. Mobile Spacing Reset */
+@media (max-width: 767px) {
+    .footer-main {
+        text-align: left !important;
+        /* Forces left align for better scan-ability */
+        padding-bottom: 80px;
+        /* Space for sticky button */
+    }
+
+    .footer-padding {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .footer-section-title {
+        margin-top: 1.5rem;
+        font-size: 0.85rem;
+    }
+
+    .footer-link-list li {
+        margin-bottom: 8px;
+        /* Tighter links */
+    }
+
+    .footer-link-list a {
+        font-size: 0.8rem;
+    }
+
+    /* Grid fix for small screens */
+    .row-cols-2>* {
+        flex: 0 0 auto;
+        width: 50%;
+    }
+}
+
+/* 2. Sticky CTA Button Style */
+.mobile-sticky-cta {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    z-index: 9999;
+}
+
+.btn-sticky-main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background: linear-gradient(135deg, #FDB515, #f0c040);
+    color: #000;
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 1rem;
+    padding: 16px;
+    border-radius: 50px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4), 0 0 20px rgba(253, 181, 21, 0.3);
+    transition: transform 0.2s;
+}
+
+.btn-sticky-main:active {
+    transform: scale(0.95);
+}
+
+/* 3. Social Icons Mobile Tweak */
+@media (max-width: 767px) {
+    .social-icons {
+        justify-content: flex-start !important;
     }
 }
