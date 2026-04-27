@@ -1,2 +1,532 @@
-<!-- studio/equipment/index.html -->
+<!doctype html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- SEO / AEO STRATEGY -->
+    <title>Podcast Equipment List | Sony FX3 & Shure SM7B Studio Mohali</title>
+    <meta name="description"
+        content="Detailed technical specifications of Puadh Studio's equipment. Featuring Sony FX3 Cinema cameras, Shure SM7B mics, and Rodecaster Pro II. High-end podcasting in Mohali.">
+    <link rel="canonical" href="https://puadhpunjabipodcast.com/studio/equipment/" />
+
+    <!-- AEO / OG TAGS (For AI & Social Media) -->
+    <meta property="og:title" content="Puadh Studio: Professional Gear Specifications" />
+    <meta property="og:description" content="The technical setup behind Punjab's #1 quality podcast." />
+    <meta property="og:image" content="https://puadhpunjabipodcast.com/img/studio-camera.webp" />
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- BOOTSTRAP 5 & FONTS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;600;800&family=Poppins:wght@300;400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/css/headerfooter.css" />
+
+    <!-- ADVANCED BEAUTIFUL CSS -->
+    <style>
+        :root {
+            --gold: #d4a017;
+            --gold-dark: #b8860b;
+            --dark-bg: #050505;
+            --glass: rgba(255, 255, 255, 0.03);
+            --glass-border: rgba(255, 255, 255, 0.1);
+        }
+
+        body {
+            background-color: var(--dark-bg);
+            color: #e0e0e0;
+            font-family: 'Poppins', sans-serif;
+            overflow-x: hidden;
+        }
+
+        h1,
+        h2,
+        h3,
+        .outfit {
+            font-family: 'Outfit', sans-serif;
+        }
+
+        /* Visual Background Effects */
+        .bg-glow {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle at 50% 50%, rgba(212, 160, 23, 0.05) 0%, transparent 70%);
+            pointer-events: none;
+            z-index: -1;
+        }
+
+        /* Hero Styling */
+        .hero-gear {
+            padding: 160px 0 80px;
+            background: linear-gradient(to bottom, rgba(5, 5, 5, 0.8), var(--dark-bg)), url('/img/studio-hero.webp');
+            background-size: cover;
+            background-attachment: fixed;
+            text-align: center;
+        }
+
+        /* Glassmorphism Cards */
+        .gear-card {
+            background: var(--glass);
+            backdrop-filter: blur(10px);
+            border: 1px solid var(--glass-border);
+            border-radius: 24px;
+            padding: 40px;
+            height: 100%;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        .gear-card:hover {
+            border-color: var(--gold);
+            transform: translateY(-15px);
+            background: rgba(212, 160, 23, 0.02);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+        }
+
+        .icon-box {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, var(--gold), #f0c040);
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 25px;
+            font-size: 2rem;
+            color: #000;
+            box-shadow: 0 10px 20px rgba(212, 160, 23, 0.3);
+        }
+
+        .spec-item {
+            border-left: 2px solid var(--gold);
+            padding-left: 15px;
+            margin-bottom: 15px;
+        }
+
+        .spec-label {
+            font-size: 0.75rem;
+            color: var(--gold);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 700;
+        }
+
+        .spec-value {
+            font-size: 1.1rem;
+            color: #fff;
+            font-weight: 600;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .hero-gear h1 {
+                font-size: 2.5rem;
+            }
+
+            .gear-card {
+                padding: 25px;
+            }
+        }
+    </style>
+
+    <!-- AEO SCHEMA DATA (Helps AI understand your site) -->
+    <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "Puadh Studio Podcast Equipment Setup",
+    "description": "Professional cinema-grade podcasting equipment including Sony FX3, Shure SM7B, and Rodecaster Pro II.",
+    "brand": { "@type": "Brand", "name": "Puadh Studio" },
+    "image": "https://puadhpunjabipodcast.com/img/studio-camera.webp"
+  }
+  </script>
+</head>
+
+<body>
+    <div class="bg-glow"></div>
+
+    <!-- ═══════════════════════════════════════════════════════════════
+       HEADER (unchanged from your original)
+       ═══════════════════════════════════════════════════════════════ -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-glass fixed-top" id="mainNavbar">
+            <div class="container">
+
+                <!-- Logo -->
+                <a class="navbar-brand logo-container" href="/" aria-label="Puadh Podcast Homepage">
+                    <img src="/img/logo.webp" alt="Puadh Podcast Logo" width="60" height="60" />
+                </a>
+
+                <!-- Mobile CTA (visible only on mobile, before toggler) -->
+                <a href="/studio" class="btn-custom btn-book-studio btn-book-studio-mobile fw-bold px-3 d-lg-none me-2"
+                    aria-label="Book Podcast Studio">
+                    🎙️ Book Studio
+                </a>
+
+                <!-- Mobile Toggle -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Nav Content -->
+                <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+
+                    <!-- Center Menu -->
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0 text-center nav-menu-enhanced">
+                        <li class="nav-item">
+                            <a class="nav-link nav-link-animated" href="/episodes" data-page="episodes">Episodes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-link-animated text-puadh" href="/clips" data-page="clips">⚡ Clips</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-link-animated nav-link-priority fw-bold text-warning" href="/studio"
+                                data-page="studio">🎙️ Studio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-link-animated" href="/blog" data-page="blog">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-link-animated" href="/about-us" data-page="about-us">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-link-animated" href="/contact" data-page="contact">Contact Us</a>
+                        </li>
+                    </ul>
+
+                    <!-- Desktop CTA -->
+                    <div class="d-none d-lg-flex justify-content-center align-items-center mt-3 mt-lg-0">
+                        <a href="/studio" class="btn-custom btn-book-studio btn-book-studio-desktop fw-bold px-4 py-2"
+                            aria-label="Book Podcast Studio">
+                            🎙️ Book Studio
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero-gear">
+        <div class="container">
+            <span class="badge rounded-pill border border-warning text-warning px-3 py-2 mb-3">THE TECH STACK</span>
+            <h1 class="display-3 fw-800 text-white mb-4">Cinema-Grade <br><span
+                    style="color:var(--gold)">Hardware</span></h1>
+            <p class="lead text-secondary mx-auto" style="max-width: 700px;">We use the same equipment used by
+                world-class creators like Joe Rogan and Diary of a CEO to ensure your voice sounds like authority.</p>
+        </div>
+    </section>
+
+    <!-- EQUIPMENT GRID -->
+    <section class="pb-5">
+        <div class="container">
+            <div class="row g-4">
+
+                <!-- CAMERA -->
+                <div class="col-lg-6">
+                    <div class="gear-card">
+                        <div class="icon-box"><i class="fas fa-video"></i></div>
+                        <h2 class="h3 mb-4 outfit">Cinema Visuals</h2>
+                        <div class="row">
+                            <div class="col-md-6 spec-item">
+                                <div class="spec-label">Primary Camera</div>
+                                <div class="spec-value">Sony FX3 Cinema Line</div>
+                            </div>
+                            <div class="col-md-6 spec-item">
+                                <div class="spec-label">Secondary</div>
+                                <div class="spec-value">Sony FX30</div>
+                            </div>
+                            <div class="col-md-12 spec-item">
+                                <div class="spec-label">Resolution</div>
+                                <div class="spec-value">4K 10-bit 4:2:2 (Netflix Approved)</div>
+                            </div>
+                        </div>
+                        <p class="mt-3 small text-secondary">Our cameras provide the highest dynamic range, ensuring
+                            skin tones look natural and professional under studio lights.</p>
+                    </div>
+                </div>
+
+                <!-- AUDIO -->
+                <div class="col-lg-6">
+                    <div class="gear-card">
+                        <div class="icon-box"><i class="fas fa-microphone-lines"></i></div>
+                        <h2 class="h3 mb-4 outfit">Broadcast Audio</h2>
+                        <div class="row">
+                            <div class="col-md-6 spec-item">
+                                <div class="spec-label">Microphones</div>
+                                <div class="spec-value">Shure SM7B</div>
+                            </div>
+                            <div class="col-md-6 spec-item">
+                                <div class="spec-label">Processing</div>
+                                <div class="spec-value">Rodecaster Pro II</div>
+                            </div>
+                            <div class="col-md-12 spec-item">
+                                <div class="spec-label">Preamps</div>
+                                <div class="spec-value">Revolution Preamps™ (Ultra Low Noise)</div>
+                            </div>
+                        </div>
+                        <p class="mt-3 small text-secondary">The SM7B is the global standard for podcasting, providing
+                            that "rich, warm radio voice" that listeners love.</p>
+                    </div>
+                </div>
+
+                <!-- LIGHTING & GRIP -->
+                <div class="col-lg-4">
+                    <div class="gear-card">
+                        <div class="icon-box"><i class="fas fa-lightbulb"></i></div>
+                        <h4 class="h5 mb-4 outfit">Lighting Setup</h4>
+                        <div class="spec-item">
+                            <div class="spec-label">Key Lights</div>
+                            <div class="spec-value">Aputure Amaran 200d</div>
+                        </div>
+                        <div class="spec-item">
+                            <div class="spec-label">Diffusion</div>
+                            <div class="spec-value">Lantern Softboxes</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- EDITING -->
+                <div class="col-lg-4">
+                    <div class="gear-card">
+                        <div class="icon-box"><i class="fas fa-laptop-code"></i></div>
+                        <h4 class="h5 mb-4 outfit">Post-Production</h4>
+                        <div class="spec-item">
+                            <div class="spec-label">Editing</div>
+                            <div class="spec-value">Adobe Premiere Pro CC</div>
+                        </div>
+                        <div class="spec-item">
+                            <div class="spec-label">Color Grading</div>
+                            <div class="spec-value">DaVinci Resolve</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ACOUSTICS -->
+                <div class="col-lg-4">
+                    <div class="gear-card">
+                        <div class="icon-box"><i class="fas fa-shuttle-space"></i></div>
+                        <h4 class="h5 mb-4 outfit">Acoustics</h4>
+                        <div class="spec-item">
+                            <div class="spec-label">Treatment</div>
+                            <div class="spec-value">High-Density Bass Traps</div>
+                        </div>
+                        <div class="spec-item">
+                            <div class="spec-label">Noise Floor</div>
+                            <div class="spec-value">-60dB (Silence Guaranteed)</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- AEO FAQ SECTION (Excellent for Perplexity/ChatGPT searches) -->
+    <section class="py-5 bg-black">
+        <div class="container">
+            <h2 class="text-center mb-5 outfit">Common Questions</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="mb-4">
+                        <h5 class="text-warning">Why do you use the Sony FX3?</h5>
+                        <p class="small text-secondary">The Sony FX3 is a dedicated cinema camera. Unlike standard
+                            DSLRs, it can record for hours without overheating and provides 15+ stops of dynamic range
+                            for professional color grading.</p>
+                    </div>
+                    <div class="mb-4">
+                        <h5 class="text-warning">Can I bring my own gear?</h5>
+                        <p class="small text-secondary">Yes, our studio is "plug-and-play" ready. However, we recommend
+                            using our Shure SM7B setup for the best acoustic matching in our treated room.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ═══════════════════════════════════════════════════════════════
+       FOOTER (unchanged from your original)
+       ═══════════════════════════════════════════════════════════════ -->
+
+
+    <footer class="footer-main pt-4 pb-2">
+        <div class="container-fluid footer-padding">
+
+            <div class="row justify-content-between text-center text-lg-start">
+
+                <!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ -->
+                <!-- COLUMN 1: BRAND + CONTACT                          -->
+                <!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ -->
+                <div class="col-lg-3 col-md-6 mb-5">
+
+                    <!-- Logo + Name -->
+                    <div class="d-flex align-items-center justify-content-center justify-content-lg-start gap-3 mb-3">
+                        <img src="/img/logo.webp" alt="Puadh Podcast Logo" width="55" height="55"
+                            class="rounded-circle footer-logo-img" loading="lazy" />
+                        <p class="h5 m-0 text-white fw-bold">Puadh Podcast</p>
+                    </div>
+
+                    <!-- Tagline -->
+                    <p class="small footer-text-muted mb-4 mx-auto mx-lg-0" style="max-width: 320px;">
+                        The #1 Podcast representing the Puadh region.
+                        Unfiltered, Unscripted, Unapologetic.
+                    </p>
+
+                    <!-- Address -->
+                    <div class="small footer-text-muted mx-auto mx-lg-0" style="max-width: 320px;">
+                        <div class="d-flex justify-content-center justify-content-lg-start mb-2">
+                            <i class="fas fa-map-marker-alt footer-icon mt-1 me-3"></i>
+                            <a href="https://maps.google.com/?q=Plot+F-298,+R%26R+Tower,+Phase+8B,+Ind.+Area,+Sector+74,+Mohali,+Punjab+160055"
+                                target="_blank" rel="noopener noreferrer" class="footer-contact-link text-start">
+                                Plot F-298, R&R Tower, Phase 8B,<br>
+                                Sector 74, Mohali, Punjab 160055
+                            </a>
+                        </div>
+
+                        <div class="d-flex justify-content-center justify-content-lg-start">
+                            <i class="fas fa-phone-alt footer-icon mt-1 me-3"></i>
+                            <a href="tel:+918360769451" class="footer-contact-link">
+                                +91 83607 69451
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ -->
+                <!-- COLUMN 2: EXPLORE                                   -->
+                <!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ -->
+                <div class="col-lg-2 col-md-3 col-6 mb-5">
+                    <p class="footer-section-title">Explore</p>
+                    <ul class="list-unstyled footer-link-list">
+                        <li><a href="/episodes">Episodes</a></li>
+                        <li><a href="/be-a-guest/">Be a Guest</a></li>
+                        <li><a href="/clips">Clips</a></li>
+                        <li><a href="/blog/">Blog</a></li>
+                        <li><a href="/about-us">About Us</a></li>
+                        <li><a href="/gallery">Gallery</a></li>
+                        <li><a href="/puadh-region">Puadh Region</a></li>
+                    </ul>
+                </div>
+
+                <!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ -->
+                <!-- COLUMN 3: STUDIO + LEGAL                            -->
+                <!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ -->
+                <div class="col-lg-2 col-md-3 col-6 mb-5">
+
+                    <p class="footer-section-title">Studio</p>
+                    <ul class="list-unstyled footer-link-list mb-4">
+                        <li><a href="/studio/">Studio Services</a></li>
+                        <li><a href="/contact">Contact Us</a></li>
+                    </ul>
+
+                    <p class="footer-section-title">Legal</p>
+                    <ul class="list-unstyled footer-link-list">
+                        <li><a href="/privacy/">Privacy Policy</a></li>
+                        <li><a href="/terms/">Terms of Use</a></li>
+                    </ul>
+                </div>
+
+                <!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ -->
+                <!-- COLUMN 4: POPULAR (SEO PAGES)                       -->
+                <!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ -->
+                <div class="col-lg-2 col-md-4 col-6 mb-5">
+                    <p class="footer-section-title">Popular</p>
+                    <ul class="list-unstyled footer-link-list">
+                        <li><a href="/mohali-podcast/">Mohali Podcast</a></li>
+                        <li><a href="/best-punjabi-podcast/">Best Punjabi Podcast</a></li>
+
+                        <li><a href="/chandigarh-podcast/">Chandigarh Podcast</a></li>
+                        <li><a href="/punjab-podcast/">Punjab Podcast</a></li>
+                        <li><a href="/punjabi-entrepreneur-podcast/">Entrepreneur Podcast</a></li>
+                        <li><a href="/india-podcasts/">India Podcasts</a></li>
+                    </ul>
+                </div>
+
+                <!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ -->
+                <!-- COLUMN 5: SOCIAL + NEWSLETTER                       -->
+                <!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ -->
+                <div class="col-lg-3 col-md-8 mb-4">
+
+                    <p class="footer-section-title">Follow Us</p>
+
+                    <div
+                        class="social-icons d-flex flex-wrap justify-content-center justify-content-lg-start gap-2 mb-4">
+                        <a href="https://www.instagram.com/puadhpunjabipodcast/" aria-label="Follow us on Instagram"
+                            target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://wa.me/918360769451" aria-label="Contact via WhatsApp" target="_blank"
+                            rel="noopener noreferrer">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="https://www.youtube.com/@puadhpunjabipodcast" aria-label="Subscribe on YouTube"
+                            target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="https://www.facebook.com/profile.php?id=61573903336128" aria-label="Follow on Facebook"
+                            target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="https://x.com/PuadhP37620" aria-label="Follow on X (Twitter)" target="_blank"
+                            rel="noopener noreferrer">
+                            <i class="fab fa-x-twitter"></i>
+                        </a>
+                        <a href="https://www.tiktok.com/@puadh_punjabi_podcast" aria-label="Follow on TikTok"
+                            target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
+                        <a href="https://open.spotify.com/show/4S1Lqp4l1Huu1MZJuKibcV" aria-label="Listen on Spotify"
+                            target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-spotify"></i>
+                        </a>
+                        <a href="/rss.xml" aria-label="RSS Feed" target="_blank" rel="noopener noreferrer">
+                            <i class="fas fa-rss"></i>
+                        </a>
+                    </div>
+
+                    <!-- Newsletter -->
+                    <p class="footer-section-title-sm">Never Miss an Episode</p>
+                    <p class="small footer-text-muted mb-3">
+                        Fresh episodes, guest updates & exclusive Puadhi stories — straight to your inbox.
+                    </p>
+
+                    <form class="footer-subscribe-form mx-auto mx-lg-0" style="max-width: 380px;"
+                        onsubmit="return false;">
+                        <label for="footer-email" class="visually-hidden">Email Address</label>
+                        <div class="input-group">
+                            <input id="footer-email" type="email" class="form-control footer-input"
+                                placeholder="Enter your email" aria-label="Email Address" required />
+                            <button class="btn btn-footer-subscribe fw-bold px-4" type="submit">
+                                Subscribe
+                            </button>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+
+            <!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ -->
+            <!-- BOTTOM BAR: COPYRIGHT                                 -->
+            <!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ -->
+            <hr class="footer-divider" />
+
+            <div class="footer-bottom text-ce   nter py-3">
+                <p class="small footer-text-muted mb-0">
+                    &copy;
+                    <script>document.write(new Date().getFullYear())</script>
+                    Puadh Punjabi Podcast Studio. All rights reserved.
+                </p>
+            </div>
+
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
