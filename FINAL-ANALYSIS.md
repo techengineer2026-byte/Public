@@ -11,10 +11,10 @@ I can see this section on your `/studio/` page (right after the Hero):
     <h3 class="h5 text-white text-center mb-4">Explore More</h3>
     <div class="row g-3 justify-content-center">
       <div class="col-md-4">
-        <a href="/mohali-podcast/" class="btn btn-outline-light w-100">📍 Podcast Studio in Mohali</a>
+        <a href="/mohali-podcast" class="btn btn-outline-light w-100">📍 Podcast Studio in Mohali</a>
       </div>
       <div class="col-md-4">
-        <a href="/chandigarh-podcast/" class="btn btn-outline-light w-100">📍 Podcast Studio in Chandigarh</a>
+        <a href="/chandigarh-podcast" class="btn btn-outline-light w-100">📍 Podcast Studio in Chandigarh</a>
       </div>
       <div class="col-md-4">
         <a href="/be-a-guest/" class="btn btn-outline-light w-100">🎙️ Be a Guest</a>
@@ -299,10 +299,10 @@ I can see this section on your `/studio/` page (right after the Hero):
     <h3 class="h5 text-white text-center mb-4">Explore More</h3>
     <div class="row g-3 justify-content-center">
       <div class="col-md-4">
-        <a href="/mohali-podcast/" class="btn btn-outline-light w-100">📍 Podcast Studio in Mohali</a>
+        <a href="/mohali-podcast" class="btn btn-outline-light w-100">📍 Podcast Studio in Mohali</a>
       </div>
       <div class="col-md-4">
-        <a href="/chandigarh-podcast/" class="btn btn-outline-light w-100">📍 Podcast Studio in Chandigarh</a>
+        <a href="/chandigarh-podcast" class="btn btn-outline-light w-100">📍 Podcast Studio in Chandigarh</a>
       </div>
       <div class="col-md-4">
         <a href="/be-a-guest/" class="btn btn-outline-light w-100">🎙️ Be a Guest</a>

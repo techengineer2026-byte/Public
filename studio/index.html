@@ -929,6 +929,128 @@
         grid-template-columns: 1fr
       }
     }
+
+    /* ─── MODERN BENTO SERVICE CARDS ─── */
+    .bento-service-card {
+      background: rgba(255, 255, 255, 0.02);
+      border: 1px solid #1a1a1a;
+      border-radius: 20px;
+      padding: 32px 28px;
+      transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+
+    .bento-service-card:hover {
+      border-color: #FDB515;
+      background: rgba(253, 181, 21, 0.03);
+      transform: translateY(-8px);
+      box-shadow: 0 20px 40px rgba(253, 181, 21, 0.08);
+    }
+
+    .bento-service-card.featured {
+      border-color: rgba(253, 181, 21, 0.4);
+      background: linear-gradient(145deg, rgba(253, 181, 21, 0.05) 0%, rgba(0, 0, 0, 0) 100%);
+    }
+
+    .svc-icon-circle {
+      width: 60px;
+      height: 60px;
+      background: rgba(253, 181, 21, 0.08);
+      border: 1px solid rgba(253, 181, 21, 0.2);
+      border-radius: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #FDB515;
+      font-size: 1.4rem;
+      margin-bottom: 24px;
+      transition: all 0.3s;
+    }
+
+    .bento-service-card:hover .svc-icon-circle {
+      background: rgba(253, 181, 21, 0.15);
+      box-shadow: 0 0 20px rgba(253, 181, 21, 0.2);
+      transform: scale(1.1);
+    }
+
+    .svc-title {
+      font-family: 'Outfit', sans-serif;
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 12px;
+    }
+
+    .svc-desc {
+      color: #777;
+      font-size: 0.9rem;
+      line-height: 1.6;
+      margin-bottom: 20px;
+      flex-grow: 1;
+    }
+
+    .svc-price-pill {
+      display: inline-block;
+      background: #111;
+      border: 1px solid #222;
+      color: #FDB515;
+      padding: 8px 16px;
+      border-radius: 50px;
+      font-weight: 700;
+      font-size: 1rem;
+      margin-bottom: 20px;
+      width: fit-content;
+    }
+
+    .bento-service-card.featured .svc-price-pill {
+      background: #FDB515;
+      color: #000;
+      border-color: #FDB515;
+    }
+
+    .featured-badge {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background: #FDB515;
+      color: #000;
+      font-size: 0.65rem;
+      font-weight: 800;
+      padding: 5px 12px;
+      border-radius: 20px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .svc-link-btn {
+      color: #fff;
+      font-weight: 600;
+      font-size: 0.9rem;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      transition: all 0.3s;
+      margin-top: auto;
+    }
+
+    .svc-link-btn:hover {
+      color: #FDB515;
+      gap: 12px;
+    }
+
+    .svc-link-btn i {
+      font-size: 0.75rem;
+      transition: transform 0.3s;
+    }
+
+    .svc-link-btn:hover i {
+      transform: translateX(4px);
+    }
   </style>
 </head>
 
@@ -1077,122 +1199,96 @@
   </div>
 
   <!-- ═══════════════════════════════════════════════════════════
-       SERVICES — YOUR ACTUAL 5 SERVICES
+       SERVICES — MODERN BENTO GRID
        ═══════════════════════════════════════════════════════════ -->
   <section class="py-5" style="background:#050505;">
     <div class="container">
       <div class="text-center mb-5">
         <span class="section-label"><i class="fas fa-cogs"></i> Our Services</span>
-        <h2 class="text-white text-center mt-5 mb-4">Everything You Need for Your Podcast</h2>
-        <p class="text-secondary text-center">Professional services at honest prices.</p>
+        <h2 class="text-white text-center mt-3 mb-3">Everything You Need for Your Podcast</h2>
+        <p class="text-secondary text-center">Pick a service, or let us handle everything. Professional quality, honest
+          prices.</p>
       </div>
 
       <div class="row g-4">
 
-        <!-- 1. EDITING — ₹5,000 -->
-        <div class="col-lg-4 col-md-6">
-          <div class="service-card">
-            <div class="service-icon"><i class="fas fa-cut"></i></div>
-            <h3>Podcast Editing</h3>
-            <p class="svc-desc">We provide the best editing using <strong style="color:#fff;">Adobe Premiere
-                Pro</strong> and <strong style="color:#fff;">DaVinci Resolve</strong>. Your podcast will look and sound
-              broadcast-ready.</p>
-            <ul class="svc-includes">
-              <li><i class="fas fa-check"></i> Up to 1 hour podcast edit</li>
-              <li><i class="fas fa-check"></i> 6 Reels / YouTube Shorts included</li>
-              <li><i class="fas fa-check"></i> Color grading & sound mixing</li>
-              <li><i class="fas fa-check"></i> Subtitles & thumbnail</li>
-            </ul>
-            <div class="service-price">₹5,000 <span style="font-size:.75rem;color:#888;font-weight:400;">/
-                episode</span></div>
-            <a href="/studio/podcast-editing/" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
-          </div>
-        </div>
-
-        <!-- 2. SHOOTING — ₹3,500 (was ₹5,000) -->
-        <div class="col-lg-4 col-md-6">
-          <div class="service-card">
-            <div class="service-icon"><i class="fas fa-video"></i></div>
-            <h3>Podcast Shooting</h3>
-            <p class="svc-desc">We provide a wide range of cameras from <strong style="color:#fff;">Canon M3 to Sony
-                FX3/FX30</strong> as per your requirement. Multi-camera, cinematic framing.</p>
-            <ul class="svc-includes">
-              <li><i class="fas fa-check"></i> Multi-camera setup</li>
-              <li><i class="fas fa-check"></i> Camera selection: M3 → FX3</li>
-              <li><i class="fas fa-check"></i> Professional lighting included</li>
-              <li><i class="fas fa-check"></i> Price may vary by camera choice</li>
-            </ul>
-            <div class="service-price">₹3,500 <span class="og-price">₹5,000</span></div>
-            <a href="/studio/podcast-shooting/" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
-          </div>
-        </div>
-
-        <!-- 3. STUDIO SPACE — ₹2,000/hr -->
-        <div class="col-lg-4 col-md-6">
-          <div class="service-card">
-            <div class="service-icon"><i class="fas fa-microphone-alt"></i></div>
-            <h3>Studio Space Rental</h3>
-            <p class="svc-desc">Book our professional studio space on an hourly basis. Soundproofed room ready for
-              recording. Lights and additional equipment available on request.</p>
-            <ul class="svc-includes">
-              <li><i class="fas fa-check"></i> Soundproofed recording room</li>
-              <li><i class="fas fa-check"></i> Podcast desk & branding setup</li>
-              <li><i class="fas fa-check"></i> Lights available (extra)</li>
-              <li><i class="fas fa-check"></i> Flexible hourly booking</li>
-            </ul>
-            <div class="service-price">₹2,000 <span style="font-size:.75rem;color:#888;font-weight:400;">/ hour</span>
-            </div>
-            <a href="/studio/podcast-studio-space/" class="service-link">Learn More <i
+        <!-- 1. STUDIO SPACE (Featured Entry Point) -->
+        <div class="col-lg-6 col-md-6">
+          <div class="bento-service-card featured">
+            <span class="featured-badge">🔥 Start Here</span>
+            <div class="svc-icon-circle"><i class="fas fa-microphone-alt"></i></div>
+            <h3 class="svc-title">Studio Space Rental</h3>
+            <p class="svc-desc">Book our professional, soundproofed studio. Ready to record with a premium podcast desk,
+              branding setup, and ambient lighting. Just walk in and hit record.</p>
+            <div class="svc-price-pill">₹2,000 <span style="font-weight:400; font-size:0.8rem;">/ hour</span></div>
+            <a href="/studio/podcast-studio-space" class="svc-link-btn">Explore Space <i
                 class="fas fa-arrow-right"></i></a>
           </div>
         </div>
 
-        <!-- 4. ANCHOR — ₹2,000 -->
+        <!-- 2. SHOOTING (Featured Visual) -->
         <div class="col-lg-6 col-md-6">
-          <div class="service-card">
-            <div class="service-icon"><i class="fas fa-user-tie"></i></div>
-            <h3>Podcast Anchor / Host</h3>
-            <p class="svc-desc">Our anchor is <strong style="color:#fff;">smart, intelligent, and
-                well-prepared</strong>. With knowledge across almost every topic, they research before every podcast,
-              ask strategic questions that help you get <strong style="color:#fff;">more reach</strong>, and make sure
-              you feel <strong style="color:#fff;">comfortable</strong> throughout the recording.</p>
-            <ul class="svc-includes">
-              <li><i class="fas fa-check"></i> Pre-podcast research & preparation</li>
-              <li><i class="fas fa-check"></i> Strategic questions for maximum reach</li>
-              <li><i class="fas fa-check"></i> Guest comfort is the #1 priority</li>
-              <li><i class="fas fa-check"></i> Available in Punjabi, Hindi & English</li>
-            </ul>
-            <div class="service-price">₹2,000 <span style="font-size:.75rem;color:#888;font-weight:400;">/
-                episode</span></div>
-            <a href="/studio/podcast-anchor/" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+          <div class="bento-service-card featured">
+            <span class="featured-badge">📸 Most Popular</span>
+            <div class="svc-icon-circle"><i class="fas fa-video"></i></div>
+            <h3 class="svc-title">Podcast Shooting</h3>
+            <p class="svc-desc">Multi-camera cinematic setup. Choose from <strong style="color:#fff;">Canon M3 to Sony
+                FX3/FX30</strong>. Professional lighting included to make your podcast look premium.</p>
+            <div class="svc-price-pill">₹3,500 <span
+                style="font-weight:400; font-size:0.8rem; text-decoration: line-through; color:#888; margin-left:6px;">₹5,000</span>
+            </div>
+            <a href="/studio/podcast-shooting" class="svc-link-btn">View Setup <i class="fas fa-arrow-right"></i></a>
           </div>
         </div>
 
-        <!-- 5. SCRIPTING — ₹2,000 -->
-        <div class="col-lg-6 col-md-6">
-          <div class="service-card">
-            <div class="service-icon"><i class="fas fa-pen-fancy"></i></div>
-            <h3>Podcast Scripting</h3>
-            <p class="svc-desc"><strong style="color:#fff;">Content is the most important part</strong> of any podcast.
-              We prepare scripts tailored to your <strong style="color:#fff;">target audience</strong> and <strong
-                style="color:#fff;">current trending topics</strong> so your podcast reaches the widest possible
-              audience.</p>
-            <ul class="svc-includes">
-              <li><i class="fas fa-check"></i> Audience-targeted content</li>
-              <li><i class="fas fa-check"></i> Trending topic research</li>
-              <li><i class="fas fa-check"></i> Interview questions & flow</li>
-              <li><i class="fas fa-check"></i> SEO-optimized titles & descriptions</li>
-            </ul>
-            <div class="service-price">₹2,000 <span style="font-size:.75rem;color:#888;font-weight:400;">/ script</span>
-            </div>
-            <a href="/studio/podcast-scripting/" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+        <!-- 3. EDITING -->
+        <div class="col-lg-4 col-md-6">
+          <div class="bento-service-card">
+            <div class="svc-icon-circle"><i class="fas fa-cut"></i></div>
+            <h3 class="svc-title">Podcast Editing</h3>
+            <p class="svc-desc">Broadcast-ready polish using <strong style="color:#fff;">Premiere Pro & DaVinci
+                Resolve</strong>. Color grading, sound mixing, and 6 Reels included.</p>
+            <div class="svc-price-pill">₹5,000 <span style="font-weight:400; font-size:0.8rem;">/ ep</span></div>
+            <a href="/studio/podcast-editing" class="svc-link-btn">Learn More <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <!-- 4. ANCHOR -->
+        <div class="col-lg-4 col-md-6">
+          <div class="bento-service-card">
+            <div class="svc-icon-circle"><i class="fas fa-user-tie"></i></div>
+            <h3 class="svc-title">Podcast Anchor</h3>
+            <p class="svc-desc">A smart, well-prepared host who researches your topic. Asks strategic questions to boost
+              your reach and makes guests feel comfortable.</p>
+            <div class="svc-price-pill">₹2,000 <span style="font-weight:400; font-size:0.8rem;">/ ep</span></div>
+            <a href="/studio/podcast-anchor" class="svc-link-btn">Meet The Anchor <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <!-- 5. SCRIPTING -->
+        <div class="col-lg-4 col-md-12">
+          <div class="bento-service-card">
+            <div class="svc-icon-circle"><i class="fas fa-pen-fancy"></i></div>
+            <h3 class="svc-title">Podcast Scripting</h3>
+            <p class="svc-desc">Content tailored to your <strong style="color:#fff;">target audience</strong> and
+              trending topics. We write the questions, flow, and SEO-optimized descriptions.</p>
+            <div class="svc-price-pill">₹2,000 <span style="font-weight:400; font-size:0.8rem;">/ script</span></div>
+            <a href="/studio/podcast-scripting" class="svc-link-btn">See Process <i class="fas fa-arrow-right"></i></a>
           </div>
         </div>
 
       </div>
+
+      <!-- Bottom CTA -->
+      <div class="text-center mt-5">
+        <p class="text-secondary mb-3">Want everything handled for you?</p>
+        <a href="#booking" class="btn px-5 py-3 fw-bold"
+          style="background: #FDB515; color: #000; border-radius: 50px; font-weight: 700;">
+          <i class="fas fa-rocket me-2"></i> Book The Complete Package (₹12,500)
+        </a>
+      </div>
     </div>
   </section>
-
   <!-- ═══════════════════════════════════════════════════════════
        EQUIPMENT + GALLERY
        ═══════════════════════════════════════════════════════════ -->
@@ -1777,20 +1873,20 @@
         <div class="col-lg-3 col-12 mb-0">
           <p class="footer-section-title">Join Community</p>
           <div class="social-icons d-flex justify-content-center justify-content-lg-start gap-2 mb-4">
-                        <a href="https://www.instagram.com/puadhpunjabipodcast/" aria-label="Follow us on Instagram"
-                            target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
-                        <a href="https://wa.me/918360769451" aria-label="Contact via WhatsApp" target="_blank"
-                            rel="noopener noreferrer"><i class="fab fa-whatsapp"></i></a>
-                        <a href="https://www.youtube.com/@puadhpunjabipodcast" aria-label="Subscribe on YouTube"
-                            target="_blank" rel="noopener noreferrer"><i class="fab fa-youtube"></i></a>
-                        <a href="https://www.facebook.com/profile.php?id=61573903336128" aria-label="Follow on Facebook"
-                            target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook"></i></a>
-                        <a href="https://x.com/PuadhP37620" aria-label="Follow on X (Twitter)" target="_blank"
-                            rel="noopener noreferrer"><i class="fab fa-x-twitter"></i></a>
-                        <a href="https://open.spotify.com/show/4S1Lqp4l1Huu1MZJuKibcV" aria-label="Listen on Spotify"
-                            target="_blank" rel="noopener noreferrer"><i class="fab fa-spotify"></i></a>
-                        <a href="https://anchor.fm/s/111d84174/podcast/rss" aria-label="RSS Feed" target="_blank" rel="noopener noreferrer"><i
-                                class="fas fa-rss"></i></a>
+            <a href="https://www.instagram.com/puadhpunjabipodcast/" aria-label="Follow us on Instagram" target="_blank"
+              rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+            <a href="https://wa.me/918360769451" aria-label="Contact via WhatsApp" target="_blank"
+              rel="noopener noreferrer"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://www.youtube.com/@puadhpunjabipodcast" aria-label="Subscribe on YouTube" target="_blank"
+              rel="noopener noreferrer"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=61573903336128" aria-label="Follow on Facebook"
+              target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook"></i></a>
+            <a href="https://x.com/PuadhP37620" aria-label="Follow on X (Twitter)" target="_blank"
+              rel="noopener noreferrer"><i class="fab fa-x-twitter"></i></a>
+            <a href="https://open.spotify.com/show/4S1Lqp4l1Huu1MZJuKibcV" aria-label="Listen on Spotify"
+              target="_blank" rel="noopener noreferrer"><i class="fab fa-spotify"></i></a>
+            <a href="https://anchor.fm/s/111d84174/podcast/rss" aria-label="RSS Feed" target="_blank"
+              rel="noopener noreferrer"><i class="fas fa-rss"></i></a>
 
           </div>
 
