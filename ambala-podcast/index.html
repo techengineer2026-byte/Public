@@ -35,7 +35,9 @@
     <!-- Styles & Fonts -->
     <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800&family=Poppins:wght@300;400;600&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
     <link rel="stylesheet" href="/css/style.css" />
     <link rel="stylesheet" href="/css/headerfooter.css" />
@@ -116,49 +118,196 @@
     </script>
 
     <style>
-        :root { --gold: #d4a017; --gold-light: #f0c040; --dark: #050505; --card-bg: #111; }
-        body { background-color: var(--dark); color: #e0e0e0; font-family: 'Poppins', sans-serif; }
-        h1, h2, h3, h4, .outfit { font-family: 'Outfit', sans-serif; }
+        :root {
+            --gold: #d4a017;
+            --gold-light: #f0c040;
+            --dark: #050505;
+            --card-bg: #111;
+        }
 
-        .hero-local { padding: 140px 0 80px; background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.9)), url('/img/studio-hero.webp'); background-size: cover; background-attachment: fixed; text-align: center; }
-        
-        .stat-bar { display: flex; flex-wrap: wrap; justify-content: center; gap: 30px; margin-top: 30px; }
-        .stat-item { text-align: center; }
-        .stat-num { font-size: 1.8rem; font-weight: 800; color: var(--gold); font-family: 'Outfit'; }
-        .stat-label { font-size: 0.85rem; color: #aaa; }
+        body {
+            background-color: var(--dark);
+            color: #e0e0e0;
+            font-family: 'Poppins', sans-serif;
+        }
 
-        .content-box { background: var(--card-bg); border: 1px solid #222; padding: 40px; border-radius: 16px; border-left: 5px solid var(--gold); }
-        
-        .pkg-card { background: var(--card-bg); border: 1px solid #222; border-radius: 16px; padding: 30px; height: 100%; transition: 0.3s; position: relative; }
-        .pkg-card:hover { border-color: var(--gold); transform: translateY(-8px); }
-        .pkg-card.recommended { border-color: var(--gold); box-shadow: 0 0 30px rgba(212, 160, 23, 0.1); }
-        .badge-rec { position: absolute; top: -12px; left: 50%; transform: translateX(-50%); background: var(--gold); color: #000; font-weight: 700; font-size: 0.75rem; padding: 5px 15px; border-radius: 20px; }
-        .pkg-price { font-size: 2.2rem; font-weight: 800; color: var(--gold); font-family: 'Outfit'; }
+        h1,
+        h2,
+        h3,
+        h4,
+        .outfit {
+            font-family: 'Outfit', sans-serif;
+        }
 
-        .step-box { text-align: center; padding: 20px; }
-        .step-num { width: 50px; height: 50px; background: var(--gold); color: #000; font-weight: 800; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 1.2rem; margin-bottom: 15px; }
+        .hero-local {
+            padding: 140px 0 80px;
+            background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9)), url('/img/studio-hero.webp');
+            background-size: cover;
+            background-attachment: fixed;
+            text-align: center;
+        }
 
-        .testimonial-card { background: #0a0a0a; border: 1px solid #222; border-radius: 12px; padding: 24px; height: 100%; }
-        .stars { color: var(--gold); margin-bottom: 10px; }
+        .stat-bar {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 30px;
+        }
 
-        .faq-q { color: #fff; font-weight: 600; font-size: 1.05rem; margin-bottom: 8px; }
-        .faq-a { color: #aaa; font-size: 0.95rem; line-height: 1.7; margin: 0; }
-        .faq-item { border-bottom: 1px solid #222; padding: 20px 0; }
-        .faq-item:last-child { border-bottom: none; }
+        .stat-item {
+            text-align: center;
+        }
 
-        .btn-wa { background: #25d366; color: white; font-weight: 700; border: none; }
-        .btn-gold { background: linear-gradient(135deg, var(--gold), var(--gold-light)); color: #000; font-weight: 700; border: none; }
-        .btn-gold:hover { color: #000; box-shadow: 0 8px 20px rgba(212, 160, 23, 0.3); }
+        .stat-num {
+            font-size: 1.8rem;
+            font-weight: 800;
+            color: var(--gold);
+            font-family: 'Outfit';
+        }
+
+        .stat-label {
+            font-size: 0.85rem;
+            color: #aaa;
+        }
+
+        .content-box {
+            background: var(--card-bg);
+            border: 1px solid #222;
+            padding: 40px;
+            border-radius: 16px;
+            border-left: 5px solid var(--gold);
+        }
+
+        .pkg-card {
+            background: var(--card-bg);
+            border: 1px solid #222;
+            border-radius: 16px;
+            padding: 30px;
+            height: 100%;
+            transition: 0.3s;
+            position: relative;
+        }
+
+        .pkg-card:hover {
+            border-color: var(--gold);
+            transform: translateY(-8px);
+        }
+
+        .pkg-card.recommended {
+            border-color: var(--gold);
+            box-shadow: 0 0 30px rgba(212, 160, 23, 0.1);
+        }
+
+        .badge-rec {
+            position: absolute;
+            top: -12px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--gold);
+            color: #000;
+            font-weight: 700;
+            font-size: 0.75rem;
+            padding: 5px 15px;
+            border-radius: 20px;
+        }
+
+        .pkg-price {
+            font-size: 2.2rem;
+            font-weight: 800;
+            color: var(--gold);
+            font-family: 'Outfit';
+        }
+
+        .step-box {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .step-num {
+            width: 50px;
+            height: 50px;
+            background: var(--gold);
+            color: #000;
+            font-weight: 800;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+        }
+
+        .testimonial-card {
+            background: #0a0a0a;
+            border: 1px solid #222;
+            border-radius: 12px;
+            padding: 24px;
+            height: 100%;
+        }
+
+        .stars {
+            color: var(--gold);
+            margin-bottom: 10px;
+        }
+
+        .faq-q {
+            color: #fff;
+            font-weight: 600;
+            font-size: 1.05rem;
+            margin-bottom: 8px;
+        }
+
+        .faq-a {
+            color: #aaa;
+            font-size: 0.95rem;
+            line-height: 1.7;
+            margin: 0;
+        }
+
+        .faq-item {
+            border-bottom: 1px solid #222;
+            padding: 20px 0;
+        }
+
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+
+        .btn-wa {
+            background: #25d366;
+            color: white;
+            font-weight: 700;
+            border: none;
+        }
+
+        .btn-gold {
+            background: linear-gradient(135deg, var(--gold), var(--gold-light));
+            color: #000;
+            font-weight: 700;
+            border: none;
+        }
+
+        .btn-gold:hover {
+            color: #000;
+            box-shadow: 0 8px 20px rgba(212, 160, 23, 0.3);
+        }
 
         @media(max-width:768px) {
-            .hero-local h1 { font-size: 2.4rem; }
-            .stat-bar { gap: 15px; }
+            .hero-local h1 {
+                font-size: 2.4rem;
+            }
+
+            .stat-bar {
+                gap: 15px;
+            }
         }
     </style>
 </head>
 
 <body>
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K2DN29GZ" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K2DN29GZ" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
 
     <!-- HEADER -->
     <header>
@@ -167,20 +316,26 @@
                 <a class="navbar-brand logo-container" href="/" aria-label="Puadh Podcast Homepage">
                     <img src="/img/logo.webp" alt="Puadh Podcast Logo" width="60" height="60" />
                 </a>
-                <a href="/studio" class="btn-custom btn-book-studio btn-book-studio-mobile fw-bold px-3 d-lg-none me-2" aria-label="Book Podcast Studio">🎙️ Book Studio</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <a href="/studio" class="btn-custom btn-book-studio btn-book-studio-mobile fw-bold px-3 d-lg-none me-2"
+                    aria-label="Book Podcast Studio">🎙️ Book Studio</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
 
                 <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
                     <ul class="navbar-nav mx-auto mb-2 mb-lg-0 text-center nav-menu-enhanced">
                         <li class="nav-item"><a class="nav-link nav-link-animated" href="/episodes">Episodes</a></li>
-                        <li class="nav-item"><a class="nav-link nav-link-animated text-puadh" href="/clips">⚡ Clips</a></li>
-                        <li class="nav-item"><a class="nav-link nav-link-animated nav-link-priority fw-bold text-warning" href="/studio">🎙️ Studio</a></li>
+                        <li class="nav-item"><a class="nav-link nav-link-animated text-puadh" href="/clips">⚡ Clips</a>
+                        </li>
+                        <li class="nav-item"><a
+                                class="nav-link nav-link-animated nav-link-priority fw-bold text-warning"
+                                href="/studio">🎙️ Studio</a></li>
                         <li class="nav-item"><a class="nav-link nav-link-animated" href="/blog/">Blog</a></li>
                         <li class="nav-item"><a class="nav-link nav-link-animated" href="/about-us">About Us</a></li>
                         <li class="nav-item"><a class="nav-link nav-link-animated" href="/contact">Contact Us</a></li>
                     </ul>
                     <div class="d-none d-lg-flex justify-content-center align-items-center mt-3 mt-lg-0">
-                        <a href="/studio" class="btn-custom btn-book-studio btn-book-studio-desktop fw-bold px-4 py-2" aria-label="Book Podcast Studio">🎙️ Book Studio</a>
+                        <a href="/studio" class="btn-custom btn-book-studio btn-book-studio-desktop fw-bold px-4 py-2"
+                            aria-label="Book Podcast Studio">🎙️ Book Studio</a>
                     </div>
                 </div>
             </div>
@@ -190,21 +345,38 @@
     <!-- HERO -->
     <section class="hero-local">
         <div class="container">
-            <h1 class="display-5 fw-800 text-white mb-3">Ambala Podcast Studio <br><span style="color:var(--gold)">Professional Recording in Haryana & Punjab</span></h1>
+            <h1 class="display-5 fw-800 text-white mb-3">Ambala Podcast Studio <br><span
+                    style="color:var(--gold)">Professional Recording in Haryana & Punjab</span></h1>
             <p class="lead text-secondary mx-auto" style="max-width: 700px;">
-                Ambala's premier podcast destination. Serving professionals, entrepreneurs, and the military community. World-class quality, just 60 minutes away.
+                Ambala's premier podcast destination. Serving professionals, entrepreneurs, and the military community.
+                World-class quality, just 60 minutes away.
             </p>
-            
+
             <div class="stat-bar">
-                <div class="stat-item"><div class="stat-num">29+</div><div class="stat-label">Episodes Produced</div></div>
-                <div class="stat-item"><div class="stat-num">1M+</div><div class="stat-label">Total Views</div></div>
-                <div class="stat-item"><div class="stat-num">50+</div><div class="stat-label">Guests Hosted</div></div>
-                <div class="stat-item"><div class="stat-num">4.9★</div><div class="stat-label">Rating</div></div>
+                <div class="stat-item">
+                    <div class="stat-num">29+</div>
+                    <div class="stat-label">Episodes Produced</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-num">1M+</div>
+                    <div class="stat-label">Total Views</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-num">50+</div>
+                    <div class="stat-label">Guests Hosted</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-num">4.9★</div>
+                    <div class="stat-label">Rating</div>
+                </div>
             </div>
 
             <div class="mt-4 d-flex flex-wrap justify-content-center gap-3">
-                <a href="https://wa.me/918360769451?text=Hi!%20I%20am%20from%20Ambala%20and%20want%20to%20book%20the%20studio" class="btn btn-wa btn-lg px-4" target="_blank" rel="noopener"><i class="fab fa-whatsapp me-2"></i> Book Studio via WhatsApp</a>
-                <a href="tel:+918360769451" class="btn btn-outline-light btn-lg px-4"><i class="fas fa-phone-alt me-2"></i> Call Now: +91 83607 69451</a>
+                <a href="https://wa.me/918360769451?text=Hi!%20I%20am%20from%20Ambala%20and%20want%20to%20book%20the%20studio"
+                    class="btn btn-wa btn-lg px-4" target="_blank" rel="noopener"><i class="fab fa-whatsapp me-2"></i>
+                    Book Studio via WhatsApp</a>
+                <a href="tel:+918360769451" class="btn btn-outline-light btn-lg px-4"><i
+                        class="fas fa-phone-alt me-2"></i> Call Now: +91 83607 69451</a>
             </div>
         </div>
     </section>
@@ -215,16 +387,24 @@
             <div class="content-box">
                 <h2 class="h3 fw-bold mb-4">Ambala's Premier Podcast Destination</h2>
                 <p class="text-secondary" style="font-size:1.05rem; line-height:1.8;">
-                    Ambala is a pivotal trading center and home to one of India's largest military cantonments. But finding a professional podcast studio in Ambala is nearly impossible. 
-                    Puadh Podcast Studio, located in nearby <strong class="text-white">Mohali (just 60 minutes from Ambala)</strong>, is the region's most experienced podcast production company. We've recorded stories from Ambala's defense professionals, traders, and growing startup ecosystem.
+                    Ambala is a pivotal trading center and home to one of India's largest military cantonments. But
+                    finding a professional podcast studio in Ambala is nearly impossible.
+                    Puadh Podcast Studio, located in nearby <strong class="text-white">Mohali (just 60 minutes from
+                        Ambala)</strong>, is the region's most experienced podcast production company. We've recorded
+                    stories from Ambala's defense professionals, traders, and growing startup ecosystem.
                 </p>
                 <h5 class="mt-4 mb-3 text-white">Why choose Puadh for your Ambala podcast?</h5>
                 <ul class="list-unstyled text-secondary" style="font-size:1rem; line-height:2;">
-                    <li><i class="fas fa-check-circle text-warning me-2"></i> <strong class="text-white">Professional Studio</strong> - Sound-treated room, 3-camera HD setup, studio lighting</li>
-                    <li><i class="fas fa-check-circle text-warning me-2"></i> <strong class="text-white">Expert Anchor</strong> - Researches your topic, prepares 15-25 strategic questions</li>
-                    <li><i class="fas fa-check-circle text-warning me-2"></i> <strong class="text-white">Full Production</strong> - Editing, color grading, thumbnail design, SEO optimization</li>
-                    <li><i class="fas fa-check-circle text-warning me-2"></i> <strong class="text-white">Fast Delivery</strong> - 5-7 business days (48 hours for VIP)</li>
-                    <li><i class="fas fa-check-circle text-warning me-2"></i> <strong class="text-white">Flexible Scheduling</strong> - Weekend slots available for defense professionals</li>
+                    <li><i class="fas fa-check-circle text-warning me-2"></i> <strong class="text-white">Professional
+                            Studio</strong> - Sound-treated room, 3-camera HD setup, studio lighting</li>
+                    <li><i class="fas fa-check-circle text-warning me-2"></i> <strong class="text-white">Expert
+                            Anchor</strong> - Researches your topic, prepares 15-25 strategic questions</li>
+                    <li><i class="fas fa-check-circle text-warning me-2"></i> <strong class="text-white">Full
+                            Production</strong> - Editing, color grading, thumbnail design, SEO optimization</li>
+                    <li><i class="fas fa-check-circle text-warning me-2"></i> <strong class="text-white">Fast
+                            Delivery</strong> - 5-7 business days (48 hours for VIP)</li>
+                    <li><i class="fas fa-check-circle text-warning me-2"></i> <strong class="text-white">Flexible
+                            Scheduling</strong> - Weekend slots available for defense professionals</li>
                 </ul>
             </div>
         </div>
@@ -285,7 +465,8 @@
                     </div>
                 </div>
             </div>
-            <p class="text-center text-secondary mt-4"><i class="fas fa-star text-warning me-1"></i> Most Ambala guests choose the <strong class="text-white">All-Inclusive</strong> package for complete peace of mind.</p>
+            <p class="text-center text-secondary mt-4"><i class="fas fa-star text-warning me-1"></i> Most Ambala guests
+                choose the <strong class="text-white">All-Inclusive</strong> package for complete peace of mind.</p>
         </div>
     </section>
 
@@ -295,15 +476,21 @@
             <h2 class="h3 fw-bold text-center mb-4">Ambala's Untold Stories Deserve a Platform</h2>
             <div class="row align-items-center g-5">
                 <div class="col-md-7">
-                    <p class="text-secondary" style="line-height:1.8;">Ambala has incredible stories: defense personnel sharing leadership insights, trading pioneers bridging Punjab and Haryana, and a growing professional sector shaping the region.</p>
+                    <p class="text-secondary" style="line-height:1.8;">Ambala has incredible stories: defense personnel
+                        sharing leadership insights, trading pioneers bridging Punjab and Haryana, and a growing
+                        professional sector shaping the region.</p>
                     <p class="text-white fw-bold mt-3">But these voices aren't being heard.</p>
-                    <p class="text-secondary" style="line-height:1.8;">Ambala doesn't have professional podcast infrastructure — most creators end up compromising on quality with amateur setups or traveling far away.</p>
+                    <p class="text-secondary" style="line-height:1.8;">Ambala doesn't have professional podcast
+                        infrastructure — most creators end up compromising on quality with amateur setups or traveling
+                        far away.</p>
                 </div>
                 <div class="col-md-5">
-                    <div class="content-box text-center" style="border-left:1px solid #222; border-top:5px solid var(--gold);">
+                    <div class="content-box text-center"
+                        style="border-left:1px solid #222; border-top:5px solid var(--gold);">
                         <i class="fas fa-shield-alt text-warning fa-3x mb-3"></i>
                         <h5 class="text-white">The Solution</h5>
-                        <p class="small text-secondary">Record in Mohali (just 60 minutes away) and get professional production that honors your story.</p>
+                        <p class="small text-secondary">Record in Mohali (just 60 minutes away) and get professional
+                            production that honors your story.</p>
                     </div>
                 </div>
             </div>
@@ -315,11 +502,46 @@
         <div class="container">
             <h2 class="h3 fw-bold text-center mb-5">From Idea to Published Episode (In 5 Steps)</h2>
             <div class="row g-4">
-                <div class="col-md-4 col-6"><div class="step-box"><div class="step-num">1</div><h5 class="text-white">Book Your Slot</h5><p class="small text-secondary">WhatsApp us or fill the form. Tell us your topic, guest, and date.</p></div></div>
-                <div class="col-md-4 col-6"><div class="step-box"><div class="step-num">2</div><h5 class="text-white">We Research & Prepare</h5><p class="small text-secondary">Our team researches your guest, writes the script, prepares strategic questions.</p></div></div>
-                <div class="col-md-4 col-6"><div class="step-box"><div class="step-num">3</div><h5 class="text-white">Record at Studio</h5><p class="small text-secondary">Drive to Mohali (60 min from Ambala). Get comfortable, record with our anchor. Zero pressure.</p></div></div>
-                <div class="col-md-4 col-6"><div class="step-box"><div class="step-num">4</div><h5 class="text-white">Professional Editing</h5><p class="small text-secondary">Color grading, thumbnail, SEO title, Reels extraction. Delivery in 5-7 days.</p></div></div>
-                <div class="col-md-4 col-6"><div class="step-box"><div class="step-num">5</div><h5 class="text-white">Publish & Grow</h5><p class="small text-secondary">Download ready for YouTube, Spotify, Apple. VIP includes cross-promotion.</p></div></div>
+                <div class="col-md-4 col-6">
+                    <div class="step-box">
+                        <div class="step-num">1</div>
+                        <h5 class="text-white">Book Your Slot</h5>
+                        <p class="small text-secondary">WhatsApp us or fill the form. Tell us your topic, guest, and
+                            date.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-6">
+                    <div class="step-box">
+                        <div class="step-num">2</div>
+                        <h5 class="text-white">We Research & Prepare</h5>
+                        <p class="small text-secondary">Our team researches your guest, writes the script, prepares
+                            strategic questions.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-6">
+                    <div class="step-box">
+                        <div class="step-num">3</div>
+                        <h5 class="text-white">Record at Studio</h5>
+                        <p class="small text-secondary">Drive to Mohali (60 min from Ambala). Get comfortable, record
+                            with our anchor. Zero pressure.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-6">
+                    <div class="step-box">
+                        <div class="step-num">4</div>
+                        <h5 class="text-white">Professional Editing</h5>
+                        <p class="small text-secondary">Color grading, thumbnail, SEO title, Reels extraction. Delivery
+                            in 5-7 days.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-6">
+                    <div class="step-box">
+                        <div class="step-num">5</div>
+                        <h5 class="text-white">Publish & Grow</h5>
+                        <p class="small text-secondary">Download ready for YouTube, Spotify, Apple. VIP includes
+                            cross-promotion.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -332,14 +554,19 @@
                 <div class="col-md-6">
                     <div class="testimonial-card">
                         <div class="stars">★★★★★</div>
-                        <p class="text-secondary" style="font-style:italic; line-height:1.7;">"Being in the cantonment, I rarely get time off. The team accommodated my weekend schedule perfectly. The 60-minute drive was easy, and the studio quality was top-notch. Highly recommended for Ambala professionals!"</p>
+                        <p class="text-secondary" style="font-style:italic; line-height:1.7;">"Being in the cantonment,
+                            I rarely get time off. The team accommodated my weekend schedule perfectly. The 60-minute
+                            drive was easy, and the studio quality was top-notch. Highly recommended for Ambala
+                            professionals!"</p>
                         <div class="mt-3 text-white fw-bold small">— Defense Professional, Ambala Cantonment</div>
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="testimonial-card">
                         <div class="stars">★★★★★</div>
-                        <p class="text-secondary" style="font-style:italic; line-height:1.7;">"As a trader in Ambala, I wanted to expand my network digitally. Puadh Studio delivered exactly that. The final episode built massive trust with my clients across Haryana and Punjab."</p>
+                        <p class="text-secondary" style="font-style:italic; line-height:1.7;">"As a trader in Ambala, I
+                            wanted to expand my network digitally. Puadh Studio delivered exactly that. The final
+                            episode built massive trust with my clients across Haryana and Punjab."</p>
                         <div class="mt-3 text-white fw-bold small">— Wholesale Trader, Ambala</div>
                     </div>
                 </div>
@@ -352,11 +579,32 @@
         <div class="container" style="max-width:860px;">
             <h2 class="h3 fw-bold text-center mb-4">Questions About Podcast Recording in Ambala?</h2>
             <div class="faq-box" style="background:#0a0a0a; border-radius:16px; padding:40px;">
-                <div class="faq-item"><p class="faq-q">How far is the studio from Ambala?</p><p class="faq-a">Our studio is just 60 minutes away from Ambala via NH44. It is a smooth highway drive, making it perfect for a half-day trip.</p></div>
-                <div class="faq-item"><p class="faq-q">Can defense personnel record on weekends?</p><p class="faq-a">Absolutely. We offer weekend and holiday slots specifically for defense professionals who have tight weekday schedules. Book in advance to secure your slot.</p></div>
-                <div class="faq-item"><p class="faq-q">Can I record remotely from Ambala?</p><p class="faq-a">Yes! Our VIP Elite package supports remote recording via Zoom. However, in-studio recording produces better audio quality and a more professional result.</p></div>
-                <div class="faq-item"><p class="faq-q">How much does a podcast episode cost?</p><p class="faq-a">Starting at ₹5,500 (shooting + recording) up to ₹25,000 (VIP Elite with 15 Reels, content strategy, 48-hour delivery). Most Ambala creators choose the All-Inclusive package at ₹12,500.</p></div>
-                <div class="faq-item"><p class="faq-q">Can you record in Punjabi/Puadhi?</p><p class="faq-a">Yes! We specialize in Punjabi, especially the Puadhi dialect. Our anchor is a native speaker and understands the local culture perfectly.</p></div>
+                <div class="faq-item">
+                    <p class="faq-q">How far is the studio from Ambala?</p>
+                    <p class="faq-a">Our studio is just 60 minutes away from Ambala via NH44. It is a smooth highway
+                        drive, making it perfect for a half-day trip.</p>
+                </div>
+                <div class="faq-item">
+                    <p class="faq-q">Can defense personnel record on weekends?</p>
+                    <p class="faq-a">Absolutely. We offer weekend and holiday slots specifically for defense
+                        professionals who have tight weekday schedules. Book in advance to secure your slot.</p>
+                </div>
+                <div class="faq-item">
+                    <p class="faq-q">Can I record remotely from Ambala?</p>
+                    <p class="faq-a">Yes! Our VIP Elite package supports remote recording via Zoom. However, in-studio
+                        recording produces better audio quality and a more professional result.</p>
+                </div>
+                <div class="faq-item">
+                    <p class="faq-q">How much does a podcast episode cost?</p>
+                    <p class="faq-a">Starting at ₹5,500 (shooting + recording) up to ₹25,000 (VIP Elite with 15 Reels,
+                        content strategy, 48-hour delivery). Most Ambala creators choose the All-Inclusive package at
+                        ₹12,500.</p>
+                </div>
+                <div class="faq-item">
+                    <p class="faq-q">Can you record in Punjabi/Puadhi?</p>
+                    <p class="faq-a">Yes! We specialize in Punjabi, especially the Puadhi dialect. Our anchor is a
+                        native speaker and understands the local culture perfectly.</p>
+                </div>
             </div>
         </div>
     </section>
@@ -366,77 +614,146 @@
         <div class="container" style="max-width:800px; text-align:center;">
             <h2 class="h3 fw-bold mb-4">Ready to Share Your Ambala Story?</h2>
             <p class="text-secondary mb-4">Book your session today. Just a 60-minute drive from Ambala city.</p>
-            <a href="https://wa.me/918360769451?text=Hi!%20I%20am%20from%20Ambala%20and%20want%20to%20book%20the%20All-Inclusive%20package" class="btn btn-gold btn-lg px-5 py-3" target="_blank" rel="noopener"><i class="fab fa-whatsapp me-2"></i> Book Studio Package</a>
+            <a href="https://wa.me/918360769451?text=Hi!%20I%20am%20from%20Ambala%20and%20want%20to%20book%20the%20All-Inclusive%20package"
+                class="btn btn-gold btn-lg px-5 py-3" target="_blank" rel="noopener"><i
+                    class="fab fa-whatsapp me-2"></i> Book Studio Package</a>
         </div>
     </section>
-
     <!-- FOOTER -->
-    <footer class="footer-main pt-4 pb-2">
+    <footer class="footer-main pt-5 pb-3">
         <div class="container-fluid footer-padding">
             <div class="row justify-content-between text-center text-lg-start">
-                <div class="col-lg-3 col-md-6 mb-5">
+
+                <!-- COLUMN 1: BRAND (Full width on mobile for impact) -->
+                <div class="col-lg-3 col-12 mb-4 mb-lg-0">
                     <div class="d-flex align-items-center justify-content-center justify-content-lg-start gap-3 mb-3">
-                        <img src="/img/logo.webp" alt="Puadh Podcast Logo" width="55" height="55" class="rounded-circle footer-logo-img" loading="lazy" />
+                        <img src="/img/logo.webp" alt="Puadh Podcast Logo" width="55" height="55"
+                            class="rounded-circle footer-logo-img" loading="lazy" />
                         <p class="h5 m-0 text-white fw-bold">Puadh Podcast</p>
                     </div>
-                    <p class="small footer-text-muted mb-4 mx-auto mx-lg-0" style="max-width: 320px;">The #1 Podcast representing the Puadh region. Unfiltered, Unscripted, Unapologetic.</p>
-                    <div class="small footer-text-muted mx-auto mx-lg-0" style="max-width: 320px;">
-                        <div class="d-flex justify-content-center justify-content-lg-start mb-2">
-                            <i class="fas fa-map-marker-alt footer-icon mt-1 me-3"></i>
-                            <a href="https://maps.google.com/?q=Plot+F-298,+R%26R+Tower,+Phase+8B,+Ind.+Area,+Sector+74,+Mohali,+Punjab+160055" target="_blank" rel="noopener noreferrer" class="footer-contact-link text-start">Plot F-298, R&R Tower, Phase 8B,<br>Sector 74, Mohali, Punjab 160055</a>
-                        </div>
-                        <div class="d-flex justify-content-center justify-content-lg-start">
-                            <i class="fas fa-phone-alt footer-icon mt-1 me-3"></i>
-                            <a href="tel:+918360769451" class="footer-contact-link">+91 83607 69451</a>
+                    <p class="small footer-text-muted mb-4 mx-auto mx-lg-0" style="max-width: 320px;">
+                        The #1 Podcast representing the Puadh region. Unfiltered, Unscripted, Unapologetic.
+                    </p>
+                    <!-- Available On Badges -->
+                    <div class="mb-4">
+                        <p class="footer-section-title-sm mb-2">Available On</p>
+                        <div class="d-flex gap-2 justify-content-center justify-content-lg-start">
+                            <a href="https://open.spotify.com/show/4S1Lqp4l1Huu1MZJuKibcV" class="platform-badge"
+                                target="_blank">Spotify</a>
+                            <a href="https://www.youtube.com/@puadhpunjabipodcast" class="platform-badge"
+                                target="_blank">YouTube</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-2 col-md-3 col-6 mb-5">
-                    <p class="footer-section-title">Explore</p>
-                    <ul class="list-unstyled footer-link-list">
-                        <li><a href="/episodes">Episodes</a></li>
-                        <li><a href="/be-a-guest/">Be a Guest</a></li>
-                        <li><a href="/clips">Clips</a></li>
-                        <li><a href="/blog/">Blog</a></li>
-                        <li><a href="/about-us">About Us</a></li>
-                    </ul>
+
+                <!-- COLUMN 2 & 3: EXPLORE & STUDIO (2 Columns on Mobile) -->
+                <div class="col-lg-3 col-12 mb-4 mb-lg-0">
+                    <div class="row row-cols-2 text-start">
+                        <div>
+                            <p class="footer-section-title">Explore</p>
+                            <ul class="list-unstyled footer-link-list">
+                                <li><a href="/episodes">Episodes</a></li>
+                                <li><a href="/clips">Clips</a></li>
+                                <li><a href="/blog">Blog</a></li>
+                                <li><a href="/about-us">About</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <p class="footer-section-title">Studio</p>
+                            <ul class="list-unstyled footer-link-list">
+                                <li><a href="/studio">Services</a></li>
+                                <li><a href="/studio/packages">Packages</a></li>
+                                <li><a href="/studio/equipment">Gear</a></li>
+                                <li><a href="/contact">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-lg-2 col-md-3 col-6 mb-5">
-                    <p class="footer-section-title">Studio</p>
-                    <ul class="list-unstyled footer-link-list mb-4">
-                        <li><a href="/studio/">Studio Services</a></li>
-                        <li><a href="/studio/equipment/">Equipment</a></li>
-                        <li><a href="/studio/packages/">Packages</a></li>
-                        <li><a href="/contact">Contact Us</a></li>
-                    </ul>
+
+                <!-- COLUMN 4: POPULAR (2 Columns on Mobile Fix) -->
+                <!-- ✅ REPLACE Popular Locations in footer -->
+                <div class="col-lg-3 col-12 mb-4 mb-lg-0">
+                    <p class="footer-section-title">Popular Locations</p>
+                    <div class="row row-cols-2 text-start">
+                        <ul class="list-unstyled footer-link-list">
+                            <li><a href="/mohali-podcast/" title="Podcast Studio in Mohali">Podcast Studio Mohali</a>
+                            </li>
+                            <li><a href="/chandigarh-podcast/" title="Podcast Studio Chandigarh">Podcast Chandigarh</a>
+                            </li>
+                            <li><a href="/kharar-podcast/" title="Podcast Studio Kharar">Podcast Studio Kharar</a></li>
+                            <li><a href="/zirakpur-podcast/" title="Podcast Studio Zirakpur">Podcast Zirakpur</a></li>
+                        </ul>
+                        <ul class="list-unstyled footer-link-list">
+                            <li><a href="/patiala-podcast/" title="Podcast in Patiala">Podcast in Patiala</a></li>
+                            <li><a href="/ludhiana-podcast/" title="Podcast in Ludhiana">Podcast in Ludhiana</a></li>
+                            <li><a href="/panchkula-podcast/" title="Podcast Panchkula">Podcast Panchkula</a></li>
+                            <li><a href="/punjab-podcast/" title="Best Punjab Podcast">Best Punjab Podcast</a></li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="col-lg-2 col-md-4 col-6 mb-5">
-                    <p class="footer-section-title">Popular</p>
-                    <ul class="list-unstyled footer-link-list">
-                        <li><a href="/mohali-podcast/">Mohali Podcast</a></li>
-                        <li><a href="/ambala-podcast/">Ambala Podcast</a></li>
-                        <li><a href="/chandigarh-podcast/">Chandigarh Podcast</a></li>
-                        <li><a href="/patiala-podcast/">Patiala Podcast</a></li>
-                    </ul>
-                </div>
-                <div class="col-lg-3 col-md-8 mb-4">
-                    <p class="footer-section-title">Follow Us</p>
-                    <div class="social-icons d-flex flex-wrap justify-content-center justify-content-lg-start gap-2 mb-4">
-                        <a href="https://www.instagram.com/puadhpunjabipodcast/" aria-label="Instagram" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
-                        <a href="https://wa.me/918360769451" aria-label="WhatsApp" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i></a>
-                        <a href="https://www.youtube.com/@puadhpunjabipodcast" aria-label="YouTube" target="_blank" rel="noopener noreferrer"><i class="fab fa-youtube"></i></a>
-                        <a href="https://open.spotify.com/show/4S1Lqp4l1Huu1MZJuKibcV" aria-label="Spotify" target="_blank" rel="noopener noreferrer"><i class="fab fa-spotify"></i></a>
+
+                <!-- COLUMN 5: COMMUNITY & NEWSLETTER -->
+                <div class="col-lg-3 col-12 mb-0">
+                    <p class="footer-section-title">Join Community</p>
+                    <div class="social-icons d-flex justify-content-center justify-content-lg-start gap-2 mb-4">
+                        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-x-twitter"></i></a>
+                    </div>
+
+<!-- The Form -->
+<p class="footer-section-title-sm mb-1">Get New Episodes + BTS Clips 🎙</p>
+<form id="subscriptionForm" class="footer-subscribe-form mb-3">
+  <!-- Your Access Key -->
+  <input type="hidden" name="access_key" value="48bfad09-3208-4804-abfa-6b581af52bdf">
+
+  <div class="input-group">
+    <input type="email" name="email" class="form-control footer-input" placeholder="Your email" required />
+    
+    <button class="btn btn-footer-subscribe fw-bold px-3" type="submit" id="submitBtn">
+      <span id="btnText">Join Free</span>
+      <!-- Hidden Spinner -->
+      <span id="btnSpinner" class="spinner-border spinner-border-sm d-none" role="status" aria-hidden="true"></span>
+    </button>
+  </div>
+</form>
+
+<!-- Success Modal (Place this anywhere) -->
+<div class="modal fade" id="successModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content text-center p-4">
+      <div class="modal-body">
+        <div class="mb-3">
+            <span style="font-size: 50px;">🎉</span>
+        </div>
+        <h3 class="fw-bold">You're on the list!</h3>
+        <p class="text-muted">Thanks for subscribing. Check your inbox for the latest episodes soon.</p>
+        <button type="button" class="btn btn-dark w-100" data-bs-dismiss="modal">Awesome</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+                    <!-- Legal Links (Small & Inline for Mobile) -->
+                    <div class="d-flex justify-content-center justify-content-lg-start gap-3 mt-3">
+                        <a href="/privacy" class="small text-secondary text-decoration-none">Privacy</a>
+                        <a href="/terms" class="small text-secondary text-decoration-none">Terms</a>
                     </div>
                 </div>
             </div>
-            <hr class="footer-divider" />
-            <div class="footer-bottom text-center py-3">
-                <p class="small footer-text-muted mb-0">&copy; <script>document.write(new Date().getFullYear())</script> Puadh Punjabi Podcast Studio. All rights reserved.</p>
+
+            <hr class="footer-divider mt-5" />
+            <div class="footer-bottom text-center py-2">
+                <p class="small footer-text-muted mb-0">
+                    &copy;
+                    <script>document.write(new Date().getFullYear())</script> Puadh Punjabi Podcast Studio.
+                </p>
             </div>
         </div>
     </footer>
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/form-handler.js" type="module"></script>
 </body>
 
 </html>

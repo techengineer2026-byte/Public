@@ -22,7 +22,7 @@
         content="Best podcast studio serving Chandigarh at Phase 8B Mohali, Sector 74. Sony FX3, Shure SM7B, full editing & 6 Reels. From ₹2,000/hr." />
     <meta property="og:url" content="https://puadhpunjabipodcast.com/chandigarh-podcast/" />
 
-    <meta property="og:image" content="https://puadhpunjabipodcast.com/img/social-share-image.jpg" />
+    <meta property="og:image" content="https://puadhpunjabipodcast.com/img/chandigarh-podcast.webp" />
     <meta property="og:type" content="business.business" />
 
     <meta name="twitter:card" content="summary_large_image">
@@ -30,7 +30,7 @@
     <meta name="twitter:title" content="Podcast Studio in Chandigarh | Professional Recording – Puadh Podcast">
     <meta name="twitter:description"
         content="Book the top podcast studio near Chandigarh. Professional recording, shooting, and editing. Phase 8B Mohali, just 10 min from Chandigarh.">
-    <meta name="twitter:image" content="https://puadhpunjabipodcast.com/img/social-share-image.jpg">
+    <meta name="twitter:image" content="https://puadhpunjabipodcast.com/img/chandigarh-podcast.webp">
 
     <!-- GEO META TAGS -->
     <meta name="geo.region" content="IN-PB" />
@@ -61,7 +61,7 @@
       "@type": "LocalBusiness",
       "@id": "https://puadhpunjabipodcast.com/#studio",
       "name": "Puadh Punjabi Podcast Studio",
-      "image": "https://puadhpunjabipodcast.com/img/logo.webp",
+      "image": "https://puadhpunjabipodcast.com/img/chandigarh-podcast.webp",
       "description": "Professional podcast recording studio in Sector 74, Mohali, serving Chandigarh, Panchkula, and the Tricity region. Home of the Puadh Punjabi Podcast.",
       "url": "https://puadhpunjabipodcast.com",
       "telephone": "+918360769451",
@@ -103,13 +103,12 @@
           { "@type": "City", "name": "Zirakpur" },
           { "@type": "City", "name": "Landran" },
           { "@type": "City", "name": "Kurali" }
+        ],
+        "sameAs": [
+          "https://www.instagram.com/puadhpunjabipodcast",
+          "https://www.youtube.com/@puadhpunjabipodcast",
+          "https://open.spotify.com/show/4S1Lqp4l1Huu1MZJuKibcV"
         ]
-
-      "sameAs": [
-        "https://www.instagram.com/puadhpunjabipodcast",
-        "https://www.youtube.com/@puadhpunjabipodcast",
-        "https://open.spotify.com/show/4S1Lqp4l1Huu1MZJuKibcV"
-      ]
     },
     {
       "@context": "https://schema.org",
@@ -674,20 +673,23 @@
                 </div>
 
                 <!-- COLUMN 4: POPULAR (2 Columns on Mobile Fix) -->
+                <!-- ✅ REPLACE Popular Locations in footer -->
                 <div class="col-lg-3 col-12 mb-4 mb-lg-0">
                     <p class="footer-section-title">Popular Locations</p>
                     <div class="row row-cols-2 text-start">
                         <ul class="list-unstyled footer-link-list">
-                            <li><a href="/mohali-podcast">Mohali</a></li>
-                            <li><a href="/chandigarh-podcast">Chandigarh</a></li>
-                            <li><a href="/kharar-podcast">Kharar</a></li>
-                            <li><a href="/zirakpur-podcast">Zirakpur</a></li>
+                            <li><a href="/mohali-podcast/" title="Podcast Studio in Mohali">Podcast Studio Mohali</a>
+                            </li>
+                            <li><a href="/chandigarh-podcast/" title="Podcast Studio Chandigarh">Podcast Chandigarh</a>
+                            </li>
+                            <li><a href="/kharar-podcast/" title="Podcast Studio Kharar">Podcast Studio Kharar</a></li>
+                            <li><a href="/zirakpur-podcast/" title="Podcast Studio Zirakpur">Podcast Zirakpur</a></li>
                         </ul>
                         <ul class="list-unstyled footer-link-list">
-                            <li><a href="/patiala-podcast">Patiala</a></li>
-                            <li><a href="/ludhiana-podcast">Ludhiana</a></li>
-                            <li><a href="/panchkula-podcast">Panchkula</a></li>
-                            <li><a href="/punjab-podcast">Punjab</a></li>
+                            <li><a href="/patiala-podcast/" title="Podcast in Patiala">Podcast in Patiala</a></li>
+                            <li><a href="/ludhiana-podcast/" title="Podcast in Ludhiana">Podcast in Ludhiana</a></li>
+                            <li><a href="/panchkula-podcast/" title="Podcast Panchkula">Podcast Panchkula</a></li>
+                            <li><a href="/punjab-podcast/" title="Best Punjab Podcast">Best Punjab Podcast</a></li>
                         </ul>
                     </div>
                 </div>
@@ -702,13 +704,38 @@
                         <a href="#" target="_blank"><i class="fab fa-x-twitter"></i></a>
                     </div>
 
-                    <p class="footer-section-title-sm mb-1">Get New Episodes + BTS Clips 🎙</p>
-                    <form class="footer-subscribe-form mb-3" onsubmit="return false;">
-                        <div class="input-group">
-                            <input type="email" class="form-control footer-input" placeholder="Your email" required />
-                            <button class="btn btn-footer-subscribe fw-bold px-3" type="submit">Join Free</button>
-                        </div>
-                    </form>
+<!-- The Form -->
+<p class="footer-section-title-sm mb-1">Get New Episodes + BTS Clips 🎙</p>
+<form id="subscriptionForm" class="footer-subscribe-form mb-3">
+  <!-- Your Access Key -->
+  <input type="hidden" name="access_key" value="48bfad09-3208-4804-abfa-6b581af52bdf">
+
+  <div class="input-group">
+    <input type="email" name="email" class="form-control footer-input" placeholder="Your email" required />
+    
+    <button class="btn btn-footer-subscribe fw-bold px-3" type="submit" id="submitBtn">
+      <span id="btnText">Join Free</span>
+      <!-- Hidden Spinner -->
+      <span id="btnSpinner" class="spinner-border spinner-border-sm d-none" role="status" aria-hidden="true"></span>
+    </button>
+  </div>
+</form>
+
+<!-- Success Modal (Place this anywhere) -->
+<div class="modal fade" id="successModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content text-center p-4">
+      <div class="modal-body">
+        <div class="mb-3">
+            <span style="font-size: 50px;">🎉</span>
+        </div>
+        <h3 class="fw-bold">You're on the list!</h3>
+        <p class="text-muted">Thanks for subscribing. Check your inbox for the latest episodes soon.</p>
+        <button type="button" class="btn btn-dark w-100" data-bs-dismiss="modal">Awesome</button>
+      </div>
+    </div>
+  </div>
+</div>
 
                     <!-- Legal Links (Small & Inline for Mobile) -->
                     <div class="d-flex justify-content-center justify-content-lg-start gap-3 mt-3">
@@ -728,6 +755,7 @@
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/form-handler.js" type="module"></script>
 </body>
 
 </html>

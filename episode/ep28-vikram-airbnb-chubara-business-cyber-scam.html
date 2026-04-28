@@ -344,23 +344,24 @@
                 </div>
 
                 <!-- COLUMN 4: POPULAR (2 Columns on Mobile Fix) -->
-                <div class="col-lg-3 col-12 mb-4 mb-lg-0">
-                    <p class="footer-section-title">Popular Locations</p>
-                    <div class="row row-cols-2 text-start">
-                        <ul class="list-unstyled footer-link-list">
-                            <li><a href="/mohali-podcast">Mohali</a></li>
-                            <li><a href="/chandigarh-podcast">Chandigarh</a></li>
-                            <li><a href="/kharar-podcast">Kharar</a></li>
-                            <li><a href="/zirakpur-podcast">Zirakpur</a></li>
-                        </ul>
-                        <ul class="list-unstyled footer-link-list">
-                            <li><a href="/patiala-podcast">Patiala</a></li>
-                            <li><a href="/ludhiana-podcast">Ludhiana</a></li>
-                            <li><a href="/panchkula-podcast">Panchkula</a></li>
-                            <li><a href="/punjab-podcast">Punjab</a></li>
-                        </ul>
-                    </div>
-                </div>
+<!-- ✅ REPLACE Popular Locations in footer -->
+<div class="col-lg-3 col-12 mb-4 mb-lg-0">
+  <p class="footer-section-title">Popular Locations</p>
+  <div class="row row-cols-2 text-start">
+    <ul class="list-unstyled footer-link-list">
+      <li><a href="/mohali-podcast/" title="Podcast Studio in Mohali">Podcast Studio Mohali</a></li>
+      <li><a href="/chandigarh-podcast/" title="Podcast Studio Chandigarh">Podcast Chandigarh</a></li>
+      <li><a href="/kharar-podcast/" title="Podcast Studio Kharar">Podcast Studio Kharar</a></li>
+      <li><a href="/zirakpur-podcast/" title="Podcast Studio Zirakpur">Podcast Zirakpur</a></li>
+    </ul>
+    <ul class="list-unstyled footer-link-list">
+      <li><a href="/patiala-podcast/" title="Podcast in Patiala">Podcast in Patiala</a></li>
+      <li><a href="/ludhiana-podcast/" title="Podcast in Ludhiana">Podcast in Ludhiana</a></li>
+      <li><a href="/panchkula-podcast/" title="Podcast Panchkula">Podcast Panchkula</a></li>
+      <li><a href="/punjab-podcast/" title="Best Punjab Podcast">Best Punjab Podcast</a></li>
+    </ul>
+  </div>
+</div>
 
                 <!-- COLUMN 5: COMMUNITY & NEWSLETTER -->
                 <div class="col-lg-3 col-12 mb-0">
@@ -372,13 +373,38 @@
                         <a href="#" target="_blank"><i class="fab fa-x-twitter"></i></a>
                     </div>
 
-                    <p class="footer-section-title-sm mb-1">Get New Episodes + BTS Clips 🎙</p>
-                    <form class="footer-subscribe-form mb-3" onsubmit="return false;">
-                        <div class="input-group">
-                            <input type="email" class="form-control footer-input" placeholder="Your email" required />
-                            <button class="btn btn-footer-subscribe fw-bold px-3" type="submit">Join Free</button>
-                        </div>
-                    </form>
+<!-- The Form -->
+<p class="footer-section-title-sm mb-1">Get New Episodes + BTS Clips 🎙</p>
+<form id="subscriptionForm" class="footer-subscribe-form mb-3">
+  <!-- Your Access Key -->
+  <input type="hidden" name="access_key" value="48bfad09-3208-4804-abfa-6b581af52bdf">
+
+  <div class="input-group">
+    <input type="email" name="email" class="form-control footer-input" placeholder="Your email" required />
+    
+    <button class="btn btn-footer-subscribe fw-bold px-3" type="submit" id="submitBtn">
+      <span id="btnText">Join Free</span>
+      <!-- Hidden Spinner -->
+      <span id="btnSpinner" class="spinner-border spinner-border-sm d-none" role="status" aria-hidden="true"></span>
+    </button>
+  </div>
+</form>
+
+<!-- Success Modal (Place this anywhere) -->
+<div class="modal fade" id="successModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content text-center p-4">
+      <div class="modal-body">
+        <div class="mb-3">
+            <span style="font-size: 50px;">🎉</span>
+        </div>
+        <h3 class="fw-bold">You're on the list!</h3>
+        <p class="text-muted">Thanks for subscribing. Check your inbox for the latest episodes soon.</p>
+        <button type="button" class="btn btn-dark w-100" data-bs-dismiss="modal">Awesome</button>
+      </div>
+    </div>
+  </div>
+</div>
 
                     <!-- Legal Links (Small & Inline for Mobile) -->
                     <div class="d-flex justify-content-center justify-content-lg-start gap-3 mt-3">
@@ -485,6 +511,7 @@
     ['whatsapp-share', 'twitter-share', 'linkedin-share'].forEach(id => {
       document.getElementById(id).setAttribute('target', '_blank');
     });  </script>
+    <script src="/js/form-handler.js" type="module"></script>
 </body>
 
 </html>
