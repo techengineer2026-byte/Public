@@ -155,48 +155,7 @@
           "url": "https://puadhpunjabipodcast.com/episode/ep19-gurjeet-mattaur"
         }
       },
-      {
-        "id": 7,
-        "title": "NRI Life: Canada vs Australia — Which is Better?",
-        "slug": "nri-life-canada-vs-australia",
-        "url": "https://puadhpunjabipodcast.com/blog/nri-life-canada-vs-australia",
-        "category": "NRI Life",
-        "series": "NRI Life Series",
-        "featured": false,
-        "image": "/img/nri-life.webp",
-        "badgeLabel": "NRI Life",
-        "excerpt": "Honest comparison of NRI life in Canada vs Australia. Cost of living, PR pathways, job market, and cultural fit.",
-        "datePublished": "2026-05-10",
-        "dateModified": "2026-05-10",
-        "readTime": "11 min read",
-        "wordCount": 2600,
-        "relatedEpisode": {
-          "number": 25,
-          "title": "Software Engineer in Doha",
-          "url": "https://puadhpunjabipodcast.com/episode/ep25-doha-engineer"
-        }
-      },
-      {
-        "id": 8,
-        "title": "Real Estate: Punjab vs Dubai — Where to Invest?",
-        "slug": "real-estate-punjab-vs-dubai",
-        "url": "https://puadhpunjabipodcast.com/blog/real-estate-punjab-vs-dubai",
-        "category": "Entrepreneurship",
-        "series": null,
-        "featured": false,
-        "image": "/img/real-estate.webp",
-        "badgeLabel": "Investment",
-        "excerpt": "Comparing real estate returns in Punjab vs Dubai. Which market is better for NRIs? ROI, risks, and the truth.",
-        "datePublished": "2026-05-28",
-        "dateModified": "2026-05-28",
-        "readTime": "10 min read",
-        "wordCount": 2400,
-        "relatedEpisode": {
-          "number": 23,
-          "title": "Anshul Bansal – Real Estate",
-          "url": "https://puadhpunjabipodcast.com/episode/ep23-real-estate"
-        }
-      },
+    
       {
         "id": 9,
         "title": "IT Jobs in Mohali & Chandigarh 2026: Complete Guide",

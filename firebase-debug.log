@@ -1,0 +1,37 @@
+[debug] [2026-05-20T12:38:27.465Z] ----------------------------------------------------------------------
+[debug] [2026-05-20T12:38:27.475Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\teche\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2026-05-20T12:38:27.475Z] CLI Version:   15.17.0
+[debug] [2026-05-20T12:38:27.476Z] Platform:      win32
+[debug] [2026-05-20T12:38:27.476Z] Node Version:  v20.18.0
+[debug] [2026-05-20T12:38:27.476Z] Time:          Wed May 20 2026 18:08:27 GMT+0530 (India Standard Time)
+[debug] [2026-05-20T12:38:27.476Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2026-05-20T12:38:33.582Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-05-20T12:38:33.583Z] > authorizing via signed-in user (techengineer2026@gmail.com)
+[debug] [2026-05-20T12:38:33.583Z] [iam] checking project pppodcast-fb08b for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2026-05-20T12:38:33.585Z] Checked if tokens are valid: true, expires at: 1779283411578
+[debug] [2026-05-20T12:38:33.585Z] Checked if tokens are valid: true, expires at: 1779283411578
+[debug] [2026-05-20T12:38:33.586Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/pppodcast-fb08b:testIamPermissions [none]
+[debug] [2026-05-20T12:38:33.587Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/pppodcast-fb08b:testIamPermissions  x-goog-user-project=pppodcast-fb08b
+[debug] [2026-05-20T12:38:33.587Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/pppodcast-fb08b:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2026-05-20T12:38:35.293Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/pppodcast-fb08b:testIamPermissions 200
+[debug] [2026-05-20T12:38:35.293Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/pppodcast-fb08b:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2026-05-20T12:38:35.294Z] Checked if tokens are valid: true, expires at: 1779283411578
+[debug] [2026-05-20T12:38:35.294Z] Checked if tokens are valid: true, expires at: 1779283411578
+[debug] [2026-05-20T12:38:35.294Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/pppodcast-fb08b [none]
+[debug] [2026-05-20T12:38:35.809Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/pppodcast-fb08b 200
+[debug] [2026-05-20T12:38:35.809Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/pppodcast-fb08b {"projectId":"pppodcast-fb08b","projectNumber":"90148077420","displayName":"PPPodcast","name":"projects/pppodcast-fb08b","resources":{"hostingSite":"pppodcast-fb08b"},"state":"ACTIVE","etag":"1_b3ea0fe9-3a85-4fab-a06a-56c52ed4de62"}
+[info] 
+[info] === Deploying to 'pppodcast-fb08b'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2026-05-20T12:38:35.887Z] Checked if tokens are valid: true, expires at: 1779283411578
+[debug] [2026-05-20T12:38:35.887Z] Checked if tokens are valid: true, expires at: 1779283411578
+[debug] [2026-05-20T12:38:35.888Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/pppodcast-fb08b/sites/pppodcast-fb08b [none]
+[debug] [2026-05-20T12:38:37.225Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/pppodcast-fb08b/sites/pppodcast-fb08b 200
+[debug] [2026-05-20T12:38:37.225Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/pppodcast-fb08b/sites/pppodcast-fb08b {"name":"projects/pppodcast-fb08b/sites/pppodcast-fb08b","defaultUrl":"https://pppodcast-fb08b.web.app","appId":"1:90148077420:web:a715b11ac5d55b922a3d49","type":"DEFAULT_SITE"}
+[debug] [2026-05-20T12:38:37.228Z] Checked if tokens are valid: true, expires at: 1779283411578
+[debug] [2026-05-20T12:38:37.228Z] Checked if tokens are valid: true, expires at: 1779283411578
+[debug] [2026-05-20T12:38:37.229Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/pppodcast-fb08b/versions [none]
+[debug] [2026-05-20T12:38:37.229Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/pppodcast-fb08b/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2026-05-20T12:38:38.400Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/pppodcast-fb08b/versions 200
