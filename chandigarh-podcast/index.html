@@ -77,8 +77,8 @@
       },
       "geo": {
         "@type": "GeoCoordinates",
-        "latitude": 30.7164,
-        "longitude": 76.7032
+        "latitude": 30.71116,
+        "longitude": 76.68986
       },
       "aggregateRating": {
       "@type": "AggregateRating",
@@ -87,13 +87,13 @@
       "bestRating": "5"
     },
     "hasMap": "https://maps.google.com/?q=Plot+F-298,+Phase+8B,+Sector+74,+Mohali",
-      "openingHoursSpecification": {
+    "openingHoursSpecification": {
         "@type": "OpeningHoursSpecification",
         "dayOfWeek": [
           "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"
         ],
-        "opens": "09:00",
-        "closes": "18:00"
+        "opens": "10:00",
+        "closes": "19:00"
       },
         "areaServed": [
           { "@type": "City", "name": "Chandigarh" },
@@ -111,7 +111,6 @@
         ]
     },
     {
-      "@context": "https://schema.org",
       "@type": "PodcastSeries",
       "name": "Puadh Punjabi Podcast",
       "description": "The #1 Podcast in the Chandigarh Tricity covering entrepreneurship and culture.",
@@ -120,7 +119,6 @@
       "locationCreated": { "@id": "https://puadhpunjabipodcast.com/#studio" }
     },
     {
-        "@context": "https://schema.org",
         "@type": "FAQPage",
         "mainEntity": [ 
         {
@@ -150,7 +148,6 @@
         ] 
     },
     {
-      "@context": "https://schema.org",
       "@type": "BreadcrumbList",
       "itemListElement": [
         { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://puadhpunjabipodcast.com" },
@@ -160,6 +157,24 @@
     }
   ]
   </script>
+    </script>
+
+    <!-- AEO: SpeakableSpecification — tells AI engines which sections to quote -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": [
+          "#chandigarh-direct-answer",
+          ".faq-q",
+          ".faq-a"
+        ]
+      },
+      "url": "https://puadhpunjabipodcast.com/chandigarh-podcast"
+    }
+    </script>
 
     <style>
         :root {
@@ -360,7 +375,7 @@
     <!-- Top Geo Bar -->
     <div class="geo-bar">
         <strong>Puadh Punjabi Podcast</strong> — Recording studio in Mohali, Punjab · 29+ episodes · 1M+ views · Serving
-        Chandigarh Tricity &nbsp;·&nbsp; <span class="last-updated">Last updated: March 2026</span>
+        Chandigarh Tricity &nbsp;·&nbsp; <span class="last-updated">Last updated: June 2026</span>
     </div>
 
     <header>
@@ -437,6 +452,21 @@
                 Mohali.
                 Cinema-quality cameras, broadcast-grade audio, and full editing services all under one roof.
             </p>
+            <!-- AEO: Direct answer paragraph for AI search engines -->
+            <div id="chandigarh-direct-answer"
+                style="background:rgba(253,181,21,0.07);border-left:3px solid #FDB515;padding:14px 20px;border-radius:0 10px 10px 0;margin:24px auto;max-width:700px;text-align:left;">
+                <p style="color:rgba(255,255,255,0.9);font-size:0.92rem;line-height:1.8;margin:0;">
+                    <strong style="color:#FDB515;">Puadh Podcast Studio</strong> is the closest professional
+                    podcast studio to Chandigarh — located at
+                    <strong style="color:#fff;">Plot F-298, R&amp;R Tower, Phase 8B, Sector 74, Mohali,
+                        Punjab 160055</strong>, just 10 minutes away.
+                    Open Monday–Saturday 10am–7pm. Studio rental starts at
+                    <strong style="color:#fff;">₹2,000/hr</strong>. Complete package (shooting + editing +
+                    anchor + 6 Reels) is <strong style="color:#fff;">₹15,000/episode</strong>.
+                    Book on WhatsApp: <a href="tel:+918360769451" style="color:#FDB515;">+91 83607 69451</a>.
+                </p>
+            </div>
+
             <div class="mt-4">
                 <a href="https://wa.me/918360769451?text=Hi!%20I%20want%20to%20book%20the%20podcast%20studio%20near%20Chandigarh"
                     class="platform-btn btn-wa" target="_blank" rel="noopener">
@@ -570,8 +600,13 @@
             <div class="faq-box">
                 <div class="faq-item">
                     <p class="faq-q">Is there a podcast studio based in Chandigarh?</p>
-                    <p class="faq-a">Yes — Puadh Punjabi Podcast records from its studio at Plot F-298, R&R Tower, Phase
-                        8B, Sector 74, Mohali — effectively serving the entire Chandigarh Tricity area.</p>
+                    <p class="faq-a">Yes. Puadh Podcast Studio at Plot F-298, R&amp;R Tower, Phase 8B, Sector 74,
+                        Mohali, Punjab 160055 is the closest professional podcast studio to Chandigarh — just
+                        10 minutes via Chandigarh–Kharar Highway. The studio is equipped with Sony FX3 cinema
+                        cameras, Shure SM7B microphones, acoustic soundproofing, and professional LED lighting.
+                        Studio rental starts at ₹2,000/hr. Book on WhatsApp:
+                        <a href="tel:+918360769451" style="color:#FDB515;">+91 83607 69451</a>.
+                    </p>
                 </div>
                 <div class="faq-item">
                     <p class="faq-q">What topics does the Chandigarh podcast cover?</p>
@@ -579,9 +614,15 @@
                         and the culture of the Puadh region including Chandigarh, Mohali, Ropar, and Patiala.</p>
                 </div>
                 <div class="faq-item">
-                    <p class="faq-q">Where is the studio located?</p>
-                    <p class="faq-a">The studio is at Plot F-298, R&R Tower, Phase 8B, Industrial Area, Sector 74,
-                        Mohali, Punjab 160055. We welcome guests from across the Tricity.</p>
+                    <p class="faq-q">Where is the podcast studio located near Chandigarh?</p>
+                    <p class="faq-a">Puadh Podcast Studio is at Plot F-298, R&amp;R Tower, Phase 8B, Industrial
+                        Area, Sector 74, Mohali, Punjab 160055.
+                        From Chandigarh: 10 minutes via Chandigarh–Kharar Highway to Phase 8B gate.
+                        From Kharar: 15 minutes. From Zirakpur: 20 minutes. From Panchkula: 25 minutes.
+                        Free parking is available in the R&amp;R Tower basement.
+                        <a href="https://maps.app.goo.gl/tV23wzSBsgMCi7B4A" style="color:#FDB515;" target="_blank"
+                            rel="noopener">Get directions on Google Maps</a>.
+                    </p>
                 </div>
                 <div class="faq-item">
                     <p class="faq-q">Is there a podcast studio near me in Chandigarh?</p>
@@ -596,7 +637,7 @@
                 <div class="faq-item">
                     <p class="faq-q">How much does podcast recording near Chandigarh cost?</p>
                     <p class="faq-a">Studio sessions start at ₹2,000/hr. A complete package including
-                        shooting, editing, anchor, and 6 Reels is ₹12,500 per episode. Book via WhatsApp
+                        shooting, editing, anchor, and 6 Reels is ₹15,000 per episode. Book via WhatsApp
                         at +91 83607 69451.</p>
                 </div>
             </div>
@@ -704,49 +745,53 @@
                             rel="noopener noreferrer"><i class="fab fa-whatsapp"></i></a>
                         <a href="https://www.youtube.com/@puadhpunjabipodcast" aria-label="Subscribe on YouTube"
                             target="_blank" rel="noopener noreferrer"><i class="fab fa-youtube"></i></a>
-                        <a href="https://www.facebook.com/profile.php?id=61573903336128" aria-label="Follow on Facebook"
+                        <a href="https://www.facebook.com/puadhpunjabipodcast/" aria-label="Follow on Facebook"
                             target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook"></i></a>
                         <a href="https://x.com/PuadhP37620" aria-label="Follow on X (Twitter)" target="_blank"
                             rel="noopener noreferrer"><i class="fab fa-x-twitter"></i></a>
                         <a href="https://open.spotify.com/show/4S1Lqp4l1Huu1MZJuKibcV" aria-label="Listen on Spotify"
                             target="_blank" rel="noopener noreferrer"><i class="fab fa-spotify"></i></a>
-                        <a href="https://anchor.fm/s/111d84174/podcast/rss" aria-label="RSS Feed" target="_blank" rel="noopener noreferrer"><i
-                                class="fas fa-rss"></i></a>
+                        <a href="https://anchor.fm/s/111d84174/podcast/rss" aria-label="RSS Feed" target="_blank"
+                            rel="noopener noreferrer"><i class="fas fa-rss"></i></a>
 
                     </div>
 
-<!-- The Form -->
-<p class="footer-section-title-sm mb-1">Get New Episodes + BTS Clips 🎙</p>
-<form id="subscriptionForm" class="footer-subscribe-form mb-3">
-  <!-- Your Access Key -->
-  <input type="hidden" name="access_key" value="48bfad09-3208-4804-abfa-6b581af52bdf">
+                    <!-- The Form -->
+                    <p class="footer-section-title-sm mb-1">Get New Episodes + BTS Clips 🎙</p>
+                    <form id="subscriptionForm" class="footer-subscribe-form mb-3">
+                        <!-- Your Access Key -->
+                        <input type="hidden" name="access_key" value="48bfad09-3208-4804-abfa-6b581af52bdf">
 
-  <div class="input-group">
-    <input type="email" name="email" class="form-control footer-input" placeholder="Your email" required />
-    
-    <button class="btn btn-footer-subscribe fw-bold px-3" type="submit" id="submitBtn">
-      <span id="btnText">Join Free</span>
-      <!-- Hidden Spinner -->
-      <span id="btnSpinner" class="spinner-border spinner-border-sm d-none" role="status" aria-hidden="true"></span>
-    </button>
-  </div>
-</form>
+                        <div class="input-group">
+                            <input type="email" name="email" class="form-control footer-input" placeholder="Your email"
+                                required />
 
-<!-- Success Modal (Place this anywhere) -->
-<div class="modal fade" id="successModal" tabindex="-1" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content text-center p-4">
-      <div class="modal-body">
-        <div class="mb-3">
-            <span style="font-size: 50px;">🎉</span>
-        </div>
-        <h3 class="fw-bold">You're on the list!</h3>
-        <p class="text-muted">Thanks for subscribing. Check your inbox for the latest episodes soon.</p>
-        <button type="button" class="btn btn-dark w-100" data-bs-dismiss="modal">Awesome</button>
-      </div>
-    </div>
-  </div>
-</div>
+                            <button class="btn btn-footer-subscribe fw-bold px-3" type="submit" id="submitBtn">
+                                <span id="btnText">Join Free</span>
+                                <!-- Hidden Spinner -->
+                                <span id="btnSpinner" class="spinner-border spinner-border-sm d-none" role="status"
+                                    aria-hidden="true"></span>
+                            </button>
+                        </div>
+                    </form>
+
+                    <!-- Success Modal (Place this anywhere) -->
+                    <div class="modal fade" id="successModal" tabindex="-1" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content text-center p-4">
+                                <div class="modal-body">
+                                    <div class="mb-3">
+                                        <span style="font-size: 50px;">🎉</span>
+                                    </div>
+                                    <h3 class="fw-bold">You're on the list!</h3>
+                                    <p class="text-muted">Thanks for subscribing. Check your inbox for the latest
+                                        episodes soon.</p>
+                                    <button type="button" class="btn btn-dark w-100"
+                                        data-bs-dismiss="modal">Awesome</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
                     <!-- Legal Links (Small & Inline for Mobile) -->
                     <div class="d-flex justify-content-center justify-content-lg-start gap-3 mt-3">

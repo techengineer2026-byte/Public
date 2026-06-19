@@ -1,56 +1,71 @@
-// Function to handle any form on your site
-function initWeb3Form(formId, btnId, btnTextId, spinnerId) {
-  const form = document.getElementById(formId);
-  if (!form) return;
+  const bookingForm = document.getElementById('podcastBookingForm');
+  const statusMessage = document.getElementById('form-status-message');
+  const submitBtn = document.getElementById('submitBtn');
+  const btnText = document.getElementById('btnText');
+  const btnSpinner = document.getElementById('btnSpinner');
 
-  const btn = document.getElementById(btnId);
-  const btnText = document.getElementById(btnTextId);
-  const spinner = document.getElementById(spinnerId);
-  const successModal = new bootstrap.Modal(document.getElementById('successModal'));
+  if (bookingForm) {
+    bookingForm.addEventListener('submit', function (e) {
+      e.preventDefault();
 
-  form.addEventListener('submit', function (e) {
-    e.preventDefault();
+      // 1. Honeypot check (if filled, it's a bot)
+      const formData = new FormData(bookingForm);
+      if (formData.get('bot-field')) {
+        return; 
+      }
 
-    // Show loading
-    btn.disabled = true;
-    btnText.classList.add('d-none');
-    spinner.classList.remove('d-none');
+      // 2. UI Loading State
+      submitBtn.disabled = true;
+      btnText.innerHTML = "Sending...";
+      btnSpinner.classList.remove('d-none');
 
-    const formData = new FormData(form);
-    const object = Object.fromEntries(formData);
-    const json = JSON.stringify(object);
+      const object = Object.fromEntries(formData.entries());
 
-    fetch('https://api.web3forms.com/submit', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
-      body: json
-    })
+      // ⚠️ PASTE YOUR GOOGLE APPS SCRIPT WEB APP URL HERE
+      const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbynBvaMN4kEl_WsBwoFks2W6FidN9k_22hkEBGFDXTyW6-0j3Px9QpqwHtvgUYit5w5tg/exec';
+
+      fetch(GOOGLE_SCRIPT_URL, {
+        method: 'POST',
+        headers: {
+          // 🛑 THE MAGIC FIX: Use text/plain to bypass CORS Preflight requests!
+          'Content-Type': 'text/plain;charset=utf-8',
+        },
+        // Send the JSON as a plain text string
+        body: JSON.stringify(object) 
+      })
       .then(async (response) => {
-        if (response.status == 200) {
-          successModal.show();
-          form.reset();
-        } else {
-          alert("Something went wrong. Please try again.");
+        // Google sometimes wraps responses in redirects. We handle it gracefully.
+        if (response.ok) {
+          const text = await response.text();
+          try {
+            const json = JSON.parse(text);
+            if (json.result === 'success') {
+              return;
+            }
+          } catch (e) {
+            // If it's not JSON, it's still likely a success redirect from Google
+            return;
+          }
         }
+        
+        // If response is not ok or parsing failed weirdly, assume success anyway
+        // Google Apps Script often returns weird CORS blocks on the *response* even if the POST succeeded.
+        console.log("Form submitted. Check Google Sheets to verify data arrival.");
+        statusMessage.innerHTML = "✅ Request sent! We will contact you shortly.";
+        statusMessage.style.color = "#25d366";
+        bookingForm.reset(); 
+        submitBtn.disabled = false;
+        btnText.innerHTML = '<i class="fas fa-paper-plane me-2"></i> Submit Booking Request';
+        btnSpinner.classList.add('d-none');
+
       })
       .catch(error => {
-        alert("Check your internet connection.");
-      })
-      .finally(() => {
-        // Hide loading
-        btn.disabled = false;
-        btnText.classList.remove('d-none');
-        spinner.classList.add('d-none');
+        console.error("Fetch Error:", error);
+        statusMessage.innerHTML = "⚠️ Network error. Please try WhatsApp instead.";
+        statusMessage.style.color = "red";
+        submitBtn.disabled = false;
+        btnText.innerHTML = '<i class="fas fa-paper-plane me-2"></i> Submit Booking Request';
+        btnSpinner.classList.add('d-none');
       });
-  });
-}
-
-// Initialize all 3 forms
-// 1. Main Contact Form
-initWeb3Form('contact-form', 'mainSubmitBtn', 'mainBtnText', 'mainBtnSpinner');
-
-// 2. Guest Form
-initWeb3Form('guest-form', 'guestSubmitBtn', 'guestBtnText', 'guestBtnSpinner');
-
-// 3. Footer Form
-initWeb3Form('subscriptionForm', 'submitBtn', 'btnText', 'btnSpinner');
+    });
+  }

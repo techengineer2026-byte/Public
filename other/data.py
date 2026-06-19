@@ -104,7 +104,7 @@ def page1(c):
     # ── PRICE TEASER BOX ──
     card_rect(c, W/2 - 45*mm, H - 150*mm, 90*mm, 22*mm, 5, GOLD_BG, GOLD)
     txt(c, 'COMPLETE PACKAGE FROM', W/2, H - 135*mm, 'Helvetica', 7, GREY, 'center')
-    txt(c, 'Rs 12,500 / Episode', W/2, H - 143*mm, 'Helvetica-Bold', 14, GOLD, 'center')
+    txt(c, 'Rs 15,000 / Episode', W/2, H - 143*mm, 'Helvetica-Bold', 14, GOLD, 'center')
     txt(c, 'Everything Included. No Hidden Charges.', W/2, H - 149.5*mm, 'Helvetica', 7, GREY, 'center')
 
     # ── SERVICES QUICK LIST (2 cols) ──
@@ -176,7 +176,7 @@ def page2(c):
     c.line(W/2 - 8*mm - 20*mm, H - 58.5*mm, W/2 - 8*mm + 23*mm, H - 58.5*mm)
 
     # Actual price BIG
-    txt(c, 'Rs 12,500', W/2, H - 68*mm, 'Helvetica-Bold', 28, GOLD, 'center')
+    txt(c, 'Rs 15,000', W/2, H - 68*mm, 'Helvetica-Bold', 28, GOLD, 'center')
     txt(c, 'per episode   |   No Hidden Charges.', W/2, H - 75.5*mm, 'Helvetica', 8, GREY, 'center')
 
     gold_line(c, 20*mm, H - 82*mm, 170*mm, 0.5)

@@ -73,7 +73,7 @@ Based on your page structure, here's what your **target customers are searching 
    → Best profit margin
    → MOST PROFITABLE
 
-3. Complete Package (₹12,500/ep)
+3. Complete Package (₹15,000/ep)
    → High-ticket
    → All-in-one
    → Premium market
@@ -172,7 +172,7 @@ After services, add:
       <div class="col-md-4 text-center">
         <div style="font-size: 24px; margin-bottom: 10px;">💰</div>
         <h4 class="text-white">Affordable Rates</h4>
-        <p class="text-secondary small">₹2,000/hr studio or complete ₹12,500 package. Fair pricing.</p>
+        <p class="text-secondary small">₹2,000/hr studio or complete ₹15,000 package. Fair pricing.</p>
       </div>
       <div class="col-md-4 text-center">
         <div style="font-size: 24px; margin-bottom: 10px;">⚡</div>
@@ -262,7 +262,7 @@ After services, add:
 People searching for "podcast studio mohali" need to see:
 - ✅ "4.9★ from 47 real reviews" → TRUST
 - ✅ "48-hour turnaround" → SPEED
-- ✅ "₹2,000/hr or ₹12,500 all-in" → PRICING
+- ✅ "₹2,000/hr or ₹15,000 all-in" → PRICING
 - ✅ "50+ creators recorded here" → SOCIAL PROOF
 - ✅ "Near Chandigarh" → LOCATION
 
@@ -361,7 +361,7 @@ Based on your page structure, here's what your **target customers are searching 
    → Best profit margin
    → MOST PROFITABLE
 
-3. Complete Package (₹12,500/ep)
+3. Complete Package (₹15,000/ep)
    → High-ticket
    → All-in-one
    → Premium market
@@ -460,7 +460,7 @@ After services, add:
       <div class="col-md-4 text-center">
         <div style="font-size: 24px; margin-bottom: 10px;">💰</div>
         <h4 class="text-white">Affordable Rates</h4>
-        <p class="text-secondary small">₹2,000/hr studio or complete ₹12,500 package. Fair pricing.</p>
+        <p class="text-secondary small">₹2,000/hr studio or complete ₹15,000 package. Fair pricing.</p>
       </div>
       <div class="col-md-4 text-center">
         <div style="font-size: 24px; margin-bottom: 10px;">⚡</div>
@@ -550,7 +550,7 @@ After services, add:
 People searching for "podcast studio mohali" need to see:
 - ✅ "4.9★ from 47 real reviews" → TRUST
 - ✅ "48-hour turnaround" → SPEED
-- ✅ "₹2,000/hr or ₹12,500 all-in" → PRICING
+- ✅ "₹2,000/hr or ₹15,000 all-in" → PRICING
 - ✅ "50+ creators recorded here" → SOCIAL PROOF
 - ✅ "Near Chandigarh" → LOCATION
 
