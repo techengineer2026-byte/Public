@@ -578,6 +578,625 @@
             border-radius: 6px
         }
 
+        /* ═══════════════════════════════════════════════════════════
+     EDITING PRICING (2-Card High Conversion)
+     ═══════════════════════════════════════════════════════════ */
+        .editing-pricing-section {
+            background: #050505;
+        }
+
+        .edit-pricing-card {
+            background: #111;
+            border: 1px solid #222;
+            border-radius: 24px;
+            padding: 40px;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            transition: all 0.4s ease;
+        }
+
+        /* --- Premium Card Specifics --- */
+        .edit-pricing-card.premium {
+            background: linear-gradient(145deg, #151010 0%, #0a0a0a 100%);
+            border: 1px solid rgba(212, 160, 23, 0.4);
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5), 0 0 30px rgba(212, 160, 23, 0.1);
+            transform: scale(1.02);
+            /* Slightly larger to dominate */
+        }
+
+        .edit-pricing-card.premium:hover {
+            transform: scale(1.04) translateY(-5px);
+            border-color: var(--gold);
+        }
+
+        /* ═══════════════════════════════════════════════════════════
+     SOFTWARE COMPARISON (Cinematic Bento Grid)
+     ═══════════════════════════════════════════════════════════ */
+        .software-section {
+            background: #0a0a0a;
+        }
+
+        .software-card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.06);
+            border-radius: 24px;
+            padding: 32px;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        .software-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+            border-color: rgba(255, 255, 255, 0.15);
+        }
+
+        /* --- Icon Boxes with Brand Colors --- */
+        .sw-icon-box {
+            width: 56px;
+            height: 56px;
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.3rem;
+            margin-bottom: 24px;
+            transition: all 0.3s ease;
+        }
+
+        .software-card:hover .sw-icon-box {
+            transform: scale(1.1);
+        }
+
+        /* Premiere Pro (Purple) */
+        .sw-color-premiere {
+            background: rgba(186, 104, 200, 0.1);
+            border: 1px solid rgba(186, 104, 200, 0.3);
+            color: #BA68C8;
+        }
+
+        .software-card:hover .sw-color-premiere {
+            box-shadow: 0 8px 20px rgba(186, 104, 200, 0.2);
+        }
+
+        /* DaVinci Resolve (Orange/Gold) */
+        .sw-color-davinci {
+            background: rgba(255, 152, 0, 0.1);
+            border: 1px solid rgba(255, 152, 0, 0.3);
+            color: #FF9800;
+        }
+
+        .software-card:hover .sw-color-davinci {
+            box-shadow: 0 8px 20px rgba(255, 152, 0, 0.2);
+        }
+
+        /* Adobe Audition (Teal/Blue) */
+        .sw-color-audition {
+            background: rgba(0, 188, 212, 0.1);
+            border: 1px solid rgba(0, 188, 212, 0.3);
+            color: #00BCD4;
+        }
+
+        .software-card:hover .sw-color-audition {
+            box-shadow: 0 8px 20px rgba(0, 188, 212, 0.2);
+        }
+
+        /* --- Typography --- */
+        .sw-name {
+            color: #fff;
+            font-family: 'Outfit', sans-serif;
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin-bottom: 4px;
+        }
+
+        .sw-tagline {
+            color: #888;
+            font-size: 0.9rem;
+            font-weight: 500;
+            margin-bottom: 24px;
+            padding-bottom: 16px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+        }
+
+        /* --- Feature List --- */
+        .sw-features {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 24px 0;
+            flex-grow: 1;
+        }
+
+        .sw-features li {
+            color: #ccc;
+            font-size: 0.95rem;
+            padding: 6px 0;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .sw-features li i {
+            font-size: 0.8rem;
+            color: #555;
+            /* Muted check, lets the icon box colors pop */
+        }
+
+        /* --- Used By Badge --- */
+        .sw-used-badge {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            padding: 10px 16px;
+            border-radius: 10px;
+            color: #888;
+            font-size: 0.8rem;
+            font-weight: 600;
+            text-align: center;
+            margin-top: auto;
+            /* Pins to bottom */
+        }
+
+        .sw-used-badge i {
+            color: var(--gold);
+            margin-right: 6px;
+            font-size: 0.7rem;
+        }
+
+        /* --- Tech Summary Banner --- */
+        .tech-summary-banner {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 20px;
+            padding: 28px 32px;
+            backdrop-filter: blur(10px);
+        }
+
+        .btn-tech-cta {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.08);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            color: #fff;
+            padding: 12px 24px;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 0.9rem;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .btn-tech-cta:hover {
+            background: var(--gold);
+            color: #000;
+            border-color: var(--gold);
+            transform: translateY(-2px);
+        }
+
+        /* ═══════ RESPONSIVENESS ═══════ */
+        @media (max-width: 768px) {
+            .tech-summary-banner {
+                text-align: center;
+                padding: 24px;
+            }
+        }
+
+        /* --- Custom Card Specifics --- */
+        .edit-pricing-card.custom {
+            background: #0d0d0d;
+            border: 1px solid #1a1a1a;
+        }
+
+        .edit-pricing-card.custom:hover {
+            transform: translateY(-5px);
+            border-color: #333;
+        }
+
+        /* --- Badge --- */
+        .epc-badge {
+            position: absolute;
+            top: -14px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: linear-gradient(135deg, var(--gold), var(--gold-light));
+            color: #000;
+            font-weight: 800;
+            font-size: 0.8rem;
+            padding: 8px 24px;
+            border-radius: 50px;
+            white-space: nowrap;
+            box-shadow: 0 4px 15px rgba(212, 160, 23, 0.4);
+        }
+
+        /* --- Header --- */
+        .epc-header {
+            margin-bottom: 24px;
+            text-align: center;
+        }
+
+        .epc-name {
+            color: #fff;
+            font-family: 'Outfit', sans-serif;
+            font-size: 1.8rem;
+            font-weight: 800;
+            margin-bottom: 8px;
+        }
+
+        .epc-subtitle {
+            color: #888;
+            font-size: 0.95rem;
+            margin: 0;
+        }
+
+        /* --- Price Block --- */
+        .epc-price-block {
+            text-align: center;
+            margin-bottom: 32px;
+            display: flex;
+            align-items: baseline;
+            justify-content: center;
+            gap: 4px;
+        }
+
+        .epc-currency {
+            color: var(--gold);
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+
+        .epc-amount {
+            color: #fff;
+            font-size: 3.5rem;
+            font-weight: 800;
+            line-height: 1;
+            font-family: 'Outfit', sans-serif;
+        }
+
+        .epc-unit {
+            color: #666;
+            font-size: 1rem;
+            font-weight: 500;
+            margin-left: 4px;
+        }
+
+        .epc-amount-sm {
+            color: #fff;
+            font-size: 2rem;
+            font-weight: 700;
+            font-family: 'Outfit', sans-serif;
+        }
+
+        /* --- Features List (Premium) --- */
+        .epc-features {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 32px 0;
+            flex-grow: 1;
+        }
+
+        /* ═══════════════════════════════════════════════════════════
+     BOOKING / ORDER FORMS (Premium Glass UI)
+     ═══════════════════════════════════════════════════════════ */
+        .editing-order-section {
+            background: #050505;
+        }
+
+        .booking-wrapper {
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 32px;
+            padding: 48px;
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            box-shadow: 0 30px 60px rgba(0, 0, 0, 0.4);
+        }
+
+        /* --- Left Column Stack --- */
+        .booking-cta-stack {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .btn-booking-wa {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            background: #25d366;
+            color: #fff;
+            padding: 16px;
+            border-radius: 14px;
+            font-weight: 700;
+            font-size: 1.05rem;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 20px rgba(37, 211, 102, 0.2);
+        }
+
+        .btn-booking-wa:hover {
+            background: #20bd5a;
+            transform: translateY(-3px);
+            color: #fff;
+            box-shadow: 0 12px 30px rgba(37, 211, 102, 0.3);
+        }
+
+        .btn-booking-call {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            color: #fff;
+            padding: 16px;
+            border-radius: 14px;
+            font-weight: 600;
+            font-size: 1.05rem;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .btn-booking-call:hover {
+            background: rgba(255, 255, 255, 0.1);
+            transform: translateY(-3px);
+            color: #fff;
+        }
+
+        /* --- Contact Info Structure (The Bento Icon Blocks) --- */
+        .booking-contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 24px;
+        }
+
+        .bci-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 16px;
+        }
+
+        .bci-icon {
+            min-width: 40px;
+            height: 40px;
+            border-radius: 10px;
+            background: rgba(212, 160, 23, 0.1);
+            border: 1px solid rgba(212, 160, 23, 0.2);
+            color: var(--gold);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.9rem;
+        }
+
+        .bci-item strong {
+            display: block;
+            color: #fff;
+            font-size: 0.9rem;
+            margin-bottom: 4px;
+        }
+
+        .bci-item span {
+            color: #888;
+            font-size: 0.85rem;
+            line-height: 1.4;
+        }
+
+        /* --- Right Column Form Glass Card --- */
+        .booking-form-glass {
+            background: rgba(0, 0, 0, 0.3);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 24px;
+            padding: 32px;
+        }
+
+        .form-label-dark {
+            color: #aaa;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 8px;
+            display: block;
+        }
+
+        /* The Premium Dark Inputs */
+        .form-control-dark {
+            width: 100%;
+            padding: 14px 16px;
+            background: #111;
+            border: 1px solid #333;
+            border-radius: 12px;
+            color: #fff;
+            font-size: 0.95rem;
+            transition: all 0.3s ease;
+            -webkit-appearance: none;
+        }
+
+        .form-control-dark::placeholder {
+            color: #555;
+        }
+
+        .form-control-dark:focus {
+            outline: none;
+            border-color: var(--gold);
+            box-shadow: 0 0 0 3px rgba(212, 160, 23, 0.15);
+            background: #0a0a0a;
+        }
+
+        /* Select Dropdown Arrow Fix */
+        select.form-control-dark {
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='%23888' viewBox='0 0 16 16'%3E%3Cpath d='M8 11L3 6h10l-5 5z'/%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: right 16px center;
+            padding-right: 40px;
+        }
+
+        select.form-control-dark option {
+            background: #111;
+            color: #fff;
+        }
+
+        /* Calendar Picker Dark Fix */
+        input[type="date"]::-webkit-calendar-picker-indicator {
+            filter: invert(0.8);
+            cursor: pointer;
+        }
+
+        /* Submit Button */
+        .btn-submit-form {
+            width: 100%;
+            padding: 18px;
+            background: linear-gradient(135deg, var(--gold), var(--gold-light));
+            color: #000;
+            border: none;
+            border-radius: 14px;
+            font-weight: 800;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 20px rgba(212, 160, 23, 0.3);
+            margin-top: 8px;
+        }
+
+        .btn-submit-form:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 30px rgba(212, 160, 23, 0.5);
+        }
+
+        .btn-submit-form:disabled {
+            opacity: 0.7;
+            transform: none;
+        }
+
+        /* ═══════ RESPONSIVENESS ═══════ */
+        @media (max-width: 768px) {
+            .booking-wrapper {
+                padding: 24px;
+                border-radius: 24px;
+            }
+
+            .booking-form-glass {
+                padding: 24px;
+            }
+        }
+
+        .epc-features li {
+            color: #ccc;
+            padding: 10px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            font-size: 0.95rem;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .epc-features li i {
+            color: var(--gold);
+            font-size: 1rem;
+            min-width: 20px;
+        }
+
+        .epc-features li strong {
+            color: #fff;
+        }
+
+        /* --- Custom List (Secondary) --- */
+        .custom-use-cases {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 16px;
+            padding: 24px;
+            margin-bottom: 32px;
+            flex-grow: 1;
+        }
+
+        .custom-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .custom-list li {
+            color: #bbb;
+            padding: 8px 0;
+            font-size: 0.9rem;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .custom-list li i {
+            color: #888;
+            font-size: 0.85rem;
+            min-width: 20px;
+        }
+
+        /* --- Buttons --- */
+        .btn-epc-gold {
+            display: block;
+            text-align: center;
+            background: linear-gradient(135deg, var(--gold), var(--gold-light));
+            color: #000;
+            border: none;
+            padding: 18px;
+            border-radius: 14px;
+            font-weight: 800;
+            font-size: 1.1rem;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 20px rgba(212, 160, 23, 0.3);
+        }
+
+        .btn-epc-gold:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 30px rgba(212, 160, 23, 0.5);
+            color: #000;
+        }
+
+        .btn-epc-wa {
+            display: block;
+            text-align: center;
+            background: #25d366;
+            color: #fff;
+            border: none;
+            padding: 18px;
+            border-radius: 14px;
+            font-weight: 700;
+            font-size: 1.1rem;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 20px rgba(37, 211, 102, 0.2);
+        }
+
+        .btn-epc-wa:hover {
+            background: #20bd5a;
+            transform: translateY(-3px);
+            box-shadow: 0 12px 30px rgba(37, 211, 102, 0.3);
+            color: #fff;
+        }
+
+        /* ═══════ RESPONSIVENESS ═══════ */
+        @media (max-width: 992px) {
+            .edit-pricing-card.premium {
+                transform: scale(1);
+                /* Reset scale on mobile */
+            }
+
+            .edit-pricing-card.premium:hover {
+                transform: translateY(-5px);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .epc-amount {
+                font-size: 2.8rem;
+            }
+        }
+
         .sw-tag.pr {
             background: rgba(153, 115, 255, .12);
             color: #9973ff;
@@ -1129,7 +1748,8 @@
             <div class="row align-items-center gy-5">
                 <div class="col-lg-7">
                     <h1 class="text-white">
-                        Podcast <span class="text-accent">Editing</span> with Adobe Premiere & DaVinci Resolve
+                        Professional Podcast Editing in Mohali | Adobe Premiere & DaVinci Resolve – <span
+                            class="text-accent">₹5,000/Episode</span>
                     </h1>
 
                     <!-- SOFTWARE BADGES -->
@@ -1204,7 +1824,104 @@
             </div>
         </div>
     </section>
+    <!-- ═══════════════════════════════════════════════════════════
+     SOFTWARE COMPARISON (Cinematic Bento Grid)
+     ═══════════════════════════════════════════════════════════ -->
+    <section class="py-5 software-section">
+        <div class="container">
+            <div class="text-center mb-5">
+                <span class="section-label"><i class="fas fa-brain"></i> The Technology</span>
+                <h2 class="text-white mt-3 h3 fw-bold">Why Premiere Pro + DaVinci + Audition?</h2>
+                <p class="text-secondary">Three industry-standard tools. One broadcast-quality result.</p>
+            </div>
 
+            <div class="row g-4">
+
+                <!-- Adobe Premiere Pro -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="software-card">
+                        <div class="sw-icon-box sw-color-premiere">
+                            <i class="fas fa-film"></i>
+                        </div>
+                        <h3 class="sw-name">Adobe Premiere Pro</h3>
+                        <p class="sw-tagline">Professional Video Editing</p>
+                        <ul class="sw-features">
+                            <li><i class="fas fa-circle-check"></i> Multi-camera synchronization</li>
+                            <li><i class="fas fa-circle-check"></i> Precision timeline editing</li>
+                            <li><i class="fas fa-circle-check"></i> Effects & dynamic transitions</li>
+                            <li><i class="fas fa-circle-check"></i> Automated subtitle generation</li>
+                            <li><i class="fas fa-circle-check"></i> 4K/8K export capability</li>
+                        </ul>
+                        <div class="sw-used-badge">
+                            <i class="fas fa-star"></i> Used by Netflix, HBO, News Studios
+                        </div>
+                    </div>
+                </div>
+
+                <!-- DaVinci Resolve -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="software-card">
+                        <div class="sw-icon-box sw-color-davinci">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <h3 class="sw-name">DaVinci Resolve</h3>
+                        <p class="sw-tagline">Hollywood Color Grading</p>
+                        <ul class="sw-features">
+                            <li><i class="fas fa-circle-check"></i> Cinematic color grading</li>
+                            <li><i class="fas fa-circle-check"></i> Advanced color correction</li>
+                            <li><i class="fas fa-circle-check"></i> Professional LUTs & HDR</li>
+                            <li><i class="fas fa-circle-check"></i> Skin tone consistency</li>
+                            <li><i class="fas fa-circle-check"></i> Visual effects & compositing</li>
+                        </ul>
+                        <div class="sw-used-badge">
+                            <i class="fas fa-star"></i> Used by Marvel, Disney, Netflix
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Adobe Audition -->
+                <div class="col-lg-4 col-md-6 mx-auto">
+                    <div class="software-card">
+                        <div class="sw-icon-box sw-color-audition">
+                            <i class="fas fa-headphones"></i>
+                        </div>
+                        <h3 class="sw-name">Adobe Audition</h3>
+                        <p class="sw-tagline">Professional Audio Mixing</p>
+                        <ul class="sw-features">
+                            <li><i class="fas fa-circle-check"></i> Noise removal & cleanup</li>
+                            <li><i class="fas fa-circle-check"></i> EQ & compression</li>
+                            <li><i class="fas fa-circle-check"></i> Voice normalization</li>
+                            <li><i class="fas fa-circle-check"></i> Dynamic processing</li>
+                            <li><i class="fas fa-circle-check"></i> Multi-track studio mixing</li>
+                        </ul>
+                        <div class="sw-used-badge">
+                            <i class="fas fa-star"></i> Used by Audio Post-Production
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Premium Upsell/Summary Banner -->
+            <div class="tech-summary-banner mt-5">
+                <div class="row align-items-center gy-3">
+                    <div class="col-md-8 text-center text-md-start">
+                        <p class="text-white fw-bold mb-1"><i class="fas fa-clapperboard me-2"
+                                style="color:var(--gold);"></i> This 3-software workflow is why our edits look
+                            cinematic.</p>
+                        <p class="text-secondary small mb-0">Most editors use just one tool. We use three
+                            industry-standard suites to deliver true broadcast-quality output.</p>
+                    </div>
+                    <div class="col-md-4 text-center text-md-end">
+                        <a href="#order" class="btn-tech-cta">
+                            Get This Quality <i class="fas fa-arrow-right ms-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
     <!-- ═══════════════════════════════════════════════════════════
        EDITING WORKFLOW — Software Specific
        ═══════════════════════════════════════════════════════════ -->
@@ -1391,92 +2108,90 @@
     </section>
 
     <!-- ═══════════════════════════════════════════════════════════
-       PRICING
-       ═══════════════════════════════════════════════════════════ -->
-    <section class="py-5" style="background:#050505;">
+     EDITING PRICING (High-Converting 2-Card Layout)
+     ═══════════════════════════════════════════════════════════ -->
+    <section class="py-5 editing-pricing-section">
         <div class="container">
             <div class="text-center mb-5">
                 <span class="section-label"><i class="fas fa-rupee-sign"></i> Pricing</span>
-                <h2 class="text-white mt-3 h3">Editing Packages</h2>
-                <p class="text-secondary">Single episodes or monthly retainers. All using Adobe Premiere & DaVinci
-                    Resolve.</p>
+                <h2 class="text-white mt-3 h3 fw-bold">Editing Packages</h2>
+                <p class="text-secondary">Professional editing using Adobe Premiere & DaVinci Resolve. No hidden fees.
+                </p>
             </div>
 
-            <div class="row g-4 justify-content-center">
+            <div class="row g-4 justify-content-center align-items-stretch">
 
-                <!-- Single -->
-                <div class="col-lg-4 col-md-6">
-                    <div class="pricing-card">
-                        <p class="pricing-name">Single Episode</p>
-                        <p class="pricing-price">₹5,000</p>
-                        <p class="pricing-unit">per episode</p>
-                        <ul class="pricing-features">
-                            <li><i class="fas fa-check"></i> Up to 1-hour edit</li>
-                            <li><i class="fas fa-check"></i> Multi-camera sync & cuts</li>
-                            <li><i class="fas fa-check"></i> Color grading (DaVinci)</li>
-                            <li><i class="fas fa-check"></i> Audio mix (Adobe Audition)</li>
-                            <li><i class="fas fa-check"></i> Subtitles / captions</li>
-                            <li><i class="fas fa-check"></i> YouTube thumbnail</li>
-                            <li><i class="fas fa-check"></i> 6 Reels / Shorts</li>
-                            <li class="disabled"><i class="fas fa-times"></i> Consistent branding</li>
-                        </ul>
-                        <a href="https://wa.me/918360769451?text=Hi!%20I%20need%20podcast%20editing%20–%20Single%20Episode%20(₹5000)"
-                            class="btn btn-outline-light btn-pricing" target="_blank" rel="noopener">
-                            <i class="fab fa-whatsapp"></i> Order Now
-                        </a>
-                    </div>
-                </div>
+                <!-- CARD 1: 4-Episode Bundle (Dominant) -->
+                <div class="col-lg-7 col-md-8">
+                    <div class="edit-pricing-card premium">
+                        <div class="epc-badge">🔥 Best Value — Most Booked</div>
 
-                <!-- 4-Episode (Popular) -->
-                <div class="col-lg-4 col-md-6">
-                    <div class="pricing-card popular">
-                        <p class="pricing-name">4-Episode Bundle</p>
-                        <p class="pricing-price">₹18,000</p>
-                        <p class="pricing-unit">save ₹2,000 · 4 episodes</p>
-                        <ul class="pricing-features">
-                            <li><i class="fas fa-check"></i> Everything in Single ×4</li>
-                            <li><i class="fas fa-check"></i> Consistent color profile</li>
-                            <li><i class="fas fa-check"></i> Branded intro/outro animation</li>
-                            <li><i class="fas fa-check"></i> 24 total Reels/Shorts</li>
-                            <li><i class="fas fa-check"></i> Priority turnaround</li>
-                            <li><i class="fas fa-check"></i> 1 revision per episode</li>
-                            <li class="disabled"><i class="fas fa-times"></i> Dedicated editor</li>
-                            <li class="disabled"><i class="fas fa-times"></i> Channel management</li>
+                        <div class="epc-header">
+                            <h3 class="epc-name">4-Episode Bundle</h3>
+                            <p class="epc-subtitle">Perfect for weekly podcasters. One month of content.</p>
+                        </div>
+
+                        <div class="epc-price-block">
+                            <span class="epc-currency">₹</span>
+                            <span class="epc-amount">15,000</span>
+                            <span class="epc-unit">/ 4 episodes</span>
+                        </div>
+
+                        <ul class="epc-features">
+                            <li><i class="fas fa-check-circle"></i> <strong>Up to 1-hour edit</strong> per episode</li>
+                            <li><i class="fas fa-check-circle"></i> <strong>Multi-camera sync</strong> & cuts</li>
+                            <li><i class="fas fa-check-circle"></i> <strong>Color grading</strong> (DaVinci Resolve)
+                            </li>
+                            <li><i class="fas fa-check-circle"></i> <strong>Audio mixing</strong> (Adobe Audition)</li>
+                            <li><i class="fas fa-check-circle"></i> <strong>Subtitles / Captions</strong> included</li>
+                            <li><i class="fas fa-check-circle"></i> <strong>24 Reels / Shorts</strong> (6 per episode)
+                            </li>
+                            <li><i class="fas fa-check-circle"></i> <strong>Branded intro/outro</strong> animation</li>
+                            <li><i class="fas fa-check-circle"></i> <strong>Priority turnaround</strong> & 1 revision/ep
+                            </li>
                         </ul>
+
                         <a href="https://wa.me/918360769451?text=Hi!%20I%20want%20the%204-Episode%20Editing%20Bundle%20(₹18000)"
-                            class="btn btn-pricing" style="background:var(--gold);color:#000;border:none;"
-                            target="_blank" rel="noopener">
-                            <i class="fab fa-whatsapp"></i> Order Now
+                            class="btn-epc-gold" target="_blank" rel="noopener">
+                            <i class="fas fa-calendar-check me-2"></i> Book 4-Episode Bundle
                         </a>
                     </div>
                 </div>
 
-                <!-- Monthly -->
-                <div class="col-lg-4 col-md-6">
-                    <div class="pricing-card">
-                        <p class="pricing-name">Monthly Retainer</p>
-                        <p class="pricing-price">₹32,000</p>
-                        <p class="pricing-unit">per month · 8 episodes</p>
-                        <ul class="pricing-features">
-                            <li><i class="fas fa-check"></i> 8 episodes per month</li>
-                            <li><i class="fas fa-check"></i> Dedicated editor assigned</li>
-                            <li><i class="fas fa-check"></i> 48 Reels/Shorts monthly</li>
-                            <li><i class="fas fa-check"></i> Consistent brand look</li>
-                            <li><i class="fas fa-check"></i> Custom intro/outro</li>
-                            <li><i class="fas fa-check"></i> 24-hour turnaround</li>
-                            <li><i class="fas fa-check"></i> Unlimited revisions</li>
-                            <li><i class="fas fa-check"></i> YouTube channel management</li>
-                        </ul>
-                        <a href="https://wa.me/918360769451?text=Hi!%20I%20want%20the%20Monthly%20Editing%20Retainer%20(₹32000)"
-                            class="btn btn-outline-light btn-pricing" target="_blank" rel="noopener">
-                            <i class="fab fa-whatsapp"></i> Get Started
+                <!-- CARD 2: Custom / Single Episode -->
+                <div class="col-lg-5 col-md-8">
+                    <div class="edit-pricing-card custom">
+                        <div class="epc-header">
+                            <h3 class="epc-name">Custom / Single</h3>
+                            <p class="epc-subtitle">Need just one episode? Or a custom monthly plan?</p>
+                        </div>
+
+                        <div class="epc-price-block">
+                            <span class="epc-amount-sm">Starting ₹5,000</span>
+                        </div>
+
+                        <div class="custom-use-cases">
+                            <p class="text-secondary small mb-2 fw-bold"
+                                style="text-transform:uppercase; letter-spacing:1px;">Common Requests:</p>
+                            <ul class="custom-list">
+                                <li><i class="fas fa-cut"></i> Single episode edit (₹5,000/ep)</li>
+                                <li><i class="fas fa-film"></i> 8-Episode Monthly Retainer (₹32,000)</li>
+                                <li><i class="fas fa-wand-magic-sparkles"></i> Reels / Shorts only</li>
+                                <li><i class="fas fa-palette"></i> Color grading correction</li>
+                                <li><i class="fas fa-closed-captioning"></i> Subtitles & captioning</li>
+                            </ul>
+                        </div>
+
+                        <a href="https://wa.me/918360769451?text=Hi!%20I%20need%20a%20custom%20editing%20quote"
+                            class="btn-epc-wa" target="_blank" rel="noopener">
+                            <i class="fab fa-whatsapp me-2"></i> WhatsApp Us
                         </a>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
-
     <!-- ═══════════════════════════════════════════════════════════
        HOW IT WORKS
        ═══════════════════════════════════════════════════════════ -->
@@ -1614,94 +2329,122 @@
     </section>
 
     <!-- ═══════════════════════════════════════════════════════════
-       ORDER FORM
-       ═══════════════════════════════════════════════════════════ -->
-    <section class="py-5" style="background:#050505;" id="order">
+     ORDER FORM (Premium Glass UI)
+     ═══════════════════════════════════════════════════════════ -->
+    <section class="py-5 editing-order-section" id="order">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-10">
-                    <div class="booking-cta">
+                    <div class="booking-wrapper">
                         <div class="row align-items-center gy-4">
+
+                            <!-- Left Column -->
                             <div class="col-lg-5">
                                 <span class="section-label mb-3"><i class="fas fa-cut"></i> Order Editing</span>
-                                <h2 class="text-white mt-3 h3">Get Your Episode Edited</h2>
+                                <h2 class="text-white mt-3 h3 fw-bold">Get Your Episode Edited</h2>
                                 <p class="text-secondary mb-4">Send us your footage — we'll make it look incredible.</p>
 
-                                <a href="https://wa.me/918360769451?text=Hi!%20I%20need%20podcast%20editing.%20Here%20are%20the%20details:"
-                                    class="btn btn-lg w-100 mb-2"
-                                    style="background:#25d366;color:#fff;font-weight:700;border-radius:10px;"
-                                    target="_blank" rel="noopener">
-                                    <i class="fab fa-whatsapp me-2"></i> Order via WhatsApp
-                                </a>
-                                <a href="tel:+918360769451" class="btn btn-lg btn-outline-light w-100"
-                                    style="border-radius:10px;">
-                                    <i class="fas fa-phone-alt me-2"></i> Call +91 83607 69451
-                                </a>
+                                <div class="booking-cta-stack mb-5">
+                                    <a href="https://wa.me/918360769451?text=Hi!%20I%20need%20podcast%20editing.%20Here%20are%20the%20details:"
+                                        class="btn-booking-wa" target="_blank" rel="noopener">
+                                        <i class="fab fa-whatsapp"></i> Order via WhatsApp
+                                    </a>
+                                    <a href="tel:+918360769451" class="btn-booking-call">
+                                        <i class="fas fa-phone-alt"></i> Call +91 83607 69451
+                                    </a>
+                                </div>
 
-                                <div class="mt-4 pt-3" style="border-top:1px solid #333;">
-                                    <p class="text-secondary small mb-1"><i class="fas fa-clock text-accent me-2"></i>
-                                        Delivery: 48–72 hours</p>
-                                    <p class="text-secondary small mb-1"><i class="fas fa-redo text-accent me-2"></i> 1
-                                        free revision included</p>
-                                    <p class="text-secondary small mb-1"><i class="fas fa-globe text-accent me-2"></i>
-                                        Remote editing available</p>
-                                    <p class="text-secondary small mb-0"><i
-                                            class="fas fa-cloud-upload-alt text-accent me-2"></i> Upload via
-                                        Drive/WeTransfer</p>
+                                <div class="booking-contact-info">
+                                    <div class="bci-item">
+                                        <div class="bci-icon"><i class="fas fa-clock"></i></div>
+                                        <div>
+                                            <strong>Delivery</strong>
+                                            <span>48–72 hours turnaround</span>
+                                        </div>
+                                    </div>
+                                    <div class="bci-item">
+                                        <div class="bci-icon"><i class="fas fa-redo"></i></div>
+                                        <div>
+                                            <strong>Revisions</strong>
+                                            <span>1 free revision included</span>
+                                        </div>
+                                    </div>
+                                    <div class="bci-item">
+                                        <div class="bci-icon"><i class="fas fa-cloud-upload-alt"></i></div>
+                                        <div>
+                                            <strong>File Transfer</strong>
+                                            <span>Upload via Drive / WeTransfer</span>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
 
+                            <!-- Right Column -->
                             <div class="col-lg-7">
-                                <!-- Give the new form a unique ID -->
-                                <form id="editingOrderForm">
-                                    <!-- Add the hidden input with a DIFFERENT value -->
-                                    <input type="hidden" name="formName" value="EditingOrder">
+                                <div class="booking-form-glass">
+                                    <form id="editingOrderForm">
+                                        <!-- Honeypot Anti-Spam -->
+                                        <input type="text" name="bot-field" style="display:none;">
+                                        <input type="hidden" name="formName" value="EditingOrder">
 
-                                    <div class="row g-3">
-                                        <!-- I have added the 'name' attributes here -->
-                                        <div class="col-md-6">
-                                            <input type="text" class="form-control" name="Your Name"
-                                                placeholder="Your Name *" required aria-label="Name">
+                                        <div class="row g-3">
+                                            <div class="col-md-6">
+                                                <label class="form-label-dark">Your Name *</label>
+                                                <input type="text" class="form-control-dark" name="Your Name"
+                                                    placeholder="John Doe" required>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label class="form-label-dark">WhatsApp Number *</label>
+                                                <input type="tel" class="form-control-dark" name="WhatsApp Number"
+                                                    placeholder="+91 98765 43210" required>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label class="form-label-dark">Select Package *</label>
+                                                <select class="form-control-dark" name="Package" required>
+                                                    <option value="" disabled selected>Select Package</option>
+                                                    <option value="4-Episode Bundle (₹18,000)">4-Episode Bundle
+                                                        (₹18,000)</option>
+                                                    <option value="Single Episode (₹5,000)">Single Episode (₹5,000)
+                                                    </option>
+                                                    <option value="Monthly Retainer (₹32,000)">Monthly Retainer
+                                                        (₹32,000)</option>
+                                                    <option value="Custom / Other">Custom / Other</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label class="form-label-dark">Footage Source *</label>
+                                                <select class="form-control-dark" name="Footage Source" required>
+                                                    <option value="" disabled selected>How will you send footage?
+                                                    </option>
+                                                    <option value="Google Drive / WeTransfer">Google Drive / WeTransfer
+                                                    </option>
+                                                    <option value="Recorded at Puadh Studio">Recorded at Puadh Studio
+                                                    </option>
+                                                    <option value="Hard Drive (In Person)">Hard Drive (In Person)
+                                                    </option>
+                                                </select>
+                                            </div>
+                                            <div class="col-12">
+                                                <label class="form-label-dark">Details</label>
+                                                <textarea class="form-control-dark" name="Details" rows="3"
+                                                    placeholder="Duration, number of cameras, subtitle language, etc."></textarea>
+                                            </div>
+                                            <div class="col-12">
+                                                <button type="submit" class="btn-submit-form" id="edit-submitBtn">
+                                                    <span id="edit-btnText"><i class="fas fa-paper-plane me-2"></i>
+                                                        Submit Editing Order</span>
+                                                    <span id="edit-btnSpinner"
+                                                        class="spinner-border spinner-border-sm d-none"
+                                                        role="status"></span>
+                                                </button>
+                                            </div>
                                         </div>
-                                        <div class="col-md-6">
-                                            <input type="tel" class="form-control" name="WhatsApp Number"
-                                                placeholder="WhatsApp Number *" required aria-label="Phone">
-                                        </div>
-                                        <div class="col-md-6">
-                                            <select class="form-control" name="Package" aria-label="Package" required>
-                                                <option value="" disabled selected>Select Package *</option>
-                                                <option value="single">Single Episode (₹5,000)</option>
-                                                <option value="bundle">4-Episode Bundle (₹18,000)</option>
-                                                <option value="monthly">Monthly Retainer (₹32,000)</option>
-                                                <option value="complete">Complete Studio Package (₹15,000)</option>
-                                            </select>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <select class="form-control" name="Footage Source"
-                                                aria-label="Footage Source">
-                                                <option value="" disabled selected>How will you send footage?</option>
-                                                <option value="drive">Google Drive / WeTransfer</option>
-                                                <option value="hard-drive">Hard Drive (in person)</option>
-                                                <option value="studio">Recorded at Puadh Studio</option>
-                                                <option value="other">Other — will discuss</option>
-                                            </select>
-                                        </div>
-                                        <div class="col-12">
-                                            <textarea class="form-control" name="Details" rows="3"
-                                                placeholder="Tell us about your podcast — duration, number of cameras, any special editing requests, subtitle language..."
-                                                aria-label="Details"></textarea>
-                                        </div>
-                                        <div class="col-12">
-                                            <button type="submit" class="btn-book-form"><i
-                                                    class="fas fa-paper-plane me-2"></i> Submit Editing Order</button>
-                                        </div>
-                                    </div>
-                                </form>
-
-                                <!-- Don't forget a status message div for this form too! -->
-                                <div id="editing-form-status-message"
-                                    style="margin-top: 15px; font-weight: bold; text-align: center;"></div>
+                                    </form>
+                                    <div id="editing-form-status-message"
+                                        style="margin-top: 15px; font-weight: bold; text-align: center;"></div>
+                                </div>
                             </div>
+
                         </div>
                     </div>
                 </div>
@@ -1795,7 +2538,7 @@
 
     <!-- ═══════════════════════════════════════════════════════════
        FOOTER
-       ═══════════════════════════════════════════════════════════ -->    <!-- FOOTER -->
+       ═══════════════════════════════════════════════════════════ --> <!-- FOOTER -->
     <footer class="footer-main pt-5 pb-3">
         <div class="container-fluid footer-padding">
             <div class="row justify-content-between text-center text-lg-start">
@@ -1847,24 +2590,26 @@
                 </div>
 
                 <!-- COLUMN 4: POPULAR (2 Columns on Mobile Fix) -->
-<!-- ✅ REPLACE Popular Locations in footer -->
-<div class="col-lg-3 col-12 mb-4 mb-lg-0">
-  <p class="footer-section-title">Popular Locations</p>
-  <div class="row row-cols-2 text-start">
-    <ul class="list-unstyled footer-link-list">
-      <li><a href="/mohali-podcast" title="Podcast Studio in Mohali">Podcast Studio Mohali</a></li>
-      <li><a href="/chandigarh-podcast" title="Podcast Studio Chandigarh">Podcast Chandigarh</a></li>
-      <li><a href="/kharar-podcast" title="Podcast Studio Kharar">Podcast Studio Kharar</a></li>
-      <li><a href="/zirakpur-podcast" title="Podcast Studio Zirakpur">Podcast Zirakpur</a></li>
-    </ul>
-    <ul class="list-unstyled footer-link-list">
-      <li><a href="/patiala-podcast" title="Podcast in Patiala">Podcast in Patiala</a></li>
-      <li><a href="/ludhiana-podcast" title="Podcast in Ludhiana">Podcast in Ludhiana</a></li>
-      <li><a href="/panchkula-podcast" title="Podcast Panchkula">Podcast Panchkula</a></li>
-      <li><a href="/punjab-podcast" title="Best Punjab Podcast">Best Punjab Podcast</a></li>
-    </ul>
-  </div>
-</div>
+                <!-- ✅ REPLACE Popular Locations in footer -->
+                <div class="col-lg-3 col-12 mb-4 mb-lg-0">
+                    <p class="footer-section-title">Popular Locations</p>
+                    <div class="row row-cols-2 text-start">
+                        <ul class="list-unstyled footer-link-list">
+                            <li><a href="/mohali-podcast" title="Podcast Studio in Mohali">Podcast Studio Mohali</a>
+                            </li>
+                            <li><a href="/chandigarh-podcast" title="Podcast Studio Chandigarh">Podcast Chandigarh</a>
+                            </li>
+                            <li><a href="/kharar-podcast" title="Podcast Studio Kharar">Podcast Studio Kharar</a></li>
+                            <li><a href="/zirakpur-podcast" title="Podcast Studio Zirakpur">Podcast Zirakpur</a></li>
+                        </ul>
+                        <ul class="list-unstyled footer-link-list">
+                            <li><a href="/patiala-podcast" title="Podcast in Patiala">Podcast in Patiala</a></li>
+                            <li><a href="/ludhiana-podcast" title="Podcast in Ludhiana">Podcast in Ludhiana</a></li>
+                            <li><a href="/panchkula-podcast" title="Podcast Panchkula">Podcast Panchkula</a></li>
+                            <li><a href="/punjab-podcast" title="Best Punjab Podcast">Best Punjab Podcast</a></li>
+                        </ul>
+                    </div>
+                </div>
 
                 <!-- COLUMN 5: COMMUNITY & NEWSLETTER -->
                 <div class="col-lg-3 col-12 mb-0">
@@ -1882,43 +2627,47 @@
                             rel="noopener noreferrer"><i class="fab fa-x-twitter"></i></a>
                         <a href="https://open.spotify.com/show/4S1Lqp4l1Huu1MZJuKibcV" aria-label="Listen on Spotify"
                             target="_blank" rel="noopener noreferrer"><i class="fab fa-spotify"></i></a>
-                        <a href="https://anchor.fm/s/111d84174/podcast/rss" aria-label="RSS Feed" target="_blank" rel="noopener noreferrer"><i
-                                class="fas fa-rss"></i></a>
+                        <a href="https://anchor.fm/s/111d84174/podcast/rss" aria-label="RSS Feed" target="_blank"
+                            rel="noopener noreferrer"><i class="fas fa-rss"></i></a>
 
                     </div>
 
-<!-- The Form -->
-<p class="footer-section-title-sm mb-1">Get New Episodes + BTS Clips 🎙</p>
-<form id="subscriptionForm" class="footer-subscribe-form mb-3">
-  <!-- Your Access Key -->
-  <input type="hidden" name="access_key" value="48bfad09-3208-4804-abfa-6b581af52bdf">
+                    <!-- The Form -->
+                    <p class="footer-section-title-sm mb-1">Get New Episodes + BTS Clips 🎙</p>
+                    <form id="subscriptionForm" class="footer-subscribe-form mb-3">
+                        <!-- Your Access Key -->
+                        <input type="hidden" name="access_key" value="48bfad09-3208-4804-abfa-6b581af52bdf">
 
-  <div class="input-group">
-    <input type="email" name="email" class="form-control footer-input" placeholder="Your email" required />
-    
-    <button class="btn btn-footer-subscribe fw-bold px-3" type="submit" id="submitBtn">
-      <span id="btnText">Join Free</span>
-      <!-- Hidden Spinner -->
-      <span id="btnSpinner" class="spinner-border spinner-border-sm d-none" role="status" aria-hidden="true"></span>
-    </button>
-  </div>
-</form>
+                        <div class="input-group">
+                            <input type="email" name="email" class="form-control footer-input" placeholder="Your email"
+                                required />
 
-<!-- Success Modal (Place this anywhere) -->
-<div class="modal fade" id="successModal" tabindex="-1" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content text-center p-4">
-      <div class="modal-body">
-        <div class="mb-3">
-            <span style="font-size: 50px;">🎉</span>
-        </div>
-        <h3 class="fw-bold">You're on the list!</h3>
-        <p class="text-muted">Thanks for subscribing. Check your inbox for the latest episodes soon.</p>
-        <button type="button" class="btn btn-dark w-100" data-bs-dismiss="modal">Awesome</button>
-      </div>
-    </div>
-  </div>
-</div>
+                            <button class="btn btn-footer-subscribe fw-bold px-3" type="submit" id="submitBtn">
+                                <span id="btnText">Join Free</span>
+                                <!-- Hidden Spinner -->
+                                <span id="btnSpinner" class="spinner-border spinner-border-sm d-none" role="status"
+                                    aria-hidden="true"></span>
+                            </button>
+                        </div>
+                    </form>
+
+                    <!-- Success Modal (Place this anywhere) -->
+                    <div class="modal fade" id="successModal" tabindex="-1" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content text-center p-4">
+                                <div class="modal-body">
+                                    <div class="mb-3">
+                                        <span style="font-size: 50px;">🎉</span>
+                                    </div>
+                                    <h3 class="fw-bold">You're on the list!</h3>
+                                    <p class="text-muted">Thanks for subscribing. Check your inbox for the latest
+                                        episodes soon.</p>
+                                    <button type="button" class="btn btn-dark w-100"
+                                        data-bs-dismiss="modal">Awesome</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
                     <!-- Legal Links (Small & Inline for Mobile) -->
                     <div class="d-flex justify-content-center justify-content-lg-start gap-3 mt-3">
@@ -1936,7 +2685,8 @@
                 </p>
             </div>
         </div>
-    </footer>    <script src="/js/main.js"></script>
+    </footer>
+    <script src="/js/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="/js/form-handler.js" type="module"></script>
 </body>
